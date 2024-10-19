@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Роман Телегин](https://up.htmlacademy.ru/adaptive-individual/2/user/2075927).
-* Наставник: `Антон Варнавский`.
+* Наставник: [Антон Варнавский] (https://github.com/htmlacademy-adaptive/2075927-cat-energy-2/pull/1).
 
 ---
 
