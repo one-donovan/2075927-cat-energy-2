@@ -5,3 +5,55 @@
 
 /* BLOCKS */
 @import "./blocks/header.scss";
+
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* .container {
+  min-width: 280px;
+  max-width: 708px;
+}
+ */
+
+.button {
+  min-width: 280px;
+  min-height: 40px;
+
+  margin: 0;
+  padding: 10px 63.5px;
+
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+
+
+  background-color: #68b738;
+  border: none;
+  color: #ffffff;
+}
+
+.experience__caption-primary {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.program {
+  width: 280px;
+  height: 266px;
+
+  background-color: #f2f2f2;
+}
