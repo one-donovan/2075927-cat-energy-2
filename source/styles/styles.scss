@@ -7,6 +7,7 @@
 @import "./blocks/header.scss";
 
 .page__body {
+  max-width: 320px;
   background-color: #ffffff;
 }
 
@@ -22,16 +23,561 @@
   overflow: hidden;
 }
 
-/* .container {
-  min-width: 280px;
-  max-width: 708px;
+/* блок навагация */
+
+.navigation {
+  border-bottom: 1px solid #ebebeb;
 }
- */
+
+.navigation__logo {
+  text-decoration: none;
+}
+
+.navigation__link {
+  color: #000000;
+  font-family: "Oswald", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.navigation__link:hover {
+  opacity: 0.6;
+}
+
+.navigation__link:focus {
+  opacity: 0.4;
+}
+
+.navigation__link:active {
+  opacity: 0.3;
+}
+
+.navigation__list {
+  padding: 0;
+  list-style-type: none;
+}
+
+/* блок hero */
+
+.hero__image {
+  /*   background-image: url("../images/index-background-mobile2@1x.png");
+  background-repeat: no-repeat;
+  background-size: 320px 302px;
+  background-position: center; */
+}
+
+.hero__title {
+  /* color: #ffffff; */
+  color: #000000; /* временно черный для видимости */
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+  /* text-align: center; */
+}
+
+.hero__description {
+  /* color: #ffffff; */
+  color: #000000; /* временно черный для видимости */
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+/* блок программы */
+
+.program {
+  width: 280px;
+  height: 266px;
+  background-color: #f2f2f2;
+
+  /* background-image: url("../images/cat-back-secondary-mobile.svg");
+  background-size: 50px 53px;
+  background-repeat: no-repeat; */
+}
+
+.program__title {
+  margin: 0 0 20px;
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 37px;
+  text-transform: uppercase;
+}
+
+.program__description {
+  margin: 0;
+  padding: 0 0 23px;
+  color: #444444;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.program__link {
+  color: #000000;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 29.64px;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.program__link::after {
+  content: "";
+
+  /*   background-image: url("../images/logo/icon.png");
+  background-repeat: no-repeat;
+  background-size: 24px 12px; */
+}
+
+.program__link:active {
+  opacity: 0.7;
+}
+
+.programs__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.programs__item {
+  margin: 0 0 20px;
+  /* background-image: url("../images/cat-back-secondary-mobile.svg");
+  background-size: 50px 53px;
+  background-repeat: no-repeat; */
+}
+
+/* блок инструкции "как это работает?" */
+
+.instructions__title {
+  margin: 0 0 40px;
+  color: #000000;
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+  /*  text-align: center; */
+}
+
+.instructions__list {
+  display: grid;
+  grid-template-columns: repeat(1, 280px);
+  grid-auto-rows: max-content;
+  /* justify-content: center; */
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.description-step-content {
+  margin: 0;
+  padding: 0;
+  color: #444444;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+/* блок опыт живой пример */
+
+.experience {
+  padding: 20px;
+  background-color: #eaeaea;
+}
+
+.experience__title {
+  margin: 0;
+  padding: 5px 0 40px;
+  color: #000000;
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+.experience__description {
+  margin: 0 0 20px;
+  color: #444444;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+}
+
+.experience__list {
+  display: flex;
+  margin: 0 -20px 20px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.experience__item {
+  width: 124px;
+  height: 56px;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+}
+
+.experience__item:not(:last-child) {
+  margin: 0 22px;
+}
+
+.experience__caption-primary {
+  margin: 0;
+  padding: 6px 0 0;
+  color: #000000;
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+}
+
+.experience__caption-secondary {
+  margin: 0;
+  padding: 0;
+  color: #444444;
+  background-color: #eaeaea;
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+}
+
+.costs__title,
+.costs__description {
+  color: #000000;
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.experience__footer {
+  margin: 0 0 20px;
+  text-align: center;
+}
+/* блок карта */
+
+.invitation__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #111111;
+  text-transform: uppercase;
+}
+
+.address {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  color: #444444;
+}
+
+.address__city,
+.address__street {
+  margin: 0;
+  padding: 0;
+}
+
+/* блок footer */
+
+.footer__container {
+  min-width: 320px;
+  min-height: 240px;
+  background-color: #f2f2f2;
+}
+
+.footer__text {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #444444;
+}
+
+.footer__image {
+  margin: 40px 96px 20px;
+}
+
+.footer__copyright {
+  display: flex;
+  justify-content: space-between;
+  margin: 27px 20px 47px;
+  text-decoration: none;
+}
+
+.social {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 74px;
+  margin: 20px 0 0;
+  list-style-type: none;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+
+/* стили каталог */
+
+.card__list {
+  padding: 0;
+  list-style-type: none;
+}
+
+.catalog__title {
+  margin: 27px 0 41px;
+  color: #000000;
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+}
+
+.card__title {
+  margin: 16px 0 10px;
+  color: #000000;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.card__title:hover {
+  opacity: 0.6;
+}
+
+.card__title:focus {
+  opacity: 0.4;
+}
+
+.card__title:active {
+  opacity: 0.3;
+}
+
+.card__measure {
+  padding: 0 65px 0 0;
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.card__value {
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.card__content {
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.catalog__link {
+  text-decoration: none;
+}
+
+.catalog__list {
+  padding: 0;
+  list-style-type: none;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+  grid-auto-rows: max-content;
+  width: 320px;
+  height: 209px;
+  border-top: 1px solid #ebebeb;
+}
+
+.card__image {
+  margin: 15px 0 0 35px;
+}
+
+.card--add {
+  border-bottom: 1px solid #ebebeb;
+}
+
+/* блок дополнительные товары */
+
+.additional-products__headline {
+  color: #000000;
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.additional-products__title {
+  color: #222222;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.additional-products__title:hover {
+  opacity: 0.6;
+}
+
+.additional-products__title:focus {
+  opacity: 0.4;
+}
+
+.additional-products__title:active {
+  opacity: 0.3;
+}
+
+.product__volume,
+.product__price {
+  color: #444444;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+.additional-products__list {
+  padding: 0;
+  list-style-type: none;
+}
+
+.product {
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+  grid-auto-rows: max-content;
+  border-top: 1px solid #ebebeb;
+}
+
+/* промо блок получите подарок */
+
+.promo__description {
+  color: #000000; /* временно черный для видимости */
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  /* text-align: center; */
+}
+
+/* блок subscription акции и новинки */
+
+.subscription__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #000000;
+}
+
+.subscription__description {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #000000;
+}
+
+.subscription__input {
+  min-width: 280px;
+  height: 56px;
+  max-height: max-content;
+  margin: 0 0 16px;
+  padding: 13px;
+  color: #444444;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 29.64px;
+  text-align: left;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 1px solid#e7e7e7;
+}
+
+.subscription__input:hover {
+  border-color: #cdcdcd;
+}
+
+.subscription__input:active,
+.subscription__input:focus {
+  border-radius: 0;
+  border: 2px solid #444444;
+  outline: none;
+}
+
+.subscription__button {
+  margin: 0 0 40px;
+}
+
+.button-subscribe {
+  min-width: 280px;
+  min-height: 56px;
+  color: #ffffff;
+  background-color: #68b738;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}
+
+.button-subscribe:hover {
+  background-color: #5eaa2f;
+}
+
+.button-subscribe:active {
+  background-color: #5eaa2f;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* блок локация карта */
+
+.map {
+  background-color: #f2f2f2;
+}
+
+.map__invitation {
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+  grid-auto-rows: max-content;
+  min-width: 320px;
+  min-height: 112px;
+  padding: 26px 20px 20px 26px;
+  background-color: #f2f2f2;
+}
+
+/* стилизация кнопок */
 
 .button {
   min-width: 280px;
   min-height: 40px;
-  margin: 0;
+  margin: 25px 0 20px;
   padding: 10px 63.5px;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
@@ -62,64 +608,4 @@
 .button--accent:active {
   color: #444444;
   background-color: #ebebeb;
-}
-
-/* блок программы */
-
-.program {
-  width: 280px;
-  height: 266px;
-  background-color: #d9d9d9;
-}
-
-.program__link {
-  color: #000000;
-  font-family: "Oswald", sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 29.64px;
-  list-style: none;
-}
-
-.program__link:hover {
-
-}
-
-
-/* блок живой пример */
-
-.experience {
-  background-color: #eaeaea;
-}
-
-
-.experience__list {
-  list-style-type: none;
-}
-
-.experience__item {
-  width: 124px;
-  height: 56px;
-  border: 1px solid #cdcdcd;
-  border-radius: 3px;
-}
-
-.experience__caption-primary {
-  margin: 0;
-  padding: 6px 0 0;
-  font-family: "Oswald", sans-serif;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 24px;
-  text-align: center;
-}
-
-.experience__caption-secondary {
-  margin: 0;
-  padding: 0;
-  background-color: #eaeaea;
-  font-family: "Lato", sans-serif;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 12px;
 }
