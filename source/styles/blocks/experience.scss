@@ -43,7 +43,7 @@
 
 .experience__caption-primary {
   margin: 0;
-  padding: 6px 0 0;
+  padding: 6px 0 7.5px;
   color: #000000;
   font-family: "Oswald", sans-serif;
   font-size: 24px;
@@ -53,6 +53,8 @@
 }
 
 .experience__caption-secondary {
+  width: 77px;
+  height: 24px;
   margin: 0;
   padding: 0;
   color: #444444;
@@ -61,6 +63,7 @@
   font-size: 12px;
   font-weight: 400;
   line-height: 12px;
+  text-align: center;
 }
 
 .costs__title,

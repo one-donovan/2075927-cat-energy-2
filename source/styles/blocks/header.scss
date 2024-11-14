@@ -1,9 +1,19 @@
 .navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-bottom: 1px solid #ebebeb;
 }
 
 .navigation__logo {
+  width: 33px;
+  height: 38px;
+  margin: 0 56px 0 0;
   text-decoration: none;
+}
+
+.navigation__logo-text {
+  margin: 0 66px 0 0;
 }
 
 .navigation__link {
@@ -31,4 +41,27 @@
 .navigation__list {
   padding: 0;
   list-style-type: none;
+}
+
+.navigation__menu-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 56px;
+  height: 56px;
+  row-gap: 6px;
+  background-color: #68b738;
+  cursor: pointer;
+  border: none;
+}
+
+.menu-button__line,
+.navigation__menu-button::before,
+.navigation__menu-button::after {
+  content: "";
+  width: 28px;
+  height: 2px;
+  background-color: #000000;
+  transition: transform 0.3s, opacity 0.3s;
 }

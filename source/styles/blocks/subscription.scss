@@ -6,6 +6,13 @@
   color: #000000;
 }
 
+.subscription__title::after {
+  content: "";
+  display: block;
+  width: 108px;
+  border: 2px solid #68b738;
+}
+
 .subscription__description {
   font-family: "Oswald", sans-serif;
   font-size: 16px;

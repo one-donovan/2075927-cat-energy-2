@@ -19,6 +19,8 @@
       <nav class="navigation">
         <a class="navigation__logo" href="index.html">
           <img class="navigation__logo" src="../images/logo/logo-mobile.svg" width="33" height="38" alt="logo">
+        </a>
+        <a class="navigation__logotype" href="index.html">
           <img class="navigation__logo-text" width="101" height="18" src="../images/logo/logo-name-mobile.svg" alt="logo text">
         </a>
         <button class="navigation__menu-button" type="button" aria-label="Меню переключения">
@@ -48,13 +50,13 @@
   <main class="main-container">
     <section class="hero">
       <div class="container">
-        <picture>
-          <source type="image/png" media="(min-width: 768px)">
-          <img class=" hero__image" src="../images/promo-can-mobile1@1x.png" srcset="../images/promo-can-mobile1@2x.png" width="280" height="270" alt="Cat energy product банка со вкусом курицы">
-        </picture>
-        <h2 class="hero__title">Функциональное питание <br> для котов</h2>
+        <h2 class="hero__title">Функциональное питание для котов</h2>
         <p class="hero__description">Занялся собой? Займись котом!
         </p>
+        <picture>
+          <source type="image/png" media="(min-width: 768px)">
+          <img class="hero__image" src="../images/promo-can-mobile1@1x.png" srcset="../images/promo-can-mobile1@2x.png" width="280" height="270" alt="Cat energy product банка со вкусом курицы">
+        </picture>
         <button class="hero__description-button button" type="button">
           Подобрать программу
         </button>
@@ -72,7 +74,7 @@
           </p>
           <a class="program__link" href="#">Каталог Slim</a>
         </li>
-        <li class="programs__item program">
+        <li class="programs__item-primary program">
           <h3 class="program__title">
             Набор массы
           </h3>
@@ -129,10 +131,15 @@
           <span class="costs__description">15 000 руб.</span>
         </div>
       </div>
-      <div class="experience__demo demo">
+      <div class="experience__demo demo demo--before">
         <picture>
           <img class="demo__image" src="../images/cat-slider-mobile@1x.png" srcset="../images/cat-slider-mobile@2x.png" width="280" height="256" alt="Демонстрация кот до и после">
-          <div class="demo__slider"></div>
+        </picture>
+      </div>
+      <button class="button slider__button" type="button">Подробнее</button>
+      <div class="experience__demo demo demo--after">
+        <picture>
+          <img class="demo__image" src="../images/cat-slider-mobile@1x.png" srcset="../images/cat-slider-mobile@2x.png" width="280" height="256" alt="Демонстрация кот до и после">
         </picture>
       </div>
     </section>
