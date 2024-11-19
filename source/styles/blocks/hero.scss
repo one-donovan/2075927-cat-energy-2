@@ -1,10 +1,11 @@
-.container {
+.main-container {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
 }
 
 .hero__title {
+  margin: 27px 0 25px;
   color: #000000;
   font-family: "Oswald", sans-serif;
   font-size: 36px;
@@ -14,6 +15,7 @@
 }
 
 .hero__description {
+  margin: 0 0 29px;
   /* color: #ffffff; */
   color: #000000; /* временно черный для видимости */
   font-family: "Oswald", sans-serif;
@@ -24,9 +26,14 @@
   text-align: center;
 }
 
-/* content: "";
-display: block;
-width: 320px;
-height: 302px;
-background-image: url("../../images/index-background-mobile2@1x.png");
-background-repeat: no-repeat; */
+.hero__description-button {
+  text-transform: uppercase;
+}
+
+/* .hero__image {
+  display: block;
+  width: 320px;
+  height: 302px;
+  background-image: url("../../images/index-background-mobile2@1x.png");
+  background-repeat: no-repeat;
+} */

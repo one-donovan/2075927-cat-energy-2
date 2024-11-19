@@ -17,16 +17,24 @@
   <header class="main-header">
     <div class="container">
       <nav class="navigation">
-        <a class="navigation__logo" href="index.html">
-          <img class="navigation__logo" src="../images/logo/logo-mobile.svg" width="33" height="38" alt="logo">
-        </a>
-        <a class="navigation__logotype" href="index.html">
-          <img class="navigation__logo-text" width="101" height="18" src="../images/logo/logo-name-mobile.svg" alt="logo text">
-        </a>
-        <button class="navigation__menu-button" type="button" aria-label="Меню переключения">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <!--         <ul class="navigation__list">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__logo" href="index.html">
+              <img class="navigation__logo" src="../images/logo/logo-mobile.svg" width="33" height="38" alt="logo">
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__logo" href="index.html">
+              <img class="navigation__logo-text" width="101" height="18" src="../images/logo/logo-name-mobile.svg" alt="logo text">
+            </a>
+          </li>
+          <li class="navigation__item">
+            <button class="navigation__menu-button" type="button" aria-label="Меню переключения">
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
+          </li>
+        </ul>
+        <!-- <ul class="navigation__list">
           <li class="navigation__item navigation__item--current">
             <a class="navigation__link" href="index.html">
               Главная
@@ -249,8 +257,8 @@
         </li>
 
         <li class="catalog__item card card--add">
-          <h3 class="card__title">Показать еще 100500 товаров</h3>
-          <p class="card__content">
+          <h3 class="card__title card__title-current">Показать еще 100500 товаров</h3>
+          <p class="card__content card__content-current">
             На самом деле вкусов гораздо больше!
           </p>
           <button class="card__button button button--accent" type="button">Показать все</button>
@@ -316,7 +324,7 @@
 
     <section class="map">
       <div class="container">
-        <div class="map__invitation invitation">
+        <div class="map__invitation invitation-catalog">
           <p class="invitation__title">Приглашаем<br>к сотрудничеству<br>дилеров!</p>
           <div class="invitation__address address">
             <p class="address__street">ул. Большая<br>Конюшенная, д. 19/8</p>
@@ -359,7 +367,7 @@
       </ul>
       <a class="footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="footer__text">HTML Academy</span>
-        <img class="footer__logo-copyright" src="../images/logo/logo-htmlacademy.svg" width="50" height="50" alt="logo html academy">
+        <img class="footer__logo-copyright" src="../images/logo/logo-htmlacademy.svg" width="27" height="34" alt="logo html academy">
       </a>
     </div>
   </footer>

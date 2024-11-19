@@ -17,15 +17,23 @@
   <header class="main-header">
     <div class="container">
       <nav class="navigation">
-        <a class="navigation__logo" href="index.html">
-          <img class="navigation__logo" src="../images/logo/logo-mobile.svg" width="33" height="38" alt="logo">
-        </a>
-        <a class="navigation__logotype" href="index.html">
-          <img class="navigation__logo-text" width="101" height="18" src="../images/logo/logo-name-mobile.svg" alt="logo text">
-        </a>
-        <button class="navigation__menu-button" type="button" aria-label="Меню переключения">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__logo" href="index.html">
+              <img class="navigation__logo" src="../images/logo/logo-mobile.svg" width="33" height="38" alt="logo">
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__logo" href="index.html">
+              <img class="navigation__logo-text" width="101" height="18" src="../images/logo/logo-name-mobile.svg" alt="logo text">
+            </a>
+          </li>
+          <li class="navigation__item">
+            <button class="navigation__menu-button" type="button" aria-label="Меню переключения">
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
+          </li>
+        </ul>
         <ul class="navigation__list">
           <li class="navigation__item navigation__item--current">
             <a class="navigation__link" href="index.html">
@@ -49,7 +57,7 @@
 
   <main class="main-container">
     <section class="hero">
-      <div class="container">
+      <div class="main-container">
         <h2 class="hero__title">Функциональное питание для котов</h2>
         <p class="hero__description">Занялся собой? Займись котом!
         </p>
@@ -57,7 +65,7 @@
           <source type="image/png" media="(min-width: 768px)">
           <img class="hero__image" src="../images/promo-can-mobile1@1x.png" srcset="../images/promo-can-mobile1@2x.png" width="280" height="270" alt="Cat energy product банка со вкусом курицы">
         </picture>
-        <button class="hero__description-button button" type="button">
+        <button class="hero__description-button" type="button">
           Подобрать программу
         </button>
       </div>
@@ -74,8 +82,8 @@
           </p>
           <a class="program__link" href="#">Каталог Slim</a>
         </li>
-        <li class="programs__item-primary program">
-          <h3 class="program__title">
+        <li class="programs__item programs__item-primary program">
+          <h3 class="program__title-primary">
             Набор массы
           </h3>
           <p class="program__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
@@ -86,7 +94,7 @@
     </section>
 
     <section class="instructions">
-      <h2 class="instructions__title">Как это работает?</h2>
+      <h2 class="instructions__title">Как это работает</h2>
       <ul class="instructions__list">
         <li class="instructions__item step step--one">
           <p class="description-step-content">
@@ -136,12 +144,12 @@
           <img class="demo__image" src="../images/cat-slider-mobile@1x.png" srcset="../images/cat-slider-mobile@2x.png" width="280" height="256" alt="Демонстрация кот до и после">
         </picture>
       </div>
-      <button class="button slider__button" type="button">Подробнее</button>
+      <!--       <button class="button slider__button" type="button">Подробнее</button>
       <div class="experience__demo demo demo--after">
         <picture>
           <img class="demo__image" src="../images/cat-slider-mobile@1x.png" srcset="../images/cat-slider-mobile@2x.png" width="280" height="256" alt="Демонстрация кот до и после">
         </picture>
-      </div>
+      </div> -->
     </section>
 
     <section class="map">
@@ -163,24 +171,32 @@
 
   <footer class="footer">
     <div class="footer__container">
-      <a class="footer__logo" href="#" aria-label="Логотип Cat Energy">
+      <a class="footer__logo" href="#">
+        <img class="footer__image" src="../images/logo/logo-name-secondary-infooter-mobile.svg" width="128" height="24" alt="logo">
       </a>
       <ul class="social">
         <li class="social__item">
           <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" aria-label="Логотип вконтакте">
+            <img class="icon" src="../images/logo/logo-vkontakte.svg" width="28" height="22" alt="">
+            <span class="visually-hidden">Мы в вконтакте</span>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--youtube" href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g" aria-label="Логотип Youtube">
+            <img class="icon" src="../images/logo/logo-youtube.svg" width="28" height="22" alt="">
+            <span class="visually-hidden">Мы в Youtube</span>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--telegram" href="https://t.me/s/htmlacademy" aria-label="Логотип Телеграмм">
+            <img class="icon" src="../images/logo/logo-telegram.svg" width="28" height="22" alt="">
+            <span class="visually-hidden">Мы в Телеграмме</span>
           </a>
         </li>
       </ul>
-      <a class="footer__copyright" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Логотип HTML Academy">
+      <a class="footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="footer__text">HTML Academy</span>
+        <img class="footer__logo-copyright" src="../images/logo/logo-htmlacademy.svg" width="27" height="34" alt="logo html academy">
       </a>
     </div>
   </footer>

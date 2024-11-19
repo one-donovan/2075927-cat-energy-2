@@ -1,19 +1,20 @@
 .navigation {
-  display: flex;
+  /*   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
+  min-height: 65px;
   border-bottom: 1px solid #ebebeb;
 }
 
 .navigation__logo {
   width: 33px;
   height: 38px;
-  margin: 0 56px 0 0;
+  margin: 13px 10px 0 0;
   text-decoration: none;
 }
 
 .navigation__logo-text {
-  margin: 0 66px 0 0;
+  margin: 23px -12px 0 0;
 }
 
 .navigation__link {
@@ -39,8 +40,15 @@
 }
 
 .navigation__list {
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
   padding: 0;
   list-style-type: none;
+}
+
+.navigation__item {
+  margin: 0;
 }
 
 .navigation__menu-button {

@@ -13,21 +13,26 @@
 }
 
 .footer__image {
-  margin: 40px 96px 20px;
+  margin: 34px 96px 16px;
 }
 
 .footer__copyright {
   display: flex;
   justify-content: space-between;
-  margin: 27px 20px 47px;
+  padding: 27px 20px;
   text-decoration: none;
+}
+
+.footer__logo-copyright {
+  padding: 0;
+  margin: -7px 0 0;
 }
 
 .social {
   display: flex;
   justify-content: space-around;
-  padding: 20px 74px;
-  margin: 20px 0 0;
+  padding: 20px 83px 15px;
+  margin: 0;
   list-style-type: none;
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
