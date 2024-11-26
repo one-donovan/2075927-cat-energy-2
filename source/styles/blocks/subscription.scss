@@ -1,3 +1,5 @@
+//блок подписка
+
 .subscription {
   position: relative;
   display: flex;
@@ -37,6 +39,11 @@
   text-align: center;
 }
 
+.subscription__form {
+  display: flex;
+  flex-direction: column;
+}
+
 .subscription__input {
   min-width: 280px;
   height: 56px;
@@ -69,6 +76,7 @@
   margin: 0 0 40px;
 }
 
+//вынести в отдельный блок?
 .button-subscribe {
   min-width: 280px;
   min-height: 56px;
@@ -91,9 +99,4 @@
 .button-subscribe:active {
   background-color: #5eaa2f;
   color: rgba(255, 255, 255, 0.3);
-}
-
-.subscription__form {
-  display: flex;
-  flex-direction: column;
 }

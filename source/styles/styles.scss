@@ -1,33 +1,31 @@
 /* GLOBAL */
 @import "./common/variables.scss";
+@import "./common/mixins.scss";
 @import "./common/global.scss";
 @import "./common/fonts.scss";
+@import "./common/visually-hidden.scss";
 
-/* BLOCKS */
-@import "./blocks/header.scss";
+/* BLOCKS INDEX */
+@import "./blocks/page__body.scss";
+@import "./blocks/navigation.scss";
 @import "./blocks/hero.scss";
+@import "./blocks/main-container.scss";
 @import "./blocks/programs.scss";
 @import "./blocks/instructions.scss";
+@import "./blocks/step-content.scss";
 @import "./blocks/experience.scss";
+@import "./blocks/costs.scss";
+@import "./blocks/demo.scss";
 @import "./blocks/map.scss";
+@import "./blocks/address.scss";
 @import "./blocks/footer.scss";
+@import "./blocks/social.scss";
+/* BLOCKS CATALOG */
 @import "./blocks/catalog.scss";
+@import "./blocks/card.scss";
 @import "./blocks/additional-products.scss";
+@import "./blocks/product.scss";
+@import "./blocks/promo.scss";
 @import "./blocks/subscription.scss";
-@import "./blocks/visually-hidden.scss";
+/* additionally */
 @import "./blocks/buttons.scss";
-@import "./blocks/mixins.scss";
-@import "./blocks/styles.scss";
-
-.page__body {
-  margin: 0;
-  padding: 0;
-  max-width: 320px;
-  background-color: #ffffff;
-}
-
-/* @media only screen and (max-width: 600px) {
-  body {
-    font-size: 0.8rem;
-  }
-} */

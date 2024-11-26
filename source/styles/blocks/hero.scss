@@ -1,12 +1,11 @@
-.main-container {
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
+.hero {
+  background: linear-gradient(to top, #ffffff 40%, #68b738 35%, transparent), url("../../images/index-background-mobile2@1x.png"), no-repeat, 320px 302px;
+  margin: -1px 0 0;
 }
 
 .hero__title {
-  margin: 27px 0 25px;
-  color: #000000;
+  margin: 27px 0;
+  color: #ffffff;
   font-family: "Oswald", sans-serif;
   font-size: 36px;
   font-weight: 400;
@@ -15,9 +14,8 @@
 }
 
 .hero__description {
-  margin: 0 0 29px;
-  /* color: #ffffff; */
-  color: #000000; /* временно черный для видимости */
+  margin: 0 0 28px;
+  color: #ffffff;
   font-family: "Oswald", sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -26,14 +24,30 @@
   text-align: center;
 }
 
+//.hero__image {}
+
 .hero__description-button {
+  min-width: 280px;
+  min-height: 40px;
+  margin-bottom: 20px;
+  padding: 10px 63.5px;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
   text-transform: uppercase;
+  background-color: #68b738;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
 }
 
-/* .hero__image {
-  display: block;
-  width: 320px;
-  height: 302px;
-  background-image: url("../../images/index-background-mobile2@1x.png");
-  background-repeat: no-repeat;
-} */
+.hero__description-button:hover {
+  background-color: #5eaa2f;
+}
+
+.hero__description-button:active {
+  background-color: #5eaa2f;
+  color: rgba(255, 255, 255, 0.3);
+}

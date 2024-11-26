@@ -56,7 +56,6 @@
   </header>
 
   <main class="main-container">
-
     <section class="catalog">
       <h2 class="catalog__title">Каталог продукции</h2>
       <ul class="catalog__list">
@@ -85,7 +84,7 @@
               </li>
             </ul>
           </div>
-          <button class="card__button button" type="button">Заказать</button>
+          <button class="card__button button" type="button">Заказать</button><!--  сделать ссылкой -->
         </li>
 
         <li class="catalog__item card">
@@ -113,7 +112,7 @@
               </li>
             </ul>
           </div>
-          <button class="card__button button" type="button">Заказать</button>
+          <button class="card__button button" type="button">Заказать</button><!--  сделать ссылкой -->
         </li>
 
         <li class="catalog__item card">
@@ -141,7 +140,7 @@
               </li>
             </ul>
           </div>
-          <button class="card__button button" type="button">Заказать</button>
+          <button class="card__button button" type="button">Заказать</button><!--  сделать ссылкой -->
         </li>
 
         <li class="catalog__item card">
@@ -169,7 +168,7 @@
               </li>
             </ul>
           </div>
-          <button class="card__button button" type="button">Заказать</button>
+          <button class="card__button button" type="button">Заказать</button><!--  сделать ссылкой -->
         </li>
 
         <li class="catalog__item card">
@@ -197,7 +196,7 @@
               </li>
             </ul>
           </div>
-          <button class="card__button button" type="button">Заказать</button>
+          <button class="card__button button" type="button">Заказать</button><!--  сделать ссылкой -->
         </li>
 
         <li class="catalog__item card">
@@ -225,7 +224,7 @@
               </li>
             </ul>
           </div>
-          <button class="card__button button" type="button">Заказать</button>
+          <button class="card__button button" type="button">Заказать</button><!--  сделать ссылкой -->
         </li>
 
         <li class="catalog__item card">
@@ -253,7 +252,7 @@
               </li>
             </ul>
           </div>
-          <button class="card__button button" type="button">Заказать</button>
+          <button class="card__button button" type="button">Заказать</button><!--  сделать ссылкой -->
         </li>
 
         <li class="catalog__item card card--add">
@@ -275,7 +274,7 @@
           </a>
           <span class="product__volume">1 упаковка (100 г)</span>
           <span class="product__price">200 &#8381;</span>
-          <button class="card-button button" type="button">Заказать</button>
+          <button class="card-button button" type="button">Заказать</button><!--  сделать ссылкой -->
         </li>
 
         <li class="additional-products__item product">
@@ -284,7 +283,7 @@
           </a>
           <span class="product__volume">5 литров</span>
           <span class="product__price">50 &#8381;</span>
-          <button class="card-button button" type="button">Заказать</button>
+          <button class="card-button button" type="button">Заказать</button><!--  сделать ссылкой -->
         </li>
 
         <li class="additional-products__item product">
@@ -293,7 +292,7 @@
           </a>
           <span class="product__volume">1 литр</span>
           <span class="product__price">100 &#8381;</span>
-          <button class="card-button button" type="button">Заказать</button>
+          <button class="card-button button" type="button">Заказать</button><!--  сделать ссылкой -->
         </li>
 
         <li class="additional-products__item product">
@@ -302,7 +301,7 @@
           </a>
           <span class="product__volume">1 упаковка (30 г)</span>
           <span class="product__price">300 &#8381;</span>
-          <button class="card-button button" type="button">Заказать</button>
+          <button class="card-button button" type="button">Заказать</button><!--  сделать ссылкой -->
         </li>
       </ul>
 
@@ -314,8 +313,9 @@
     <section class="subscription">
       <h2 class="subscription__title">Акции и новинки</h2>
       <p class="subscription__description">Подпишитесь на наши новости и не<br>пропустите ни одного предложения!</p>
-      <form class="subscription__form" action="https://htmlacademy.ru/" method="post">
+      <form class="subscription__form" action="https://echo.htmlacademy.ru/" method="post">
         <label>
+          <span class="visually-hidden">Поле ввода электронной почты"</span>
           <input class="subscription__input" type="text" name="email" id="email" placeholder="кuklachev@gmail.com">
         </label>
         <button class="subscription__button button-subscribe" type="submit">Подписаться</button>
@@ -324,7 +324,7 @@
 
     <section class="map">
       <div class="container">
-        <div class="map__invitation invitation-catalog">
+        <div class="map__invitation invitation--catalog">
           <p class="invitation__title">Приглашаем<br>к сотрудничеству<br>дилеров!</p>
           <div class="invitation__address address">
             <p class="address__street">ул. Большая<br>Конюшенная, д. 19/8</p>
@@ -334,34 +334,30 @@
       </div>
       <h2 class="visually-hidden">Карта</h2>
       <picture>
-        <img class="map-image" src="../images/location@1x.png" srcset="../images/location@2x.png" width="320" height="362" alt="Карта">
+        <img class="map__image" src="../images/location@1x.png" srcset="../images/location@2x.png" width="320" height="362" alt="Карта">
       </picture>
     </section>
-
   </main>
 
   <footer class="footer">
     <div class="footer__container">
-      <a class="footer__logo" href="#">
+      <a class="footer__logo-text" href="#">
         <img class="footer__image" src="../images/logo/logo-name-secondary-infooter-mobile.svg" width="128" height="24" alt="logo">
       </a>
       <ul class="social">
         <li class="social__item">
           <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" aria-label="Логотип вконтакте">
-            <img class="icon" src="../images/logo/logo-vkontakte.svg" width="28" height="22" alt="">
-            <span class="visually-hidden">Мы в вконтакте</span>
+            <img class="social__icon-image" src="../images/logo/logo-vkontakte.svg" width="28" height="22" alt="">
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--youtube" href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g" aria-label="Логотип Youtube">
-            <img class="icon" src="../images/logo/logo-youtube.svg" width="28" height="22" alt="">
-            <span class="visually-hidden">Мы в Youtube</span>
+            <img class="social__icon-image" src="../images/logo/logo-youtube.svg" width="28" height="22" alt="">
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--telegram" href="https://t.me/s/htmlacademy" aria-label="Логотип Телеграмм">
-            <img class="icon" src="../images/logo/logo-telegram.svg" width="28" height="22" alt="">
-            <span class="visually-hidden">Мы в Телеграмме</span>
+            <img class="social__icon-image" src="../images/logo/logo-telegram.svg" width="28" height="22" alt="">
           </a>
         </li>
       </ul>

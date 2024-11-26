@@ -16,50 +16,11 @@
   text-transform: uppercase;
 }
 
-.button:hover,
-.hero__description-button:hover {
+.button:hover {
   background-color: #5eaa2f;
 }
 
-.button:active,
-.hero__description-button:active {
+.button:active {
   background-color: #5eaa2f;
   color: rgba(255, 255, 255, 0.3);
-}
-
-.button--accent {
-  margin: 0 0 24px;
-  padding: 0;
-  color: #444444;
-  background-color: #f2f2f2;
-  text-transform: uppercase;
-}
-
-.button--accent:hover {
-  color: #444444;
-  background-color: #ebebeb;
-}
-
-.button--accent:active {
-  opacity: 0.7;
-}
-
-.hero__description-button {
-  min-width: 280px;
-  min-height: 40px;
-  margin-bottom: 20px;
-  padding: 10px 63.5px;
-  font-family: "Oswald", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
-  text-align: center;
-  background-color: #68b738;
-  border: none;
-  color: #ffffff;
-  cursor: pointer;
-}
-
-.card-button {
-  text-transform: uppercase;
 }

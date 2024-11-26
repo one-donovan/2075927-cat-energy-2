@@ -1,3 +1,5 @@
+//Дополнительные товары
+
 .additional-products__headline {
   position: relative;
   margin: 0;
@@ -33,6 +35,11 @@
   grid-template-columns: repeat(2, 1fr);
 }
 
+.additional-products__card-link {
+  text-decoration: none;
+  grid-column: 1 / -1;
+}
+
 .additional-products__title {
   margin: 16px 0 10px;
   color: #222222;
@@ -53,80 +60,4 @@
 
 .additional-products__title:active {
   opacity: 0.3;
-}
-
-.product__volume {
-  margin: 0;
-  padding: 0;
-  color: #444444;
-  font-family: "Lato", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 14px;
-}
-
-.product__price {
-  margin: 0; /* временный вариант !!! */
-  color: #444444;
-  font-family: "Lato", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 14px;
-  text-align: right;
-}
-
-.additional-products__card-link {
-  text-decoration: none;
-  grid-column: 1 / -1;
-}
-
-.product {
-  border-top: 1px solid #ebebeb;
-}
-
-.promo__description {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  width: 280px;
-  height: 290px;
-  margin: 0;
-  padding: 146px 0 0;
-  background-image: url("../../images/catalog/cat-in-backpack-mobile@1x.png");
-  background-repeat: no-repeat;
-  color: #ffffff;
-  font-family: "Lato", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
-  text-align: center;
-}
-
-.promo__description::before {
-  content: "";
-  position: absolute;
-  top: 59px;
-  width: 78px;
-  height: 80px;
-  background-image: url("../../images/logo/present-icon.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-/* .promo::before {
-  content: "";
-  display: block;
-  width: 280px;
-  height: 290px;
-  background-image: url("../../images/catalog/cat-in-backpack-mobile@1x.png");
-  background-repeat: no-repeat;
-}
- */
-
-.promo {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  margin: 0 0 42px;
 }
