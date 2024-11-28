@@ -1,11 +1,27 @@
 //Дополнительные товары
 
+.additional-products {
+  .additional-products__title {
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.4;
+    }
+
+    &:focus {
+      opacity: 0.3;
+    }
+  }
+}
+
 .additional-products__headline {
   position: relative;
   margin: 0;
   padding: 0 0 16px;
   color: #000000;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
@@ -22,6 +38,7 @@
 }
 
 .additional-products__list {
+  //@mixin flex
   display: flex;
   flex-flow: column wrap;
   align-content: center;
@@ -43,21 +60,9 @@
 .additional-products__title {
   margin: 16px 0 10px;
   color: #222222;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;
   text-transform: uppercase;
-}
-
-.additional-products__title:hover {
-  opacity: 0.6;
-}
-
-.additional-products__title:focus {
-  opacity: 0.4;
-}
-
-.additional-products__title:active {
-  opacity: 0.3;
 }

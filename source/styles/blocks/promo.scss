@@ -3,6 +3,7 @@
   justify-content: center;
   position: relative;
   margin: 0 0 42px;
+  background: linear-gradient(to right, #ffffff 50%, #68b738 50%);
 }
 
 .promo__description {
@@ -17,7 +18,7 @@
   background-image: url("../../images/catalog/cat-in-backpack-mobile@1x.png");
   background-repeat: no-repeat;
   color: #ffffff;
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;

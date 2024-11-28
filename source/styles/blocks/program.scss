@@ -1,0 +1,75 @@
+.program {
+  padding-top: 30px;
+  width: 280px;
+  height: 266px;
+  background-color: #f2f2f2;
+}
+
+.program__title {
+  margin: 0;
+  padding: 0 0 29px 9px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 37px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.program__title-secondary {
+  margin: 0;
+  padding: 0 0 29px 39px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 37px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.program__description {
+  margin: 0;
+  padding: 0 20px 21px;
+  color: #444444;
+  font-family: "Lato", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.program__link {
+  display: block;
+  width: 134px;
+  height: 24px;
+  margin: 0;
+  padding: 13px 0 0 21px;
+  color: #000000;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 29.64px;
+  list-style-type: none;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+.program__link::after {
+  content: "";
+  position: relative;
+  bottom: 21px;
+  left: 100px;
+  display: block;
+  width: 24px;
+  height: 12px;
+  background-image: url("../../images/logo/arrow-standart.svg");
+  background-repeat: no-repeat;
+}

@@ -21,24 +21,24 @@
 .card__title {
   margin: 6px 0 13px;
   color: #000000;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
   text-decoration: none;
-}
 
-.card__title:hover {
-  opacity: 0.6;
-}
+  &:hover {
+    opacity: 0.6;
+  }
 
-.card__title:focus {
-  opacity: 0.4;
-}
+  &:focus {
+    color: #d24899;
+  }
 
-.card__title:active {
-  opacity: 0.3;
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .card__title-current {
@@ -54,21 +54,21 @@
 
 .card__measure {
   padding: 0 65px 0 0;
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
 }
 
 .card__value {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
 }
 
 .card__content {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
@@ -100,26 +100,4 @@
   height: 30px;
   background-image: url("../../images/logo/plus.svg");
   background-repeat: no-repeat;
-}
-
-//выносить в отдельный блок ?
-.button--accent {
-  margin: 0 0 24px;
-  padding: 0;
-  color: #444444;
-  background-color: #f2f2f2;
-  text-transform: uppercase;
-}
-
-.button--accent:hover {
-  color: #444444;
-  background-color: #ebebeb;
-}
-
-.button--accent:active {
-  opacity: 0.7;
-}
-
-.card-button {
-  text-transform: uppercase;
 }
