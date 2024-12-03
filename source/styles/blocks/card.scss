@@ -1,6 +1,8 @@
 .card {
+  width: 320px;
+  height: 209px;
   justify-content: center;
-  border-top: 1px solid #ebebeb;
+  border-top: 1px solid $border-color-catalog;
 }
 
 .card:not(:last-child) {
@@ -9,7 +11,6 @@
   grid-auto-rows: max-content;
   width: 320px;
   height: 209px;
-  border-top: 1px solid #ebebeb;
 }
 
 .card__list {
@@ -20,11 +21,9 @@
 
 .card__title {
   margin: 6px 0 13px;
-  color: #000000;
-  font-family: "Oswald", "Arial", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
+  color: $basic-black;
+
+  @include font($secondary-font, 400, 16px, 20px);
   text-transform: uppercase;
   text-decoration: none;
 
@@ -33,7 +32,7 @@
   }
 
   &:focus {
-    color: #d24899;
+    color: #d24899; //временно
   }
 
   &:active {
@@ -43,7 +42,7 @@
 
 .card__title-current {
   margin: 0;
-  padding: 60px 0 8px;
+  padding: 46px 0 8px;
   cursor: pointer;
 }
 
@@ -54,24 +53,16 @@
 
 .card__measure {
   padding: 0 65px 0 0;
-  font-family: "Lato", "Arial", sans-serif;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 16px;
+
+  @include font($main-font, 400, 12px, 16px);
 }
 
 .card__value {
-  font-family: "Lato", "Arial", sans-serif;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 16px;
+  @include font($main-font, 400, 12px, 16px);
 }
 
 .card__content {
-  font-family: "Lato", "Arial", sans-serif;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 16px;
+  @include font($main-font, 400, 12px, 16px);
 }
 
 .card__link {
@@ -84,17 +75,19 @@
 
 .card--add {
   position: relative;
+
+  //@include flex(column, wrap);
   display: flex;
-  flex-wrap: wrap;
-  height: 209px;
+  flex-flow: column wrap;
   align-items: center;
+  height: 209px;
   border-bottom: 1px solid #ebebeb;
 }
 
 .card--add::before {
   content: "";
   position: absolute;
-  top: 25px;
+  top: 9px;
   display: block;
   width: 30px;
   height: 30px;

@@ -1,20 +1,22 @@
 .social {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
-  padding: 20px 83px 15px;
+  padding: 16px 63px;
   margin: 0;
   list-style-type: none;
-  border-top: 1px solid #d9d9d9;
-  border-bottom: 1px solid #d9d9d9;
+  border-top: 1px solid $border-color-index;
+  border-bottom: 1px solid $border-color-index;
 }
 
-//.social__item {}
-//.social__link {}
-//.social__icon-image {}
-
-/* .social__link--vkontakte {
-  --bgi: url("../../")
+/* .social__link {
+  &:hover path {
+    fill: $accent-color;
+  }
 } */
 
+//.social__item {}
+//.social__icon-image {}
+//.social__link--vkontakte {}
 //.social__link--youtube {}
 //.social__link--telegram {}

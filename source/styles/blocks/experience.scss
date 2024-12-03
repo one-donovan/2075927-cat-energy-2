@@ -1,17 +1,17 @@
+//блок живой пример
+
 .experience {
   min-height: 659px;
   padding: 20px;
-  background-color: #eaeaea;
+  background-color: $live-example-color;
 }
 
 .experience__title {
   margin: 0;
   padding: 5px 0 40px;
-  color: #000000;
-  font-family: "Oswald", "Arial", sans-serif;
-  font-size: 36px;
-  font-weight: 400;
-  line-height: 40px;
+  color: $basic-black;
+
+  @include font($secondary-font, 400, 36px, 40px);
 }
 
 //.experience__content {}
@@ -19,17 +19,15 @@
 
 .experience__description {
   margin: 0 0 20px;
-  color: #444444;
-  font-family: "Lato", "Arial", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 18px;
+  color: $basic-text-color;
+
+  @include font($main-font, 400, 14px, 18px);
   text-align: left;
 }
 
 .experience__list {
   display: flex;
-  margin: 0 -22px 33px;
+  margin: 0 -21px 31px;
   padding: 0;
   list-style-type: none;
 }
@@ -48,11 +46,9 @@
 .experience__caption-primary {
   margin: 0;
   padding: 14px 0 7.5px;
-  color: #000000;
-  font-family: "Oswald", "Arial", sans-serif;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 24px;
+  color: $basic-black;
+
+  @include font($secondary-font, 400, 24px, 24px);
   text-align: center;
   text-transform: uppercase;
 }
@@ -62,17 +58,15 @@
   height: 24px;
   margin: 0 0 0 20px;
   padding: 0;
-  color: #444444;
-  background-color: #eaeaea;
-  font-family: "Lato", "Arial", sans-serif;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 12px;
+  color: $basic-text-color;
+  background-color: $live-example-color;
+
+  @include font($main-font, 400, 12px, 12px);
   text-align: center;
   text-transform: lowercase;
 }
 
 .experience__footer {
-  margin: 0 0 20px;
+  margin: 0 0 18px;
   text-align: center;
 }

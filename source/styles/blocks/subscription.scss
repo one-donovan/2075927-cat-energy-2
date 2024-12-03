@@ -2,40 +2,38 @@
 
 .subscription {
   position: relative;
-  display: flex;
+
+  @include flex(column, center);
+  /*   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; */
   margin: 0 0 42px;
 }
 
 .subscription__title {
   margin: 0 0 30px;
   padding: 0 127px 0 0;
-  font-family: "Oswald", "Arial", sans-serif;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 24px;
-  color: #000000;
-}
 
-.subscription__title::after {
-  content: "";
-  position: absolute;
-  top: 8px;
-  right: -20px;
-  display: block;
-  width: 108px;
-  border: 2px solid #68b738;
+  @include font($secondary-font, 400, 24px, 24px);
+  color: $basic-black;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    right: -20px;
+    display: block;
+    width: 108px;
+    border: 2px solid $hover-buttons;
+  }
 }
 
 .subscription__description {
   margin: 0 0 24px;
   padding: 0;
-  font-family: "Oswald", "Arial", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  color: #000000;
+  color: $basic-black;
+
+  @include font($secondary-font, 400, 16px, 24px);
   text-align: center;
 }
 
@@ -50,11 +48,9 @@
   max-height: max-content;
   margin: 0 0 16px;
   padding: 13px;
-  color: #444444;
-  font-family: "Oswald", "Arial", sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 29.64px;
+  color: $basic-text-color;
+
+  @include font($secondary-font, 400, 20px, 29.64px);
   text-align: left;
   text-transform: uppercase;
   cursor: pointer;
@@ -67,7 +63,7 @@
   &:active,
   &:focus {
     border-radius: 0;
-    border: 2px solid #444444;
+    border: 2px solid $basic-text-color;
     outline: none;
   }
 }
@@ -80,22 +76,20 @@
   min-width: 280px;
   min-height: 56px;
   margin: 0;
-  color: #ffffff;
-  background-color: #68b738;
-  font-family: "Oswald", "Arial", sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 26px;
+  color: $basic-white;
+  background-color: $accent-color;
+
+  @include font($secondary-font, 400, 20px, 26px);
   text-transform: uppercase;
   border: none;
   cursor: pointer;
 
   &:hover {
-    background-color: #5eaa2f;
+    background-color: $hover-buttons;
   }
 
   &:active {
-    background-color: #5eaa2f;
+    background-color: $hover-buttons;
     color: rgba(255, 255, 255, 0.3);
   }
 }

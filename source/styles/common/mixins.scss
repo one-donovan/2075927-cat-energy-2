@@ -9,11 +9,17 @@
 }
 
 @mixin flex($direction: row, $justify: space-between, $align: center) {
-  display: flex;
-  flex-direction: $direction;
+  display: flex; // когда добавляешь доллар верстка ломает
+  flex-flow: $direction;
   justify-content: $justify;
   align-items: $align;
 }
+
+/* @mixin grid($columns, $gap) {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 0;
+} */
 
 @mixin font($font, $weight, $size, $line) {
   font-family: $font;

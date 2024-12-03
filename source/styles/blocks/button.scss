@@ -4,42 +4,40 @@
   min-height: 40px;
   margin: 15px 0 19px;
   padding: 10px 63.5px;
-  font-family: "Oswald", "Arial", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
+  color: $basic-white;
+  background-color: $accent-color;
+
+  @include font($secondary-font, 400, 16px, 20px);
   text-align: center;
-  background-color: #68b738;
   border: none;
-  color: #ffffff;
   cursor: pointer;
   text-transform: uppercase;
 
   &:hover {
-    background-color: #5eaa2f;
+    background-color: $hover-buttons;
   }
 
   &:focus {
-    color: #d24899;
+    color: #d24899; //временно
     outline: none;
   }
 
   &:active {
-    background-color: #5eaa2f;
+    background-color: $hover-buttons;
     color: rgba(255, 255, 255, 0.3);
   }
 }
 
 .button--accent {
   margin: 0 0 24px;
-  padding: 0;
-  color: #444444;
-  background-color: #f2f2f2;
+  padding: 10px 63.5px;
+  color: $basic-text-color;
+  background-color: $basic-grey;
   text-transform: uppercase;
 
   &:hover {
-    color: #444444;
-    background-color: #ebebeb;
+    color: $basic-text-color;
+    background-color: $border-color-catalog;
   }
 
   &:active {

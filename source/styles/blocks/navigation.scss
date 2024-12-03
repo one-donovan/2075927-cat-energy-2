@@ -1,37 +1,49 @@
 .navigation {
   min-height: 65px;
-  border-bottom: 1px solid #ebebeb;
+  border-bottom: 1px solid $border-color-catalog;
 }
 
 .navigation__list {
-  margin: 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.navigation__list-inner {
+  display: flex;
+  justify-content: center;
+  margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
 .navigation__item {
   margin: 0;
+  padding: 13px 20px 9px;
 }
 
-.navigation__logo {
+.navigation__logo-first {
   width: 33px;
   height: 38px;
-  margin: 13px 10px 0 0;
+  margin: 0;
   text-decoration: none;
 }
 
+.navigation__logo-second {
+  width: 101px;
+  height: 20px;
+}
+
 .navigation__logo-text {
-  margin: 23px -12px 0 0;
+  margin: 10px 8px 0 0;
 }
 
 .navigation__link {
-  color: #000000;
-  font-family: "Oswald", "Arial", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 24px;
+  color: $basic-black;
+
+  @include font($secondary-font, 400, 18px, 24px);
   text-transform: uppercase;
   text-decoration: none;
 
@@ -49,23 +61,43 @@
 }
 
 .navigation__menu-button {
+  //@include flex(column, center);
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-flow: column wrap;
+  place-content: center center;
   align-items: center;
-  width: 56px;
-  height: 56px;
+  margin: 6px 1px 0 0;
+  width: 24px;
+  height: 24px;
   row-gap: 6px;
-  background-color: #68b738;
+  background-color: transparent;
   cursor: pointer;
   border: none;
+
+  &:hover {
+    color: #d24899;
+    background-color: $accent-color;
+  }
+
+  &:focus {
+    background-color: $accent-color;
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
 }
 
+.navigation__menu-button-line,
 .navigation__menu-button::before,
 .navigation__menu-button::after {
   content: "";
-  width: 28px;
+  width: 24px;
   height: 2px;
-  background-color: #000000;
-  transition: transform 0.3s, opacity 0.3s;
+  background-color: $basic-black;
+
+  &:hover {
+    color: #d24899; //не работает ?
+  }
 }

@@ -3,35 +3,34 @@
   justify-content: center;
   position: relative;
   margin: 0 0 42px;
-  background: linear-gradient(to right, #ffffff 50%, #68b738 50%);
+  background: linear-gradient(to right, $basic-white 50%, $accent-color 50%);
 }
 
 .promo__description {
-  display: flex;
+  @include flex(space-between, center);
+  /*   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
   width: 280px;
   height: 290px;
   margin: 0;
   padding: 146px 0 0;
   background-image: url("../../images/catalog/cat-in-backpack-mobile@1x.png");
   background-repeat: no-repeat;
-  color: #ffffff;
-  font-family: "Lato", "Arial", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
-  text-align: center;
-}
+  color: $basic-white;
 
-.promo__description::before {
-  content: "";
-  position: absolute;
-  top: 59px;
-  width: 78px;
-  height: 80px;
-  background-image: url("../../images/logo/present-icon.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+  @include font($main-font, 400, 16px, 20px);
+  text-align: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 59px;
+    width: 78px;
+    height: 80px;
+    background-image: url("../../images/logo/present-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
