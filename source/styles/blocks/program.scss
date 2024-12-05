@@ -6,57 +6,40 @@
 }
 
 .program__title {
+  @include font($secondary-font, 400, 24px, 37px);
   margin: 0;
   padding: 0 0 29px 9px;
-
-  @include font($secondary-font, 400, 24px, 37px);
   text-align: center;
   text-transform: uppercase;
 }
 
 .program__title-secondary {
+  @include font($secondary-font, 400, 24px, 37px);
   margin: 0;
   padding: 0 0 29px 39px;
-
-  @include font($secondary-font, 400, 24px, 37px);
   text-align: center;
   text-transform: uppercase;
 }
 
 .program__description {
+  @include font($main-font, 400, 14px, 18px);
   margin: 0;
   padding: 0 0 21px;
   color: $basic-text-color;
-
-  @include font($main-font, 400, 14px, 18px);
   border-bottom: 1px solid $border-color-index;
 }
 
 .program__link {
+  @include font($secondary-font, 400, 16px, 29.64px);
   display: block;
   width: 134px;
   height: 24px;
   margin: 0;
   padding: 13px 0 0;
   color: $basic-black;
-
-  @include font($secondary-font, 400, 16px, 29.64px);
   list-style-type: none;
   text-decoration: none;
   text-transform: uppercase;
-
-  &:hover::after { //работает на половину, ховер не отрабатывает
-    content: "";
-    position: relative;
-    bottom: 21px;
-    left: 100px;
-    display: block;
-    width: 42px;
-    height: 10px;
-    background-image: url("../../images/logo/long-arrow.svg");
-    background-repeat: no-repeat;
-    opacity: 0.8;
-  }
 
   &:focus {
     color: #d24899;
@@ -64,6 +47,21 @@
 
   &:active {
     opacity: 0.7;
+  }
+
+  &:hover::before {
+    content: "";
+    position: relative;
+    top: 15.6px;
+    left: 95px;
+    display: block;
+    width: 25px;
+    height: 2.2px;
+    color: #d24899;
+    margin: -2px 0 0; //так можно? на католог про не срабатывает
+    background-color: $basic-black;
+    border: 1px solid $basic-black;
+    transform: translateX(-10%);
   }
 
   &::after {
@@ -78,3 +76,17 @@
     background-repeat: no-repeat;
   }
 }
+
+/*  &:hover::after {
+    content: "";
+    position: relative;
+    bottom: 21px;
+    left: 100px;
+    display: block;
+    width: 42px;
+    height: 10px;
+    color: #d24899;
+    background-image: url("../../images/logo/long-arrow.svg"); изображени
+    background-repeat: no-repeat;
+    opacity: 0.8;
+  } */

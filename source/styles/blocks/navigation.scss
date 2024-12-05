@@ -4,16 +4,14 @@
 }
 
 .navigation__list {
-  display: flex;
-  justify-content: space-between;
+  @include flex(flex, space-between, wrap);
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
 .navigation__list-inner {
-  display: flex;
-  justify-content: center;
+  @include flex(flex, center);
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -41,9 +39,8 @@
 }
 
 .navigation__link {
-  color: $basic-black;
-
   @include font($secondary-font, 400, 18px, 24px);
+  color: $basic-black;
   text-transform: uppercase;
   text-decoration: none;
 
@@ -61,11 +58,8 @@
 }
 
 .navigation__menu-button {
-  //@include flex(column, center);
-  display: flex;
-  flex-flow: column wrap;
+  @include flex(column, center, wrap);
   place-content: center center;
-  align-items: center;
   margin: 6px 1px 0 0;
   width: 24px;
   height: 24px;

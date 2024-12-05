@@ -9,20 +9,22 @@
   }
 }
 
+.hero-wrapper {
+  @include flex(column, center);
+}
+
 .hero__title {
+  @include font($secondary-font, 400, 36px, 36px);
   margin: 27px 0;
   color: $basic-white;
-
-  @include font($secondary-font, 400, 36px, 36px);
   text-align: center;
 }
 
 .hero__description {
+  @include font($secondary-font, 400, 14px, 14px);
   margin: 0 0 28px;
   padding: 0 3px 0 0;
   color: $basic-white;
-
-  @include font($secondary-font, 400, 14px, 14px);
   text-transform: uppercase;
   text-align: center;
 }
@@ -30,12 +32,11 @@
 //.hero__image {}
 
 .hero__description-button {
+  @include font($secondary-font, 400, 16px, 20px);
   min-width: 280px;
   min-height: 40px;
   margin-bottom: 20px;
   padding: 10px 63.5px;
-
-  @include font($secondary-font, 400, 16px, 20px);
   text-align: center;
   text-transform: uppercase;
   background-color: $accent-color;

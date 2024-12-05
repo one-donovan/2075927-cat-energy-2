@@ -7,18 +7,16 @@
 }
 
 .product__volume {
+  @include font($main-font, 400, 14px, 14px);
   margin: 0;
   padding: 0;
   color: $basic-text-color;
-
-  @include font($main-font, 400, 14px, 14px);
 }
 
 .product__price {
+  @include font($main-font, 400, 14px, 14px);
   margin: 0;
   color: $basic-text-color;
-
-  @include font($main-font, 400, 14px, 14px);
   text-align: right;
 }
 

@@ -1,14 +1,14 @@
-.step--one::before {
+.step--leaf::before {
   content: "";
   display: block;
   width: 60px;
   height: 60px;
   margin: 0 20px 0 0;
-  background-image: url("../../images/sheet-mobile.svg");
+  background-image: url("../../images/leaf-mobile.svg");
   background-repeat: no-repeat;
 }
 
-.step--two::before {
+.step--pot::before {
   content: "";
   display: block;
   width: 60px;
@@ -18,7 +18,7 @@
   background-repeat: no-repeat;
 }
 
-.step--three::before {
+.step--spoon::before {
   content: "";
   display: block;
   width: 60px;
@@ -28,7 +28,7 @@
   background-repeat: no-repeat;
 }
 
-.step--four::before {
+.step--clock::before {
   content: "";
   display: block;
   width: 60px;

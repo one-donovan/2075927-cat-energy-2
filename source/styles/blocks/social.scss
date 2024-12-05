@@ -1,7 +1,5 @@
 .social {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  @include flex(flex, space-around, wrap);
   padding: 16px 63px;
   margin: 0;
   list-style-type: none;
@@ -17,6 +15,6 @@
 
 //.social__item {}
 //.social__icon-image {}
-//.social__link--vkontakte {}
-//.social__link--youtube {}
-//.social__link--telegram {}
+//.social__link--vk {}
+//.social__link--yt {}
+//.social__link--tg {}

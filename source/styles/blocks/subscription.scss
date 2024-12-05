@@ -11,10 +11,9 @@
 }
 
 .subscription__title {
+  @include font($secondary-font, 400, 24px, 24px);
   margin: 0 0 30px;
   padding: 0 127px 0 0;
-
-  @include font($secondary-font, 400, 24px, 24px);
   color: $basic-black;
 
   &::after {
@@ -29,28 +28,25 @@
 }
 
 .subscription__description {
+  @include font($secondary-font, 400, 16px, 24px);
   margin: 0 0 24px;
   padding: 0;
   color: $basic-black;
-
-  @include font($secondary-font, 400, 16px, 24px);
   text-align: center;
 }
 
 .subscription__form {
-  display: flex;
-  flex-direction: column;
+  @include flex(flex, column);
 }
 
 .subscription__input {
+  @include font($secondary-font, 400, 20px, 29.64px);
   min-width: 280px;
   height: 56px;
   max-height: max-content;
   margin: 0 0 16px;
   padding: 13px;
   color: $basic-text-color;
-
-  @include font($secondary-font, 400, 20px, 29.64px);
   text-align: left;
   text-transform: uppercase;
   cursor: pointer;
@@ -73,13 +69,12 @@
 }
 
 .subscription__button-subscribe {
+  @include font($secondary-font, 400, 20px, 26px);
   min-width: 280px;
   min-height: 56px;
   margin: 0;
   color: $basic-white;
   background-color: $accent-color;
-
-  @include font($secondary-font, 400, 20px, 26px);
   text-transform: uppercase;
   border: none;
   cursor: pointer;

@@ -1,8 +1,5 @@
 .main-container {
   @include flex(column, center);
-  /*   display: flex;
-  flex-flow: column wrap;
-  align-items: center; */
   margin: 0;
   padding: 0;
 }

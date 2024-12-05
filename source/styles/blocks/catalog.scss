@@ -3,11 +3,10 @@
 //.catalog {}
 
 .catalog__title {
+  @include font($secondary-font, 400, 36px, 36px);
   margin: 28px 0 56px;
   padding: 0 23px 0 0;
   color: $basic-black;
-
-  @include font($secondary-font, 400, 36px, 36px);
   text-align: center;
 }
 

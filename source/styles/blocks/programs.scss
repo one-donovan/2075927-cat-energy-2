@@ -1,8 +1,5 @@
 .programs {
-  @include flex();
-  /*   display: flex;
-  flex-flow: column wrap;
-  align-items: center; */
+  @include flex(flex, column, center, wrap);
 }
 
 .programs__list {

@@ -7,21 +7,19 @@
 }
 
 .experience__title {
+  @include font($secondary-font, 400, 36px, 40px);
   margin: 0;
   padding: 5px 0 40px;
   color: $basic-black;
-
-  @include font($secondary-font, 400, 36px, 40px);
 }
 
 //.experience__content {}
 //.experience__demo {}
 
 .experience__description {
+  @include font($main-font, 400, 14px, 18px);
   margin: 0 0 20px;
   color: $basic-text-color;
-
-  @include font($main-font, 400, 14px, 18px);
   text-align: left;
 }
 
@@ -44,24 +42,22 @@
 }
 
 .experience__caption-primary {
+  @include font($secondary-font, 400, 24px, 24px);
   margin: 0;
   padding: 14px 0 7.5px;
   color: $basic-black;
-
-  @include font($secondary-font, 400, 24px, 24px);
   text-align: center;
   text-transform: uppercase;
 }
 
 .experience__caption-secondary {
+  @include font($main-font, 400, 12px, 12px);
   width: 77px;
   height: 24px;
   margin: 0 0 0 20px;
   padding: 0;
   color: $basic-text-color;
   background-color: $live-example-color;
-
-  @include font($main-font, 400, 12px, 12px);
   text-align: center;
   text-transform: lowercase;
 }

@@ -19,10 +19,9 @@
 }
 
 .map__invitation-title {
+  @include font($secondary-font, 400, 16px, 20px);
   margin: 0;
   color: $text-grey;
-
-  @include font($secondary-font, 400, 16px, 20px);
   text-transform: uppercase;
 }
 

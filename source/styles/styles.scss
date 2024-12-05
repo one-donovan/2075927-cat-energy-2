@@ -3,17 +3,17 @@
 @import "./common/mixins.scss";
 @import "./common/global.scss";
 @import "./common/fonts.scss";
-@import "./common/visually-hidden.scss";
+@import "./common/list-reset.scss";
 /* BLOCKS INDEX */
 @import "./blocks/page.scss";
-@import "./blocks/main-header.scss";
+@import "./blocks/page-header.scss";
 @import "./blocks/navigation.scss";
 @import "./blocks/hero.scss";
 @import "./blocks/main-container.scss";
 @import "./blocks/programs.scss";
 @import "./blocks/program.scss";
 @import "./blocks/instructions.scss";
-@import "./blocks/step-content.scss";
+@import "./blocks/step.scss";
 @import "./blocks/experience.scss";
 @import "./blocks/costs.scss";
 @import "./blocks/demo.scss";
@@ -21,7 +21,6 @@
 @import "./blocks/address.scss";
 @import "./blocks/footer.scss";
 @import "./blocks/social.scss";
-@import "./blocks/helper.scss";
 /* BLOCKS CATALOG */
 @import "./blocks/catalog.scss";
 @import "./blocks/card.scss";

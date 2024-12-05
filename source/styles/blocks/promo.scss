@@ -7,11 +7,8 @@
 }
 
 .promo__description {
-  @include flex(space-between, center);
-  /*   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center; */
+  @include flex(flex, space-between, center, center, wrap);
+  @include font($main-font, 400, 16px, 20px);
   width: 280px;
   height: 290px;
   margin: 0;
@@ -19,8 +16,6 @@
   background-image: url("../../images/catalog/cat-in-backpack-mobile@1x.png");
   background-repeat: no-repeat;
   color: $basic-white;
-
-  @include font($main-font, 400, 16px, 20px);
   text-align: center;
 
   &::before {

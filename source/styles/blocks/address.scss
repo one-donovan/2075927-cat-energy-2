@@ -1,14 +1,16 @@
 //блок с адресом
 
-.address {
-  color: $basic-text-color;
-
+.address__street {
   @include font($main-font, 400, 14px, 20px);
-  text-align: left;
+  color: $basic-text-color;
+  margin: 0;
+  padding: 0;
 }
 
-.address__city,
-.address__street {
-  margin: 0;
+.address__city {
+  @include font($main-font, 400, 14px, 20px);
+  color: $basic-text-color;
+  grid-column: 2 /-1;
+  margin: -20px 0 0;
   padding: 0;
 }

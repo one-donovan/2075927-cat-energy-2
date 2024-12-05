@@ -1,9 +1,4 @@
-/* .instructions {
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
-}
- */
+//.instructions {}
 
 .instructions__list {
   display: grid;
@@ -22,17 +17,15 @@
 }
 
 .instructions__title {
+  @include font($secondary-font, 400, 36px, 40px);
   margin: 0 0 40px;
   padding: 0 54px 0 0;
   color: $basic-black;
-
-  @include font($secondary-font, 400, 36px, 40px);
 }
 
 .instructions__description-step-content {
+  @include font($main-font, 400, 14px, 18px);
   margin: 0;
   padding: 0;
   color: $basic-text-color;
-
-  @include font($main-font, 400, 14px, 18px);
 }

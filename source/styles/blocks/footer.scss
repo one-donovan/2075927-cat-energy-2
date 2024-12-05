@@ -1,7 +1,5 @@
 .footer__container {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: space-between;
+  @include flex(column, space-between, wrap);
   min-width: 320px;
   min-height: 240px;
   padding: 40px 20px;
@@ -9,7 +7,7 @@
 }
 
 .footer__logo-text {
-  display: flex;
+  @include flex(wrap);
   align-self: center;
   width: 128px;
   height: 24px;
@@ -18,10 +16,9 @@
 //.footer__image {}
 
 .footer__text {
+  @include font($main-font, 400, 16px, 20px);
   padding: 6px 0 0;
   color: $basic-text-color;
-
-  @include font($main-font, 400, 16px, 20px);
 
   &:hover {
     color: $accent-color;
@@ -38,6 +35,7 @@
 }
 
 .footer__copyright {
+  //@include flex(space-between, wrap);
   display: flex;
   justify-content: space-between;
   text-decoration: none;
