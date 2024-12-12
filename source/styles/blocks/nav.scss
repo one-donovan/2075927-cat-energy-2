@@ -1,44 +1,44 @@
-.navigation {
+.nav {
   min-height: 65px;
   border-bottom: 1px solid $border-color-catalog;
 }
 
-.navigation__list {
+.nav__list {
   @include flex(flex, space-between, wrap);
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
-.navigation__list-inner {
+.nav__list-inner {
   @include flex(flex, center);
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
-.navigation__item {
+.nav__item {
   margin: 0;
   padding: 13px 20px 9px;
 }
 
-.navigation__logo-first {
+.nav__logo-first {
   width: 33px;
   height: 38px;
   margin: 0;
   text-decoration: none;
 }
 
-.navigation__logo-second {
+.nav__logo-second {
   width: 101px;
   height: 20px;
 }
 
-.navigation__logo-text {
+.nav__logo-text {
   margin: 10px 8px 0 0;
 }
 
-.navigation__link {
+.nav__link {
   @include font($secondary-font, 400, 18px, 24px);
   color: $basic-black;
   text-transform: uppercase;
@@ -57,7 +57,7 @@
   }
 }
 
-.navigation__menu-button {
+.nav__menu-button {
   @include flex(column, center, wrap);
   place-content: center center;
   margin: 6px 1px 0 0;
@@ -83,12 +83,10 @@
   }
 }
 
-.navigation__menu-button-line,
-.navigation__menu-button::before,
-.navigation__menu-button::after {
-  content: "";
-  width: 24px;
-  height: 2px;
+.nav__menu-button-line,
+.nav__menu-button::before,
+.nav__menu-button::after {
+  @include pseudo(24px, 2px,);
   background-color: $basic-black;
 
   &:hover {

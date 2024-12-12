@@ -31,7 +31,7 @@
   }
 
   &:focus {
-    color: #d24899; //временно
+    color: #d24899;
   }
 
   &:active {
@@ -79,12 +79,9 @@
 }
 
 .card--add::before {
-  content: "";
+  @include pseudo(30px, 30px);
   position: absolute;
   top: 9px;
-  display: block;
-  width: 30px;
-  height: 30px;
   background-image: url("../../images/logo/plus.svg");
   background-repeat: no-repeat;
 }

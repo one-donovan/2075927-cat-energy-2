@@ -1,38 +1,26 @@
 .step--leaf::before {
-  content: "";
-  display: block;
-  width: 60px;
-  height: 60px;
+  @include pseudo(60px, 60px);
   margin: 0 20px 0 0;
   background-image: url("../../images/leaf-mobile.svg");
   background-repeat: no-repeat;
 }
 
 .step--pot::before {
-  content: "";
-  display: block;
-  width: 60px;
-  height: 60px;
+  @include pseudo(60px, 60px);
   margin: 0 20px 0 0;
   background-image: url("../../images/pot-mobile.svg");
   background-repeat: no-repeat;
 }
 
 .step--spoon::before {
-  content: "";
-  display: block;
-  width: 60px;
-  height: 60px;
+  @include pseudo(60px, 60px);
   margin: 0 20px 0 0;
   background-image: url("../../images/fork-and-spoon-mobile.svg");
   background-repeat: no-repeat;
 }
 
 .step--clock::before {
-  content: "";
-  display: block;
-  width: 60px;
-  height: 60px;
+  @include pseudo(60px, 60px);
   margin: 0 20px 0 0;
   background-image: url("../../images/clock-mobile.svg");
   background-repeat: no-repeat;

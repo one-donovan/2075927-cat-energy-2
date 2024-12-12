@@ -7,7 +7,8 @@
 /* BLOCKS INDEX */
 @import "./blocks/page.scss";
 @import "./blocks/page-header.scss";
-@import "./blocks/navigation.scss";
+@import "./blocks/header.scss";
+@import "./blocks/nav.scss";
 @import "./blocks/hero.scss";
 @import "./blocks/main-container.scss";
 @import "./blocks/programs.scss";
@@ -21,6 +22,7 @@
 @import "./blocks/address.scss";
 @import "./blocks/footer.scss";
 @import "./blocks/social.scss";
+@import "./blocks/container.scss";
 /* BLOCKS CATALOG */
 @import "./blocks/catalog.scss";
 @import "./blocks/card.scss";

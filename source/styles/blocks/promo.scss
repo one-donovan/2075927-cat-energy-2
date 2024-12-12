@@ -1,13 +1,14 @@
 .promo {
-  display: flex;
-  justify-content: center;
+  @include flex(flex, center, wrap);
+  //display: flex;
+  //justify-content: center;
   position: relative;
   margin: 0 0 42px;
   background: linear-gradient(to right, $basic-white 50%, $accent-color 50%);
 }
 
 .promo__description {
-  @include flex(flex, space-between, center, center, wrap);
+  @include flex(flex, space-between, center, wrap);
   @include font($main-font, 400, 16px, 20px);
   width: 280px;
   height: 290px;
@@ -19,11 +20,9 @@
   text-align: center;
 
   &::before {
-    content: "";
+    @include pseudo(78px, 80px);
     position: absolute;
     top: 59px;
-    width: 78px;
-    height: 80px;
     background-image: url("../../images/logo/present-icon.svg");
     background-repeat: no-repeat;
     background-position: center;

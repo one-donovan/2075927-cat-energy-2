@@ -14,40 +14,45 @@
 </head>
 
 <body class="page__body">
-  <header class="page-header">
+  <header class="page__header header">
     <div class="container">
-      <nav class="navigation">
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a class="navigation__logo-first" href="index.html">
-              <img class="navigation__logo" src="../images/logo/logo-mobile.svg" width="33" height="38" alt="logo">
+      <nav class="header__nav nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__logo-first" href="index.html">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="../images/logo/logo-desktop.svg" type="svg+xml" width="70" height="59" alt="logo">
+                <source media="(min-width: 768px)" srcset="../images/logo/logo-tablet.svg" type="svg+xml" width="60" height="5" alt="logo-tablet">
+                <img src="../images/logo/logo-mobile.svg" width="33" height="38" alt="logo-mobile">
+              </picture>
+              <!-- <img class="nav__logo" src="../images/logo/logo-mobile.svg" width="33" height="38" alt="logo"> -->
             </a>
           </li>
-          <li class="navigation__item">
-            <a class="navigation__logo-second" href="index.html">
-              <img class="navigation__logo-text" width="101" height="18" src="../images/logo/logo-name-mobile.svg" alt="logo text">
+          <li class="nav__item">
+            <a class="nav__logo-second" href="index.html">
+              <img class="nav__logo-text" width="101" height="18" src="../images/logo/logo-name-mobile.svg" alt="logo text">
             </a>
           </li>
-          <li class="navigation__item">
-            <button class="navigation__menu-button" type="button" aria-label="Меню переключения">
-              <span class="navigation__menu-button-line"></span>
+          <li class="nav__item">
+            <button class="nav__menu-button" type="button" aria-label="Меню переключения">
+              <span class="nav__menu-button-line"></span>
               <span class="visually-hidden">Открыть меню</span>
             </button>
           </li>
         </ul>
-        <ul class="navigation__list-inner">
-          <li class="navigation__item navigation__item--current">
-            <a class="navigation__link" href="index.html">
+        <ul class="nav__list-inner">
+          <li class="nav__item nav__item--current">
+            <a class="nav__link" href="index.html">
               Главная
             </a>
           </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="catalog.html">
+          <li class="nav__item">
+            <a class="nav__link" href="catalog.html">
               Каталог продукции
             </a>
           </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="#">
+          <li class="nav__item">
+            <a class="nav__link" href="#">
               Подбор программы
             </a>
           </li>
@@ -58,7 +63,7 @@
 
   <main class="main-container">
     <section class="hero">
-      <div class="hero-wrapper"><!-- дублириующийся класс -->
+      <div class="hero__wrapper">
         <h2 class="hero__title">Функциональное питание для котов</h2>
         <p class="hero__description">Занялся собой? Займись котом!
         </p>
