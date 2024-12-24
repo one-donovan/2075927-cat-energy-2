@@ -1,5 +1,5 @@
 .social {
-  @include flex(flex, space-around, wrap);
+  @include flex(row, space-around, center, wrap);
   padding: 16px 63px;
   margin: 0;
   list-style-type: none;

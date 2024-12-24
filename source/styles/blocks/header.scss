@@ -1,0 +1,19 @@
+@media (min-width: $tablet-width) {
+  .header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 704px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header__wrapper {
+    width: 1220px;
+  }
+}
+
+.header {
+  outline: 5px solid rgba(255, 0, 0, 0.8);
+  outline-offset: -3px;
+}

@@ -1,5 +1,5 @@
 .footer__container {
-  @include flex(column, space-between, wrap);
+  @include flex(column, space-between, normal, wrap);
   min-width: 320px;
   min-height: 240px;
   padding: 40px 20px;
@@ -35,9 +35,7 @@
 }
 
 .footer__copyright {
-  //@include flex(space-between, wrap);
-  display: flex;
-  justify-content: space-between;
+  @include flex(row, space-between, center, wrap);
   text-decoration: none;
 }
 

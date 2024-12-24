@@ -1,26 +1,47 @@
 .nav {
   min-height: 65px;
   border-bottom: 1px solid $border-color-catalog;
+
+
+  outline: 5px solid rgba(28, 180, 36, 0.8);
+  outline-offset: -3px;
 }
 
 .nav__list {
-  @include flex(flex, space-between, wrap);
+  @include flex(row, normal, center, nowrap);
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
 .nav__list-inner {
-  @include flex(flex, center);
+  @include flex(row, space-between, center, wrap);
+  display: none;
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+@media (min-width: $tablet-width) {
+  .nav__list-inner {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
 }
 
 .nav__item {
   margin: 0;
   padding: 13px 20px 9px;
 }
+
+/* .nav__item--current {
+  @include pseudo(64px, 2px);
+  position: relative;
+  color: $accent-color;
+  bottom: 10px;
+  left: 10px;
+} */
 
 .nav__logo-first {
   width: 33px;
@@ -58,7 +79,7 @@
 }
 
 .nav__menu-button {
-  @include flex(column, center, wrap);
+  @include flex(column, center, center, wrap);
   place-content: center center;
   margin: 6px 1px 0 0;
   width: 24px;

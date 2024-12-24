@@ -1,14 +1,12 @@
 .promo {
-  @include flex(flex, center, wrap);
-  //display: flex;
-  //justify-content: center;
+  @include flex(column, center, center, wrap);
   position: relative;
   margin: 0 0 42px;
   background: linear-gradient(to right, $basic-white 50%, $accent-color 50%);
 }
 
 .promo__description {
-  @include flex(flex, space-between, center, wrap);
+  @include flex(column, center, center, wrap);
   @include font($main-font, 400, 16px, 20px);
   width: 280px;
   height: 290px;

@@ -1,5 +1,5 @@
 .programs {
-  @include flex(flex, column, center, wrap);
+  @include flex(column, space-between, center, wrap);
 }
 
 .programs__list {

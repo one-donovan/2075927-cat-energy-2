@@ -20,7 +20,7 @@
   @include font($secondary-font, 400, 24px, 24px);
   position: relative;
   margin: 0;
-  padding: 0 20px 16px;
+  padding: 0 0 16px;
   color: $basic-black;
 }
 
@@ -28,7 +28,7 @@
   @include pseudo(34px, 2px);
   position: absolute;
   top: 9px;
-  right: 0;
+  right: -20px;
   border: 2px solid $accent-color;
 }
 

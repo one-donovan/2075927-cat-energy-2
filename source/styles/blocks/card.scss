@@ -72,7 +72,7 @@
 }
 
 .card--add {
-  @include flex(column, wrap, center);
+  @include flex(column, center, center, wrap);
   position: relative;
   height: 209px;
   border-bottom: 1px solid #ebebeb;
