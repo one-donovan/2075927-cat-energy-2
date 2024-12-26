@@ -1,19 +1,29 @@
-@media (min-width: $tablet-width) {
-  .header__wrapper {
-    display: flex;
-    justify-content: space-between;
-    width: 704px;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .header__wrapper {
-    width: 1220px;
-  }
-}
-
 .header {
   outline: 5px solid rgba(255, 0, 0, 0.8);
   outline-offset: -3px;
+}
+
+.header__wrapper {
+  @media (min-width: $tablet-width) {
+    @include flex(row, space-between, center, wrap);
+    width: 704px;
+    min-height: 50px;
+    margin: 0 auto;
+
+    .nav__menu-button {
+      display: none;
+    }
+
+    .nav__item:nth-child(2) {
+      padding: 13px 20px 9px 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+
+    .nav__menu-button {
+      display: none;
+    }
+  }
 }
