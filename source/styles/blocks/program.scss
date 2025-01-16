@@ -1,4 +1,10 @@
 .program {
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    height: 372px;
+    padding: 77px 63px 53px 52px;
+  }
+
   padding: 30px 20px 20px;
   width: 280px;
   height: 266px;
@@ -6,6 +12,12 @@
 }
 
 .program__title {
+  @media (min-width: $tablet-width) {
+    @include font($secondary-font, 400, 36px, 36px);
+    padding: 0 0 24px;
+    text-align: left;
+  }
+
   @include font($secondary-font, 400, 24px, 37px);
   margin: 0;
   padding: 0 0 29px 9px;
@@ -14,6 +26,12 @@
 }
 
 .program__title-secondary {
+  @media (min-width: $tablet-width) {
+    @include font($secondary-font, 400, 36px, 36px);
+    text-align: left;
+    padding: 0 0 24px;
+  }
+
   @include font($secondary-font, 400, 24px, 37px);
   margin: 0;
   padding: 0 0 29px 39px;
@@ -22,14 +40,27 @@
 }
 
 .program__description {
+  @media (min-width: $tablet-width) {
+    @include font($main-font, 400, 16px, 24px);
+    width: 340px;
+    height: 96px;
+    margin: 0 0 48px;
+    color: $basic-black;
+    border: none;
+  }
+
   @include font($main-font, 400, 14px, 18px);
   margin: 0;
-  padding: 0 0 21px;
+  padding: 0;
   color: $basic-text-color;
   border-bottom: 1px solid $border-color-index;
 }
 
 .program__link {
+  @media (min-width: $tablet-width) {
+    @include font($secondary-font, 400, 20px, 29.64px);
+  }
+
   @include font($secondary-font, 400, 16px, 29.64px);
   display: block;
   width: 134px;

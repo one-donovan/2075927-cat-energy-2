@@ -1,4 +1,8 @@
 .social {
+  @media (min-width) {
+    border: none;
+  }
+
   @include flex(row, space-around, center, wrap);
   padding: 16px 63px;
   margin: 0;

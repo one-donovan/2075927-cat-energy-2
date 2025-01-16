@@ -1,6 +1,16 @@
-//.instructions {}
+.instructions {
+  @include flex(column, normal, center, wrap);
+}
 
 .instructions__list {
+  @media (min-width: $tablet-width) { // не работает!
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 153px;
+    padding: 0;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   margin: 0 0 49px;
@@ -9,10 +19,18 @@
 }
 
 .instructions__item {
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
   display: flex;
 }
 
 .instructions__item:not(:last-child) {
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+
   margin: 0 0 20px;
 }
 
@@ -24,6 +42,10 @@
 }
 
 .instructions__description-step-content {
+  @media (min-width: $tablet-width) {
+    @include font($main-font, 400, 16px, 24px);
+  }
+
   @include font($main-font, 400, 14px, 18px);
   margin: 0;
   padding: 0;

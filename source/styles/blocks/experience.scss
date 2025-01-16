@@ -1,15 +1,25 @@
 //блок живой пример
 
 .experience {
+  @media (min-width: $tablet-width) {
+    padding: 45px 30px 0;
+    background-color: #ffffff;
+  }
+
   min-height: 659px;
   padding: 20px;
   background-color: $live-example-color;
 }
 
 .experience__title {
+  @media (min-width: $tablet-width) {
+    @include font($secondary-font, 400, 60px, 60px);
+    padding: 0 0 60px;
+  }
+
   @include font($secondary-font, 400, 36px, 40px);
   margin: 0;
-  padding: 5px 0 40px;
+  padding: 0 0 40px;
   color: $basic-black;
 }
 
@@ -17,6 +27,11 @@
 //.experience__demo {}
 
 .experience__description {
+  @media (min-width: $tablet-width) {
+    @include font($main-font, 400, 16px, 24px);
+    margin: 0 0 40px;
+  }
+
   @include font($main-font, 400, 14px, 18px);
   margin: 0 0 20px;
   color: $basic-text-color;
@@ -31,6 +46,12 @@
 }
 
 .experience__item {
+  @media (min-width: $tablet-width) {
+    width: 162px;
+    height: 72px;
+    border: 1px solid #cdcdcd;
+    border-radius: 3px;
+  }
   width: 124px;
   height: 56px;
   border: 1px solid #cdcdcd;
@@ -42,6 +63,10 @@
 }
 
 .experience__caption-primary {
+  @media (min-width: $tablet-width) {
+    @include font($secondary-font, 400, 30px, 37px);
+  }
+
   @include font($secondary-font, 400, 24px, 24px);
   margin: 0;
   padding: 14px 0 7.5px;
@@ -51,6 +76,12 @@
 }
 
 .experience__caption-secondary {
+  @media (min-width: $tablet-width) {
+    @include font($main-font, 400, 14px, 14px);
+    margin: 0 0 0 40px;
+    background-color: #ffffff;
+  }
+
   @include font($main-font, 400, 12px, 12px);
   width: 77px;
   height: 24px;

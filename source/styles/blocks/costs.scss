@@ -2,6 +2,11 @@
 
 .costs__title,
 .costs__description {
+  @media (min-width: $tablet-width) {
+    @include font($secondary-font, 400, 20px, 20px);
+    //text-align: end;
+  }
+
   @include font($secondary-font, 400, 14px, 24px);
   color: $basic-black;
   text-transform: uppercase;

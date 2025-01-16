@@ -5,6 +5,12 @@
 }
 
 .map__invitation {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 60px 70px;
+  }
+
   display: grid;
   grid-template-columns: repeat(2, 140px);
   grid-auto-rows: max-content;
@@ -19,6 +25,10 @@
 }
 
 .map__invitation-title {
+  @media (min-width: $tablet-width) {
+    @include font($secondary-font, 400, 20px, 26px);
+  }
+
   @include font($secondary-font, 400, 16px, 20px);
   margin: 0;
   color: $text-grey;

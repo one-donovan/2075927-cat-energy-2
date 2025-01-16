@@ -1,11 +1,16 @@
 .hero {
+  @media (min-width: $tablet-width) {
+    background: none;
+  }
+
   background: linear-gradient(to top, $basic-white 40%, $accent-color 35%, transparent), url("../../images/index-background-mobile2@1x.png"), no-repeat, 320px 302px;
-  margin: -1px 0 0;
+  margin: 0;
 
   @media (min-resolution: 2dppx) {
-    width: 500px;
+    //width: 500px;
     height: 500px;
-    background: url("../../images/index-background-mobile2@2x.png");
+    //background-image: url("../../images/index-background-mobile2@2x.png");
+    background-repeat: no-repeat;
   }
 }
 
@@ -14,6 +19,14 @@
 }
 
 .hero__title {
+  @media (min-width: $tablet-width) {
+    @include font($secondary-font, 400, 60px, 60px);
+    margin: 0;
+    padding: 65px 179px 40px 0;
+    color: $basic-black;
+    text-align: left;
+  }
+
   @include font($secondary-font, 400, 36px, 36px);
   margin: 27px 0;
   color: $basic-white;
@@ -21,6 +34,13 @@
 }
 
 .hero__description {
+  @media (min-width: $tablet-width) {
+    @include font($secondary-font, 400, 20px, 20px);
+    color: $basic-black;
+    margin: 0;
+    padding: 0 306px 21px 0;
+  }
+
   @include font($secondary-font, 400, 14px, 14px);
   margin: 0 0 28px;
   padding: 0 3px 0 0;

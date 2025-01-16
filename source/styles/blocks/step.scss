@@ -1,4 +1,8 @@
 .step--leaf::before {
+  @media (min-width: $tablet-width) {
+    margin: 0 0 31px;
+  }
+
   @include pseudo(60px, 60px);
   margin: 0 20px 0 0;
   background-image: url("../../images/leaf-mobile.svg");
@@ -6,6 +10,10 @@
 }
 
 .step--pot::before {
+  @media (min-width: $tablet-width) {
+    margin: 0 0 31px;
+  }
+
   @include pseudo(60px, 60px);
   margin: 0 20px 0 0;
   background-image: url("../../images/pot-mobile.svg");
@@ -13,6 +21,10 @@
 }
 
 .step--spoon::before {
+  @media (min-width: $tablet-width) {
+    margin: 0 0 31px;
+  }
+
   @include pseudo(60px, 60px);
   margin: 0 20px 0 0;
   background-image: url("../../images/fork-and-spoon-mobile.svg");
@@ -20,6 +32,10 @@
 }
 
 .step--clock::before {
+  @media (min-width: $tablet-width) {
+    margin: 0 0 31px;
+  }
+
   @include pseudo(60px, 60px);
   margin: 0 20px 0 0;
   background-image: url("../../images/clock-mobile.svg");

@@ -8,7 +8,9 @@
 }
 
 .nav__list {
-  @include flex(row, normal, center, nowrap);
+  //@include flex(row, normal, center, nowrap);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -26,6 +28,12 @@
     justify-content: center;
     margin: 0 auto;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 704px;
+    display: flex;
+    justify-content: end;
+  }
 }
 
 .nav__item {
@@ -42,6 +50,10 @@
 } */
 
 .nav__logo-first {
+  @media (min-width: $tablet-width) {
+    margin: 0 13px 0 0;
+  }
+
   width: 33px;
   height: 38px;
   margin: 0;
@@ -54,7 +66,7 @@
 }
 
 .nav__logo-text {
-  margin: 10px 8px 0 0;
+  margin: 0 0 7px;
 }
 
 .nav__link {
@@ -79,7 +91,7 @@
 .nav__menu-button {
   @include flex(column, center, center, wrap);
   place-content: center center;
-  margin: 6px 1px 0 0;
+  margin: 0;
   width: 24px;
   height: 24px;
   row-gap: 6px;

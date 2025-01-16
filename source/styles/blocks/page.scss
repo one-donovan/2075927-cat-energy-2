@@ -1,6 +1,9 @@
 .page__body {
-  max-width: 320px;
+  min-width: 320px;
   margin: 0;
   padding: 0;
   background-color: $basic-white;
+
+  outline: 5px solid rgba(255, 0, 0, 0.8);
+  outline-offset: -3px;
 }

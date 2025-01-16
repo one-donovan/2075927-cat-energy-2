@@ -1,4 +1,12 @@
 .footer__container {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 768px;
+    height: 147px;
+    padding: 55px 40px;
+  }
+
   @include flex(column, space-between, normal, wrap);
   min-width: 320px;
   min-height: 240px;
@@ -7,7 +15,7 @@
 }
 
 .footer__logo-text {
-  @include flex(wrap);
+  @include flex(row, space-between, center, wrap);
   align-self: center;
   width: 128px;
   height: 24px;

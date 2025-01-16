@@ -2,7 +2,7 @@
   @include flex(column, center, center, wrap);
   position: relative;
   margin: 0 0 42px;
-  background: linear-gradient(to right, $basic-white 50%, $accent-color 50%);
+  //background: linear-gradient(to right, $basic-white 50%, $accent-color 50%);
 }
 
 .promo__description {
