@@ -1,14 +1,33 @@
 //затраты на питание
 
-.costs__title,
-.costs__description {
+.costs {
   @media (min-width: $tablet-width) {
-    @include font($secondary-font, 400, 20px, 20px);
-    //text-align: end;
+    display: flex;
+    justify-content: end;
+    margin: -72px 0 0;
+    padding: 0;
+    text-align: end;
   }
+}
 
+.costs__title {
   @include font($secondary-font, 400, 14px, 24px);
   color: $basic-black;
   text-transform: uppercase;
   padding: 0 0 0 2px;
+
+  @media (min-width: $tablet-width) {
+    @include font($secondary-font, 400, 20px, 20px);
+  }
+}
+
+.costs__description {
+  @include font($secondary-font, 400, 14px, 24px);
+  color: $basic-black;
+  text-transform: uppercase;
+  padding: 0 0 0 2px;
+
+  @media (min-width: $tablet-width) {
+    @include font($secondary-font, 400, 20px, 20px);
+  }
 }

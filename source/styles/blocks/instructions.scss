@@ -3,51 +3,63 @@
 }
 
 .instructions__list {
-  @media (min-width: $tablet-width) { // не работает!
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 153px;
-    padding: 0;
-    border-bottom: 1px solid #e6e6e6;
-  }
-
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   margin: 0 0 49px;
   padding: 0 8px 0 0;
   list-style-type: none;
+
+  @media (min-width: $tablet-width) { // не работает!
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 153px;
+    margin: 0;
+    padding: 0 110px 104px 0;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .instructions__item {
+  display: flex;
+
   @media (min-width: $tablet-width) {
     display: block;
   }
-
-  display: flex;
 }
 
 .instructions__item:not(:last-child) {
+  margin: 0 0 20px;
+
   @media (min-width: $tablet-width) {
     margin: 0;
   }
-
-  margin: 0 0 20px;
 }
 
 .instructions__title {
   @include font($secondary-font, 400, 36px, 40px);
+  align-self: flex-start;
   margin: 0 0 40px;
-  padding: 0 54px 0 0;
+  padding: 0 0 0 20px;
   color: $basic-black;
+
+  @media (min-width: 768px) {
+    @include font($secondary-font, 400, 60px, 60px);
+    padding: 0 0 0 30px;
+  }
 }
 
 .instructions__description-step-content {
-  @media (min-width: $tablet-width) {
-    @include font($main-font, 400, 16px, 24px);
-  }
-
   @include font($main-font, 400, 14px, 18px);
   margin: 0;
   padding: 0;
   color: $basic-text-color;
+
+  @media (min-width: $tablet-width) {
+    @include font($main-font, 400, 16px, 24px);
+  }
 }

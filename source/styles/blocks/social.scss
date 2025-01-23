@@ -1,14 +1,15 @@
 .social {
-  @media (min-width) {
-    border: none;
-  }
-
   @include flex(row, space-around, center, wrap);
   padding: 16px 63px;
   margin: 0;
   list-style-type: none;
   border-top: 1px solid $border-color-index;
   border-bottom: 1px solid $border-color-index;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    justify-content: space-between;
+  }
 }
 
 /* .social__link {

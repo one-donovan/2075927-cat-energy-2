@@ -25,6 +25,18 @@
     background-color: $hover-buttons;
     color: rgba(255, 255, 255, 0.3);
   }
+
+  @media (min-width: $tablet-width) {
+    width: 250px;
+    height: 40px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 169px;
+    height: 40px;
+    margin: 0;
+  }
 }
 
 .button--accent {
@@ -41,5 +53,12 @@
 
   &:active {
     opacity: 0.7;
+  }
+}
+
+.button__product--tablet {
+  @media (min-width: $tablet-width) {
+    width: 632px;
+    height: 40px;
   }
 }

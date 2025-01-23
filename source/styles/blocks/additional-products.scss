@@ -1,6 +1,8 @@
 //Дополнительные товары
 
 .additional-products {
+  @include flex(column, normal, center, wrap);
+
   .additional-products__title {
     &:hover {
       opacity: 0.6;
@@ -20,8 +22,20 @@
   @include font($secondary-font, 400, 24px, 24px);
   position: relative;
   margin: 0;
-  padding: 0 20px 16px;
+  padding: 0 50px 16px 0;
   color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    @include font($secondary-font, 400, 32px, 32px);
+    @include flex(row, normal, normal, wrap);
+    align-self: flex-start;
+    margin: 0 0 80px;
+    padding: 0 0 0 30px;
+  }
+
+  @media (min-width: $tablet-width) {
+    @include font($secondary-font, 400, 40px, 40px);
+  }
 }
 
 .additional-products__headline::after {
@@ -30,6 +44,46 @@
   top: 9px;
   right: 0;
   border: 2px solid $accent-color;
+
+  @media (min-width: $tablet-width) {
+    @include pseudo(357px, 2px);
+    position: absolute;
+    top: 25px;
+    left: 411px;
+    border: 2px solid $accent-color;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include pseudo(914px, 2px);
+    position: absolute;
+    top: 25px;
+    left: 526px;
+    border: 2px solid $accent-color;
+  }
+}
+
+.additional-products__headline::before {
+  @include pseudo(34px, 2px);
+  position: absolute;
+  top: 9px;
+  right: 0;
+  border: 2px solid $accent-color;
+
+  @media (min-width: $tablet-width) {
+    @include pseudo(30px, 2px);
+    position: absolute;
+    top: 25px;
+    right: 376px;
+    border: 2px solid $accent-color;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include pseudo(70px, 2px);
+    position: absolute;
+    top: 25px;
+    right: 336px;
+    border: 2px solid $accent-color;
+  }
 }
 
 .additional-products__list {
@@ -37,11 +91,14 @@
   margin: 16px 0 34px;
   padding: 0;
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .additional-products__item {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
 }
 
 .additional-products__card-link {
@@ -54,4 +111,9 @@
   margin: 16px 0 10px;
   color: $basic-text-color-two;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0;
+  }
 }

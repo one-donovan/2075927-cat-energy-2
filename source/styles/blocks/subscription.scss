@@ -1,7 +1,12 @@
 //блок подписка
 
 .subscription {
-  width: 320px;
+  @media (min-width: $tablet-width) {
+    @include flex(column, normal, center, wrap);
+    padding: 0 68px;
+  }
+
+  min-width: 320px;
   position: relative;
   margin: 0 0 42px;
 }

@@ -1,16 +1,11 @@
 //блок карта
 
 .map {
+  @include flex(column, normal, center, wrap);
   margin: 0 0 -4px;
 }
 
 .map__invitation {
-  @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding: 60px 70px;
-  }
-
   display: grid;
   grid-template-columns: repeat(2, 140px);
   grid-auto-rows: max-content;
@@ -18,6 +13,13 @@
   min-height: 112px;
   padding: 25px 19px;
   background-color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 768px;
+    padding: 60px 70px;
+  }
 }
 
 .map__invitation--catalog {
@@ -25,14 +27,14 @@
 }
 
 .map__invitation-title {
-  @media (min-width: $tablet-width) {
-    @include font($secondary-font, 400, 20px, 26px);
-  }
-
   @include font($secondary-font, 400, 16px, 20px);
   margin: 0;
   color: $text-grey;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    @include font($secondary-font, 400, 20px, 26px);
+  }
 }
 
 //.map__image {}

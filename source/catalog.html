@@ -15,52 +15,48 @@
 
 <body class="page__body">
   <header class="page__header header">
-    <div class="header__wrapper"><!-- так можно? -->
-      <nav class="header__nav nav">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a class="nav__logo-first" href="index.html">
-              <img class="nav__logo" src="../images/logo/logo-mobile.svg" width="33" height="38" alt="logo">
-            </a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__logo-second" href="index.html">
-              <img class="nav__logo-text" width="101" height="18" src="../images/logo/logo-name-mobile.svg" alt="logo text">
-            </a>
-          </li>
-          <li class="nav__item">
-            <button class="nav__menu-button" type="button" aria-label="Меню переключения">
-              <span class="nav__menu-button-line"></span>
-              <span class="visually-hidden">Открыть меню</span>
-            </button>
-          </li>
-        </ul>
-        <ul class="nav__list-inner">
-          <li class="nav__item nav__item--current">
-            <a class="nav__link" href="index.html">
-              Главная
-            </a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="catalog.html">
-              Каталог продукции
-            </a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#">
-              Подбор программы
-            </a>
-          </li>
-        </ul>
-      </nav>
+    <div class="header__wrapper">
+      <a class="nav__logo-first" href="index.html">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="../images/logo/logo-desktop.svg" type="svg+xml" width="70" height="59">
+
+          <source media="(min-width: 768px)" srcset="../images/logo/logo-tablet.svg" type="svg+xml" width="60" height="50">
+
+          <img class="logo-image-link__icon" src="../images/logo/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
+        </picture>
+
+        <img class="nav__logo-text" width="101" height="18" src="../images/logo/logo-name-mobile.svg" alt="Логотип Cat Energy текст">
+      </a>
+      <button class="nav__menu-button" type="button" aria-label="Меню переключения">
+        <span class="nav__menu-button-line"></span>
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <ul class="nav__list-inner">
+        <li class="nav__item nav__item--current">
+          <a class="nav__link" href="index.html">
+            Главная
+          </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="catalog.html">
+            Каталог продукции
+          </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">
+            Подбор программы
+          </a>
+        </li>
+      </ul>
     </div>
+    </nav>
   </header>
 
   <main class="main-container">
     <section class="catalog">
       <h2 class="catalog__title">Каталог продукции</h2>
       <ul class="catalog__list">
-        <li class="catalog__item card">
+        <li class="catalog__item card card--tablet">
           <a class="card__link" href="#">
             <picture>
               <img class="card__image" src="../images/catalog/card-chicken500-mobile@1x.png" srcset="../images/catalog/card-chicken500-mobile@2x.png" width="68" height="86" alt="продукт">
@@ -88,7 +84,7 @@
           <a class="card__link button" href="#">Заказать</a>
         </li>
 
-        <li class="catalog__item card">
+        <li class="catalog__item card card--tablet">
           <a class="card__link" href="#">
             <picture>
               <img class="card__image" src="../images/catalog/card-chicken1000-mobile@1x.png" srcset="../images/catalog/card-chicken1000-mobile@2x.png" width="84" height="100" alt="продукт">
@@ -116,7 +112,7 @@
           <a class="card__link button" href="#">Заказать</a>
         </li>
 
-        <li class="catalog__item card">
+        <li class="catalog__item card card--tablet">
           <a class="card__link" href="#">
             <picture>
               <img class="card__image" src="../images/catalog/card-fish500-mobile@1x.png" srcset="../images/catalog/card-fish500-mobile@2x.png" width="68" height="78" alt="продукт">
@@ -144,7 +140,7 @@
           <a class="card__link button" href="#">Заказать</a>
         </li>
 
-        <li class="catalog__item card">
+        <li class="catalog__item card card--tablet">
           <a class="card__link" href="#">
             <picture>
               <img class="card__image" src="../images/catalog/card-fish1000-mobile@1x.png" srcset="../images/catalog/card-fish1000-mobile@2x.png" width="84" height="100" alt="продукт">
@@ -172,7 +168,7 @@
           <a class="card__link button" href="#">Заказать</a>
         </li>
 
-        <li class="catalog__item card">
+        <li class="catalog__item card card--tablet">
           <a class="card__link" href="#">
             <picture>
               <img class="card__image" src="../images/catalog/card-buckwheat-500-mobile@1x.png" srcset="../images/catalog/card-buckwheat-500-mobile@2x.png" width="68" height="78" alt="продукт">
@@ -200,7 +196,7 @@
           <a class="card__link button" href="#">Заказать</a>
         </li>
 
-        <li class="catalog__item card">
+        <li class="catalog__item card card--tablet">
           <a class="card__link" href="#">
             <picture>
               <img class="card__image" src="../images/catalog/card-buckwheat1000-mobile@1x.png" srcset="../images/catalog/card-buckwheat1000-mobile@2x.png" width="84" height="100" alt="продукт">
@@ -228,7 +224,7 @@
           <a class="card__link button" href="#">Заказать</a>
         </li>
 
-        <li class="catalog__item card">
+        <li class="catalog__item card card--tablet">
           <a class="card__link" href="#">
             <picture>
               <img class="card__image" src="../images/catalog/card-rice500-mobile@1x.png" srcset="../images/catalog/card-rice500-mobile@2x.png" width="72" height="84" alt="продукт">
@@ -257,7 +253,7 @@
         </li>
 
         <li class="catalog__item card card--add">
-          <h3 class="card__title card__title-current">Показать еще 100500 товаров</h3>
+          <h3 class="card__title card__title-current">Показать еще <br class="card__tablet"> 100500 товаров</h3>
           <p class="card__content card__content-current">
             На самом деле вкусов гораздо больше!
           </p>
@@ -275,7 +271,7 @@
           </a>
           <span class="product__volume">1 упаковка (100 г)</span>
           <span class="product__price">200 &#8381;</span>
-          <a class="product__link button" href="#">Заказать</a>
+          <a class="product__link button button__product--tablet" href="#">Заказать</a>
         </li>
 
         <li class="additional-products__item product">
@@ -284,7 +280,7 @@
           </a>
           <span class="product__volume">5 литров</span>
           <span class="product__price">50 &#8381;</span>
-          <a class="product__link button" href="#">Заказать</a>
+          <a class="product__link button button__product--tablet" href="#">Заказать</a>
         </li>
 
         <li class="additional-products__item product">
@@ -293,7 +289,7 @@
           </a>
           <span class="product__volume">1 литр</span>
           <span class="product__price">100 &#8381;</span>
-          <a class="product__link button" href="#">Заказать</a>
+          <a class="product__link button button__product--tablet" href="#">Заказать</a>
         </li>
 
         <li class="additional-products__item product">
@@ -302,7 +298,7 @@
           </a>
           <span class="product__volume">1 упаковка (30 г)</span>
           <span class="product__price">300 &#8381;</span>
-          <a class="product__link button" href="#">Заказать</a>
+          <a class="product__link button button__product--tablet" href="#">Заказать</a>
         </li>
       </ul>
 

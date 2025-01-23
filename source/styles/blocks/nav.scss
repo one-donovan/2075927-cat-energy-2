@@ -1,14 +1,11 @@
 .nav {
   min-height: 65px;
   border-bottom: 1px solid $border-color-catalog;
-
-
   outline: 5px solid rgba(28, 180, 36, 0.8);
   outline-offset: -3px;
 }
 
 .nav__list {
-  //@include flex(row, normal, center, nowrap);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin: 0;
@@ -39,25 +36,38 @@
 .nav__item {
   margin: 0;
   padding: 13px 20px 9px;
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      @include pseudo(64px, 2px);
+      position: relative;
+      color: $accent-color;
+      bottom: -10px;
+      left: 0;
+    }
+  }
 }
 
 /* .nav__item--current {
-  @include pseudo(64px, 2px);
-  position: relative;
-  color: $accent-color;
-  bottom: 10px;
-  left: 10px;
+  @media (min-width: $tablet-width) {
+    @include pseudo(64px, 2px);
+    position: relative;
+    color: $accent-color;
+    bottom: 10px;
+    left: 10px;
+  }
 } */
 
 .nav__logo-first {
-  @media (min-width: $tablet-width) {
-    margin: 0 13px 0 0;
-  }
-
+  display: flex;
   width: 33px;
   height: 38px;
   margin: 0;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 13px 0 0;
+  }
 }
 
 .nav__logo-second {
@@ -66,7 +76,11 @@
 }
 
 .nav__logo-text {
-  margin: 0 0 7px;
+  margin: 10px 0 0 60px;
+
+  @media (min-width: $tablet-width) {
+    margin: 10px 0 0 13px;
+  }
 }
 
 .nav__link {
@@ -86,12 +100,16 @@
   &:active {
     opacity: 0.3;
   }
+
+  @media (min-width: $desktop-width) {
+    @include font($secondary-font, 400, 20px, 29.64px);
+  }
 }
 
 .nav__menu-button {
   @include flex(column, center, center, wrap);
   place-content: center center;
-  margin: 0;
+  margin: 4px 0 0;
   width: 24px;
   height: 24px;
   row-gap: 6px;

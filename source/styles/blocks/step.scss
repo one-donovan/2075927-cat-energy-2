@@ -1,43 +1,55 @@
 .step--leaf::before {
-  @media (min-width: $tablet-width) {
-    margin: 0 0 31px;
-  }
-
   @include pseudo(60px, 60px);
   margin: 0 20px 0 0;
   background-image: url("../../images/leaf-mobile.svg");
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    @include pseudo(80px, 80px);
+    background-image: url("../../images/leaf-mobile.svg");
+    background-size: 100%;
+    margin: 0 0 31px;
+  }
 }
 
 .step--pot::before {
-  @media (min-width: $tablet-width) {
-    margin: 0 0 31px;
-  }
-
   @include pseudo(60px, 60px);
   margin: 0 20px 0 0;
   background-image: url("../../images/pot-mobile.svg");
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    @include pseudo(80px, 80px);
+    background-image: url("../../images/pot-mobile.svg");
+    background-size: 100%;
+    margin: 0 0 31px;
+  }
 }
 
 .step--spoon::before {
-  @media (min-width: $tablet-width) {
-    margin: 0 0 31px;
-  }
-
   @include pseudo(60px, 60px);
   margin: 0 20px 0 0;
   background-image: url("../../images/fork-and-spoon-mobile.svg");
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    @include pseudo(80px, 80px);
+    background-image: url("../../images/fork-and-spoon-mobile.svg");
+    background-size: 100%;
+    margin: 0 0 31px;
+  }
 }
 
 .step--clock::before {
-  @media (min-width: $tablet-width) {
-    margin: 0 0 31px;
-  }
-
   @include pseudo(60px, 60px);
   margin: 0 20px 0 0;
   background-image: url("../../images/clock-mobile.svg");
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    @include pseudo(80px, 80px);
+    background-image: url("../../images/clock-mobile.svg");
+    background-size: 100%;
+    margin: 0 0 31px;
+  }
 }

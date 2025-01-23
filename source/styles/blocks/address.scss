@@ -1,26 +1,26 @@
 //блок с адресом
 
 .address__street {
-  @media (min-width: $tablet-width) {
-    @include font($main-font, 400, 16px, 20px);
-    text-align: end;
-  }
-
   @include font($main-font, 400, 14px, 20px);
   color: $basic-text-color;
   margin: 0;
   padding: 0;
-}
 
-.address__city {
   @media (min-width: $tablet-width) {
     @include font($main-font, 400, 16px, 20px);
     text-align: end;
   }
+}
 
+.address__city {
   @include font($main-font, 400, 14px, 20px);
   color: $basic-text-color;
   grid-column: 2 /-1;
   margin: -20px 0 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    @include font($main-font, 400, 16px, 20px);
+    text-align: end;
+  }
 }

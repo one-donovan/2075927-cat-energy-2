@@ -1,14 +1,20 @@
 .program {
+  padding: 30px 20px 20px;
+  width: 280px;
+  height: 266px;
+  background-color: $basic-grey;
+
   @media (min-width: $tablet-width) {
     width: 708px;
     height: 372px;
     padding: 77px 63px 53px 52px;
   }
 
-  padding: 30px 20px 20px;
-  width: 280px;
-  height: 266px;
-  background-color: $basic-grey;
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    height: 374px;
+    padding: 41px 61px 59px 52px;
+  }
 }
 
 .program__title {
@@ -85,7 +91,7 @@
     @include pseudo(24px, 12px);
     position: relative;
     bottom: 21px;
-    left: 100px;
+    left: 130px;
     background-image: url("../../images/logo/arrow-standart.svg");
     background-repeat: no-repeat;
     transition: 0.5s;
@@ -95,7 +101,7 @@
     @include pseudo(25px, 2.4px);
     position: relative;
     top: 15.6px;
-    left: 95px;
+    left: 122px;
     background-color: $basic-black;
   }
 

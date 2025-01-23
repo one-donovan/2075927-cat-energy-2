@@ -3,25 +3,21 @@
 }
 
 .programs__list {
+  margin: 0 0 20px;
+  padding: 0;
+  list-style-type: none;
+
   @media (min-width: $tablet-width) {
     margin: 120px 0 20px;
   }
 
-  margin: 0 0 20px;
-  padding: 0;
-  list-style-type: none;
+  @media (min-width: $desktop-width) {
+    display: flex;
+    gap: 80px;
+  }
 }
 
-.programs__item {
-  @media (min-width: $tablet-width) {
-    &::before {
-      @include pseudo(200px, 211px);
-      position: absolute;
-      background-image: url("../../images/cat-back-secondary-mobile.svg");
-      background-repeat: no-repeat;
-    }
-  }
-
+.program--slim {
   position: relative;
   margin: 0 0 20px;
 
@@ -32,29 +28,58 @@
     left: 20px;
     background-image: url("../../images/cat-back-secondary-mobile.svg");
     background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      @include pseudo(200px, 211px);
+      top: 81px;
+      left: 430px;
+      background-image: url("../../images/cat-back-secondary-mobile.svg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      @include pseudo(100px, 106px);
+      top: 81px;
+      left: 430px;
+      background-image: url("../../images/cat-back-secondary-mobile.svg");
+    }
   }
 }
 
-.programs__item-secondary {
-  /*   @media (min-width: $tablet-width) {
-    &::before {
-      @include pseudo(200px, 211px) {
-        position: absolute;
-        top: 150px;
-        left: 450px;
-      }
-    }
-  } */
-
-  margin: 0;
-  padding: 30px 0 0;
+.program--pro {
+  position: relative;
+  margin: 0 0 20px;
 
   &::before {
-    @include pseudo(67px, 50px);
+    @include pseudo(66px, 53px);
     position: absolute;
-    top: 23px;
-    left: 13px;
+    top: 21px;
+    left: 20px;
     background-image: url("../../images/cat-back-primary-mobile.svg");
     background-repeat: no-repeat;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      @include pseudo(268px, 200px);
+      top: 81px;
+      left: 430px;
+      background-image: url("../../images/cat-back-primary-mobile.svg");
+      background-size: 100% 100%;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      @include pseudo(134px, 100px);
+      top: 81px;
+      left: 430px;
+      background-image: url("../../images/cat-back-primary-mobile.svg");
+      background-size: 100% 100%;
+    }
   }
 }

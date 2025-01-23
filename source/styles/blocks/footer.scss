@@ -1,4 +1,14 @@
+.footer {
+  @include flex(column, normal, center, wrap);
+}
+
 .footer__container {
+  @include flex(column, space-between, normal, wrap);
+  min-width: 320px;
+  min-height: 240px;
+  padding: 40px 20px;
+  background-color: $basic-grey;
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -6,12 +16,6 @@
     height: 147px;
     padding: 55px 40px;
   }
-
-  @include flex(column, space-between, normal, wrap);
-  min-width: 320px;
-  min-height: 240px;
-  padding: 40px 20px;
-  background-color: $basic-grey;
 }
 
 .footer__logo-text {
@@ -39,6 +43,10 @@
   &:active {
     color: $accent-color;
     opacity: 0.7;
+  }
+
+  @media (min-width: 768px) {
+    padding: 0 0 0 70px;
   }
 }
 
