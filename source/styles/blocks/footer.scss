@@ -16,6 +16,14 @@
     height: 147px;
     padding: 55px 40px;
   }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 1440px;
+    height: 169px;
+    padding: 66px 110px;
+  }
 }
 
 .footer__logo-text {

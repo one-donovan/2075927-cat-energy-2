@@ -20,8 +20,8 @@
     width: 324px;
     height: 511px;
     align-content: center;
-    background-color: #f2f2f2;
     padding: 37px;
+    background: linear-gradient($basic-white 10%, $basic-grey 10%);
   }
 
   @media (min-width: $desktop-width) {
@@ -29,14 +29,10 @@
     width: 245px;
     height: 511px;
     align-content: center;
-    background-color: #f2f2f2;
     padding: 37px;
+    background: linear-gradient($basic-white 10%, $basic-grey 10%);
   }
 }
-
-/* .card__tablet {
-  display: none;
-} */
 
 .card__list {
   margin: 0 0 6px;
@@ -166,7 +162,7 @@
     width: 245px;
     height: 511px;
     align-content: center;
-    background-color: #f2f2f2;
+    background-color: $basic-white;
     padding: 37px;
   }
 }

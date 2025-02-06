@@ -73,7 +73,7 @@
     }
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     &::before {
       @include pseudo(134px, 100px);
       top: 81px;

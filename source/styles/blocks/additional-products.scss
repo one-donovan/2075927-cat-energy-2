@@ -1,7 +1,7 @@
 //Дополнительные товары
 
 .additional-products {
-  @include flex(column, normal, center, wrap);
+  @include flex(row, normal, center, wrap);
 
   .additional-products__title {
     &:hover {
@@ -16,6 +16,11 @@
       opacity: 0.3;
     }
   }
+
+  @media (min-width: $tablet-width) {
+    @include flex(row, center, center, wrap);
+    gap: 30px;
+  }
 }
 
 .additional-products__headline {
@@ -27,14 +32,16 @@
 
   @media (min-width: $tablet-width) {
     @include font($secondary-font, 400, 32px, 32px);
-    @include flex(row, normal, normal, wrap);
+    //@include flex(row, normal, normal, wrap);
+    width: 100%;
     align-self: flex-start;
-    margin: 0 0 80px;
+    margin: 0;
     padding: 0 0 0 30px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     @include font($secondary-font, 400, 40px, 40px);
+    padding: 0 0 0 100px;
   }
 }
 
@@ -48,7 +55,7 @@
   @media (min-width: $tablet-width) {
     @include pseudo(357px, 2px);
     position: absolute;
-    top: 25px;
+    top: 16px;
     left: 411px;
     border: 2px solid $accent-color;
   }
@@ -57,7 +64,7 @@
     @include pseudo(914px, 2px);
     position: absolute;
     top: 25px;
-    left: 526px;
+    left: 605px;
     border: 2px solid $accent-color;
   }
 }
@@ -72,8 +79,8 @@
   @media (min-width: $tablet-width) {
     @include pseudo(30px, 2px);
     position: absolute;
-    top: 25px;
-    right: 376px;
+    top: 16px;
+    left: 0;
     border: 2px solid $accent-color;
   }
 
@@ -81,7 +88,7 @@
     @include pseudo(70px, 2px);
     position: absolute;
     top: 25px;
-    right: 336px;
+    right: 300px;
     border: 2px solid $accent-color;
   }
 }
@@ -95,6 +102,12 @@
   @media (min-width: $tablet-width) {
     margin: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    align-self: flex-start;
+    margin: 0;
+  }
 }
 
 .additional-products__item {
@@ -103,7 +116,7 @@
 
 .additional-products__card-link {
   text-decoration: none;
-  grid-column: 1 / -1;
+  grid-column: 1 / 3;
 }
 
 .additional-products__title {
@@ -113,6 +126,12 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font($secondary-font, 400, 20px, 20px);
     margin: 0;
     padding: 0;
   }

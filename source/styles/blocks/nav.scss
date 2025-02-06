@@ -34,16 +34,17 @@
 }
 
 .nav__item {
+  position: relative;
   margin: 0;
   padding: 13px 20px 9px;
 
   &::after {
     @media (min-width: $tablet-width) {
       @include pseudo(64px, 2px);
-      position: relative;
-      color: $accent-color;
+      position: absolute;
+      background-color: $accent-color;
       bottom: -10px;
-      left: 0;
+      left: 24px;
     }
   }
 }

@@ -24,6 +24,12 @@
 
 .map__invitation--catalog {
   background-color: $basic-grey;
+
+  @media (min-width: $desktop-width) {
+    width: 565px;
+    height: 199px;
+    background-color: $basic-white;
+  }
 }
 
 .map__invitation-title {

@@ -2,8 +2,7 @@
 
 .costs {
   @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: end;
+    @include flex(column, end, normal, wrap);
     margin: -72px 0 0;
     padding: 0;
     text-align: end;

@@ -18,34 +18,40 @@
 }
 
 .program__title {
-  @media (min-width: $tablet-width) {
-    @include font($secondary-font, 400, 36px, 36px);
-    padding: 0 0 24px;
-    text-align: left;
-  }
-
   @include font($secondary-font, 400, 24px, 37px);
   margin: 0;
   padding: 0 0 29px 9px;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    @include font($secondary-font, 400, 36px, 36px);
+    padding: 0 0 24px;
+    text-align: left;
+  }
 }
 
 .program__title-secondary {
-  @media (min-width: $tablet-width) {
-    @include font($secondary-font, 400, 36px, 36px);
-    text-align: left;
-    padding: 0 0 24px;
-  }
-
   @include font($secondary-font, 400, 24px, 37px);
   margin: 0;
   padding: 0 0 29px 39px;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    @include font($secondary-font, 400, 36px, 36px);
+    text-align: left;
+    padding: 0 0 24px;
+  }
 }
 
 .program__description {
+  @include font($main-font, 400, 14px, 18px);
+  margin: 0;
+  padding: 0;
+  color: $basic-text-color;
+  border-bottom: 1px solid $border-color-index;
+
   @media (min-width: $tablet-width) {
     @include font($main-font, 400, 16px, 24px);
     width: 340px;
@@ -54,19 +60,9 @@
     color: $basic-black;
     border: none;
   }
-
-  @include font($main-font, 400, 14px, 18px);
-  margin: 0;
-  padding: 0;
-  color: $basic-text-color;
-  border-bottom: 1px solid $border-color-index;
 }
 
 .program__link {
-  @media (min-width: $tablet-width) {
-    @include font($secondary-font, 400, 20px, 29.64px);
-  }
-
   @include font($secondary-font, 400, 16px, 29.64px);
   display: block;
   width: 134px;
@@ -111,6 +107,10 @@
 
   &:focus::after {
     transform: translateX(10px);
+  }
+
+  @media (min-width: $tablet-width) {
+    @include font($secondary-font, 400, 20px, 29.64px);
   }
 }
 

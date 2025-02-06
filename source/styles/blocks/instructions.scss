@@ -8,6 +8,7 @@
   margin: 0 0 49px;
   padding: 0 8px 0 0;
   list-style-type: none;
+  counter-reset: number 0;
 
   @media (min-width: $tablet-width) { // не работает!
     display: grid;
@@ -26,9 +27,22 @@
 
 .instructions__item {
   display: flex;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     display: block;
+
+    &::after {
+      content: counter(number);
+      counter-increment: number;
+
+      @include font($secondary-font, 400, 280px, 40px);
+      position: absolute;
+      z-index: -1;
+      top: 80;
+      left: 130;
+      color: $basic-grey;
+    }
   }
 }
 

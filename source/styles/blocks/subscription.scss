@@ -1,14 +1,20 @@
 //блок подписка
 
 .subscription {
-  @media (min-width: $tablet-width) {
-    @include flex(column, normal, center, wrap);
-    padding: 0 68px;
-  }
-
   min-width: 320px;
   position: relative;
   margin: 0 0 42px;
+
+  @media (min-width: $tablet-width) {
+    @include flex(column, normal, normal, wrap);
+    padding: 0 68px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include flex(column, normal, normal, wrap);
+    padding: 0 68px;
+    margin: 0 0 104px;
+  }
 }
 
 .subscription__title {
@@ -17,12 +23,50 @@
   padding: 0 0 0 20px;
   color: $basic-black;
 
+  @media (min-width: $desktop-width) {
+    @include font($secondary-font, 400, 40px, 40px);
+  }
+
+  &::before {
+    @media (min-width: $tablet-width) {
+      @include pseudo(30px, 2px);
+      position: absolute;
+      top: 8px;
+      left: 0;
+      border: 2px solid $hover-buttons;
+    }
+
+    @media (min-width: $desktop-width) {
+      @include pseudo(70px, 2px);
+      position: absolute;
+      top: 20px;
+      left: 0;
+      border: 2px solid $hover-buttons;
+    }
+  }
+
   &::after {
     @include pseudo(108px, 2px);
     position: absolute;
     top: 8px;
     right: 0;
     border: 2px solid $hover-buttons;
+
+    @media (min-width: $tablet-width) {
+      @include pseudo(456px, 2px);
+      position: absolute;
+      top: 8px;
+      right: 0;
+      border: 2px solid $hover-buttons;
+    }
+
+    @media (min-width: $desktop-width) {
+      @include pseudo(1053px, 2px);
+      position: absolute;
+      top: 20px;
+      right: 0;
+      border: 2px solid $hover-buttons;
+    }
   }
 }
 
@@ -32,10 +76,19 @@
   padding: 0;
   color: $basic-black;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    @include font($secondary-font, 400, 24px, 32px);
+  }
 }
 
 .subscription__form {
-  @include flex(column, wrap);
+  @include flex(row, center, center, wrap);
+
+
+  @media (min-width: $tablet-width) {
+    @include flex(row, center, center, wrap);
+  }
 }
 
 .subscription__input {
@@ -61,6 +114,17 @@
     border: 2px solid $basic-text-color;
     outline: none;
   }
+
+  @media (min-width: $tablet-width) {
+    min-width: 376px;
+    height: 56px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 496px;
+    height: 56px;
+    margin: 0;
+  }
 }
 
 .subscription__button {
@@ -71,7 +135,7 @@
   @include font($secondary-font, 400, 20px, 26px);
   min-width: 280px;
   min-height: 56px;
-  margin: 0;
+  margin: -15px 0 0;
   color: $basic-white;
   background-color: $accent-color;
   text-transform: uppercase;
@@ -85,5 +149,16 @@
   &:active {
     background-color: $hover-buttons;
     color: rgba(255, 255, 255, 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    min-width: 256px;
+    min-height: 56px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    min-width: 256px;
+    min-height: 56px;
   }
 }
