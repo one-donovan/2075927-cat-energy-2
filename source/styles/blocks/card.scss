@@ -5,7 +5,7 @@
   width: 320px;
   height: 209px;
   justify-content: center;
-  border-top: 1px solid $border-color-catalog;
+  //border-top: 1px solid $border-color-catalog;
 }
 
 /* .card:not(:last-child) {
@@ -159,6 +159,7 @@
 
   @media (min-width: $desktop-width) {
     @include flex(column, space-around, center, wrap);
+    //@include pseudo();
     width: 245px;
     height: 511px;
     align-content: center;
@@ -181,14 +182,14 @@
   @include pseudo(30px, 30px);
   position: absolute;
   top: 9px;
-  background-image: url("../../images/logo/plus.svg");
-  background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
     @include pseudo(60px, 60px);
     position: absolute;
     top: 50px;
-    background-image: url("../../images/logo/plus.svg");
+    left: 10px;
+    background-image: url("../../images/icons/plus.svg");/*  не работает */
+    background-repeat: no-repeat;
     background-size: 100%;
   }
 }

@@ -1,8 +1,10 @@
 .program {
-  padding: 30px 20px 20px;
-  width: 280px;
-  height: 266px;
-  background-color: $basic-grey;
+  @media (min-width: $mobile-width) {
+    padding: 30px 20px 20px;
+    width: 280px;
+    height: 266px;
+    background-color: $basic-grey;
+  }
 
   @media (min-width: $tablet-width) {
     width: 708px;
@@ -18,39 +20,59 @@
 }
 
 .program__title {
-  @include font($secondary-font, 400, 24px, 37px);
-  margin: 0;
-  padding: 0 0 29px 9px;
-  text-align: center;
-  text-transform: uppercase;
+  @media (min-width: $mobile-width) {
+    @include font($secondary-font, 400, 24px, 37px);
+    margin: 0;
+    padding: 0 0 29px 9px;
+    text-align: center;
+    text-transform: uppercase;
+  }
 
   @media (min-width: $tablet-width) {
     @include font($secondary-font, 400, 36px, 36px);
     padding: 0 0 24px;
     text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 40px 0 73px 62px;
+    text-align: center;
+    text-transform: uppercase;
   }
 }
 
 .program__title-secondary {
-  @include font($secondary-font, 400, 24px, 37px);
-  margin: 0;
-  padding: 0 0 29px 39px;
-  text-align: center;
-  text-transform: uppercase;
+  @media (min-width: $mobile-width) {
+    @include font($secondary-font, 400, 24px, 37px);
+    margin: 0;
+    padding: 0 0 29px 39px;
+    text-align: center;
+    text-transform: uppercase;
+  }
 
   @media (min-width: $tablet-width) {
     @include font($secondary-font, 400, 36px, 36px);
     text-align: left;
     padding: 0 0 24px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 40px 0 73px 62px;
+    text-align: center;
+    text-transform: uppercase;
+  }
 }
 
 .program__description {
-  @include font($main-font, 400, 14px, 18px);
-  margin: 0;
-  padding: 0;
-  color: $basic-text-color;
-  border-bottom: 1px solid $border-color-index;
+  @media (min-width: $mobile-width) {
+    @include font($main-font, 400, 14px, 18px);
+    margin: 0;
+    padding: 0 0 23px;
+    color: $basic-text-color;
+    border-bottom: 1px solid $border-color-index;
+  }
 
   @media (min-width: $tablet-width) {
     @include font($main-font, 400, 16px, 24px);
@@ -59,6 +81,13 @@
     margin: 0 0 48px;
     color: $basic-black;
     border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 457px;
+    min-height: 72px;
+    padding: 0;
+    margin: 0;
   }
 }
 
@@ -88,7 +117,7 @@
     position: relative;
     bottom: 21px;
     left: 130px;
-    background-image: url("../../images/logo/arrow-standart.svg");
+    background-image: url("../../images/icons/arrow-standart.svg");
     background-repeat: no-repeat;
     transition: 0.5s;
   }

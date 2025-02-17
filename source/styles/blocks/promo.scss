@@ -12,7 +12,7 @@
   height: 290px;
   margin: 0;
   padding: 146px 0 0;
-  background-image: url("../../images/catalog/cat-in-backpack-mobile@1x.png");
+  background-image: url("../../images/catalog/promo-cat/cat-in-backpack-mobile@1x.png");
   background-repeat: no-repeat;
   color: $basic-white;
   text-align: center;
@@ -25,7 +25,8 @@
     @include pseudo(78px, 80px);
     position: absolute;
     top: 59px;
-    background-image: url("../../images/logo/present-icon.svg");
+    background-image: url("../../images/icons/present.svg");
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
 
@@ -39,7 +40,7 @@
     align-content: end;
     width: 707px;
     height: 200px;
-    background-image: url("../../images/catalog/cat-in-backpack-mobile@1x.png");
+    background-image: url("../../images/catalog/promo-cat/cat-in-backpack-tablet@2x.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -48,7 +49,7 @@
   @media (min-width: $desktop-width) {
     width: 245px;
     height: 288px;
-    background-image: url("../../images/catalog/cat-in-backpack-mobile@1x.png");
+    background-image: url("../../images/catalog/promo-cat/cat--in-backpack-desktop@2x.png");
     background-repeat: no-repeat;
   }
 }

@@ -1,18 +1,25 @@
-.hero {
+/* .hero {
+  @media (min-width: $mobile-width) {
+    width: 320px;
+    height: 302px;
+    background-image: url("../../images/index/index-cat-background-mobile@2x.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 0 200px;
+  }
+
   @media (min-width: $tablet-width) {
     background: none;
   }
 
-  background: linear-gradient(to top, $basic-white 40%, $accent-color 35%, transparent), url("../../images/index-background-mobile2@1x.png"), no-repeat, 320px 302px;
-  margin: 0;
-
-  @media (min-resolution: 2dppx) {
-    //width: 500px;
-    height: 500px;
-    //background-image: url("../../images/index-background-mobile2@2x.png");
+  @media (min-width: $desktop-width) {
+    width: 720px;
+    height: 694px;
+    background-image: url("../../images/index/index-cat-background-desktop@2x.png");
     background-repeat: no-repeat;
+    background-position: center;
   }
-}
+} */
 
 .hero__wrapper {
   @include flex(column, center);
@@ -71,5 +78,19 @@
   &:active {
     background-color: $hover-buttons;
     color: rgba(255, 255, 255, 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 385px;
+    left: 90px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 385px;
+    left: 425px;
+    margin: 0;
   }
 }

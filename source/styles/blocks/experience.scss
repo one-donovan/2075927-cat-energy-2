@@ -24,7 +24,11 @@
 }
 
 //.experience__content {}
-//.experience__demo {}
+.experience__demo {
+  @media (min-width: $tablet-width) {
+    padding: 99px 0 0;
+  }
+}
 
 .experience__description {
   @include font($main-font, 400, 14px, 18px);

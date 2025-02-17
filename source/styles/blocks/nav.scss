@@ -61,13 +61,21 @@
 
 .nav__logo-first {
   display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
   width: 33px;
   height: 38px;
   margin: 0;
   text-decoration: none;
 
-  @media (min-width: $tablet-width) {
-    margin: 0 13px 0 0;
+  .logo-image-link__icon {
+    @media (min-width: $desktop-width) {
+      //margin: 0 14px 0 0;
+    }
+
+    @media (min-width: $tablet-width) {
+      //margin: 0 12px 0 0;
+    }
   }
 }
 

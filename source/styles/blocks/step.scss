@@ -1,55 +1,227 @@
-.step--leaf::before {
-  @include pseudo(60px, 60px);
-  margin: 0 20px 0 0;
-  background-image: url("../../images/leaf-mobile.svg");
-  background-repeat: no-repeat;
+.step--leaf {
+  @media (min-width: $mobile-width) {
+    &::before {
+      @include pseudo(60px, 60px);
+      margin: 0 20px 0 0;
+      background-color: $accent-color;
+    }
+
+    &::after {
+      @include pseudo(30px, 32px);
+      position: absolute;
+      top: 13px;
+      left: 16px;
+      background-image: url("../../images/vectors/leaf.svg");
+      background-size: 100%;
+      background-repeat: no-repeat;
+      margin: 0;
+    }
+  }
 
   @media (min-width: $tablet-width) {
-    @include pseudo(80px, 80px);
-    background-image: url("../../images/leaf-mobile.svg");
-    background-size: 100%;
-    margin: 0 0 31px;
+    &::before {
+      @include pseudo(80px, 80px);
+      margin: 0 0 31px;
+      background-color: $accent-color;
+    }
+
+    &::after {
+      @include pseudo(30px, 32px);
+      position: absolute;
+      top: 10px;
+      left: 20px;
+      background-image: url("../../images/vectors/leaf.svg");
+      background-size: 100%;
+      background-repeat: no-repeat;
+      margin: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      &::before {
+        @include pseudo(80px, 80px);
+        margin: 0 0 31px;
+        background-color: $accent-color;
+      }
+
+      &::after {
+        @include pseudo(30px, 32px);
+        position: absolute;
+        background-image: url("../../images/vectors/leaf.svg");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        margin: 0;
+      }
+    }
   }
 }
 
-.step--pot::before {
-  @include pseudo(60px, 60px);
-  margin: 0 20px 0 0;
-  background-image: url("../../images/pot-mobile.svg");
-  background-repeat: no-repeat;
+.step--pot {
+  @media (min-width: $mobile-width) {
+    &::before {
+      @include pseudo(60px, 60px);
+      margin: 0 20px 0 0;
+      background-color: $accent-color;
+    }
+
+    &::after {
+      @include pseudo(30px, 32px);
+      position: absolute;
+      top: 13px;
+      left: 16px;
+      background-image: url("../../images/vectors/pot.svg");
+      background-size: 100%;
+      background-repeat: no-repeat;
+      margin: 0;
+    }
+  }
 
   @media (min-width: $tablet-width) {
-    @include pseudo(80px, 80px);
-    background-image: url("../../images/pot-mobile.svg");
-    background-size: 100%;
-    margin: 0 0 31px;
+    &::before {
+      @include pseudo(80px, 80px);
+      margin: 0 0 31px;
+      background-color: $accent-color;
+    }
+
+    &::after {
+      @include pseudo(30px, 32px);
+      position: absolute;
+      top: 10px;
+      left: 20px;
+      background-image: url("../../images/vectors/pot.svg");
+      background-size: 100%;
+      background-repeat: no-repeat;
+      margin: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      &::before {
+        @include pseudo(80px, 80px);
+        margin: 0 0 31px;
+        background-color: $accent-color;
+      }
+
+      &::after {
+        @include pseudo(30px, 32px);
+        position: absolute;
+        background-image: url("../../images/vectors/pot.svg");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        margin: 0;
+      }
+    }
   }
 }
 
-.step--spoon::before {
-  @include pseudo(60px, 60px);
-  margin: 0 20px 0 0;
-  background-image: url("../../images/fork-and-spoon-mobile.svg");
-  background-repeat: no-repeat;
+.step--spoon {
+  @media (min-width: $mobile-width) {
+    &::before {
+      @include pseudo(60px, 60px);
+      margin: 0 20px 0 0;
+      background-color: $accent-color;
+    }
+
+    &::after {
+      @include pseudo(30px, 32px);
+      position: absolute;
+      top: 13px;
+      left: 16px;
+      background-image: url("../../images/vectors/fork_spoon.svg");
+      background-size: 100%;
+      background-repeat: no-repeat;
+      margin: 0;
+    }
+  }
 
   @media (min-width: $tablet-width) {
-    @include pseudo(80px, 80px);
-    background-image: url("../../images/fork-and-spoon-mobile.svg");
-    background-size: 100%;
-    margin: 0 0 31px;
+    &::before {
+      @include pseudo(80px, 80px);
+      margin: 0 0 31px;
+      background-color: $accent-color;
+    }
+
+    &::after {
+      @include pseudo(30px, 32px);
+      position: absolute;
+      top: 10px;
+      left: 20px;
+      background-image: url("../../images/vectors/fork_spoon.svg");
+      background-size: 100%;
+      background-repeat: no-repeat;
+      margin: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      &::before {
+        @include pseudo(80px, 80px);
+        margin: 0 0 31px;
+        background-color: $accent-color;
+      }
+
+      &::after {
+        @include pseudo(30px, 32px);
+        position: absolute;
+        background-image: url("../../images/vectors/fork_spoon.svg");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        margin: 0;
+      }
+    }
   }
 }
 
-.step--clock::before {
-  @include pseudo(60px, 60px);
-  margin: 0 20px 0 0;
-  background-image: url("../../images/clock-mobile.svg");
-  background-repeat: no-repeat;
+.step--clock {
+  @media (min-width: $mobile-width) {
+    &::before {
+      @include pseudo(60px, 60px);
+      margin: 0 20px 0 0;
+      background-color: $accent-color;
+    }
+
+    &::after {
+      @include pseudo(27px, 33px);
+      position: absolute;
+      top: 13px;
+      left: 16px;
+      background-image: url("../../images/vectors/clock.svg");
+      background-size: 100%;
+      background-repeat: no-repeat;
+      margin: 0;
+    }
+  }
 
   @media (min-width: $tablet-width) {
-    @include pseudo(80px, 80px);
-    background-image: url("../../images/clock-mobile.svg");
-    background-size: 100%;
-    margin: 0 0 31px;
+    &::before {
+      @include pseudo(80px, 80px);
+      margin: 0 0 31px;
+      background-color: $accent-color;
+    }
+
+    &::after {
+      @include pseudo(30px, 32px);
+      position: absolute;
+      top: 10px;
+      left: 20px;
+      background-image: url("../../images/vectors/clock.svg");
+      background-size: 100%;
+      background-repeat: no-repeat;
+      margin: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      &::before {
+        @include pseudo(80px, 80px);
+        margin: 0 0 31px;
+        background-color: $accent-color;
+      }
+
+      &::after {
+        @include pseudo(30px, 32px);
+        position: absolute;
+        background-image: url("../../images/vectors/clock.svg");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        margin: 0;
+      }
+    }
   }
 }
