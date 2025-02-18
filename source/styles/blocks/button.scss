@@ -1,6 +1,6 @@
 .button {
   @include font($secondary-font, 400, 16px, 20px);
-  grid-column: 1 / -1;
+  grid-column: 1 / -1; /* ПЕРЕДЕЛАТЬ! */
   min-width: 169px;
   min-height: 40px;
   margin: 15px 0 19px;

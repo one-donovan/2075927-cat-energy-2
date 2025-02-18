@@ -25,14 +25,14 @@
     @include pseudo(78px, 80px);
     position: absolute;
     top: 59px;
-    background-image: url("../../images/icons/present.svg");
+    background-image: url("../../icons/present.svg");
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
 
     @media (min-width: $tablet-width) {
-      top: 59px;
-      left: 100px;
+      top: 56px;
+      left: 82px;
     }
   }
 
@@ -49,6 +49,7 @@
   @media (min-width: $desktop-width) {
     width: 245px;
     height: 288px;
+    align-content: center;
     background-image: url("../../images/catalog/promo-cat/cat--in-backpack-desktop@2x.png");
     background-repeat: no-repeat;
   }

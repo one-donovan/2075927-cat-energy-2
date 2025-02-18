@@ -15,7 +15,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    @include flex(row, space-between, center, wrap);
+    //@include flex(row, space-between, center, wrap);
+    display: grid;
+    gap: 0;
+    grid-template-columns: repeat(4, 1fr);
     min-width: 896px;
     height: 72px;
     padding: 0;
@@ -48,6 +51,7 @@
 
   @media (min-width: $desktop-width) {
     @include font($main-font, 400, 16px, 20px);
+    padding: 0 0 0 90px;
   }
 }
 
@@ -63,6 +67,7 @@
 
   @media (min-width: $desktop-width) {
     @include font($main-font, 400, 16px, 20px);
+    padding: 0 40px 0 0;
   }
 }
 

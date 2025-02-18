@@ -25,12 +25,12 @@
   }
 
   @media (min-width: $desktop-width) {
-    @include flex(column, space-around, center, wrap);
+    @include flex(column, start, center, wrap);
     width: 245px;
     height: 511px;
     align-content: center;
     padding: 37px;
-    background: linear-gradient($basic-white 10%, $basic-grey 10%);
+    background: linear-gradient(transparent 20%, $basic-grey 10%);
   }
 }
 
@@ -48,6 +48,8 @@
 
 .card__item {
   @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
     border-bottom: 1px solid #cdcdcd;
   }
 }
@@ -186,9 +188,9 @@
   @media (min-width: $tablet-width) {
     @include pseudo(60px, 60px);
     position: absolute;
-    top: 50px;
-    left: 10px;
-    background-image: url("../../images/icons/plus.svg");/*  не работает */
+    top: 125px;
+    left: 90px;
+    background-image: url("../../icons/plus.svg");/*  не работает */
     background-repeat: no-repeat;
     background-size: 100%;
   }

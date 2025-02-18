@@ -1,10 +1,10 @@
 .header {
-  min-height: 66px;
+  height: 65px;
 
   @media (min-width: $tablet-width) {
     @include flex(row, space-between, center, wrap);
     width: 704px;
-    min-height: 50px;
+    //min-height: 50px;
     margin: 0 auto;
 
     .nav__menu-button {

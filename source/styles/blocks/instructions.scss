@@ -29,10 +29,25 @@
   display: flex;
   position: relative;
 
+  &::after {
+    content: counter(number);
+    counter-increment: number;
+
+    @include font($secondary-font, 400, 280px, 40px);
+    position: absolute;
+    z-index: -1;
+    top: 80;
+    left: 130;
+    color: $basic-grey;
+  }
+
+  @media (min-width: $mobile-width) {
+    //
+  }
+
   @media (min-width: $tablet-width) {
     display: block;
-
-    &::after {
+    /*     &::after {
       content: counter(number);
       counter-increment: number;
 
@@ -42,7 +57,11 @@
       top: 80;
       left: 130;
       color: $basic-grey;
-    }
+    } */
+  }
+
+  @media (min-width: $desktop-width) {
+    //
   }
 }
 

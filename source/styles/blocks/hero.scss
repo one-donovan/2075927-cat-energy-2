@@ -1,11 +1,12 @@
-/* .hero {
+.hero {
   @media (min-width: $mobile-width) {
-    width: 320px;
-    height: 302px;
+    //width: 320px;
+    //height: 302px;
     background-image: url("../../images/index/index-cat-background-mobile@2x.png");
     background-repeat: no-repeat;
-    background-position: center;
-    margin: 0 0 200px;
+    background-position: top;
+    background-size: 320px 302px;
+    //margin: 0 0 200px;
   }
 
   @media (min-width: $tablet-width) {
@@ -13,19 +14,24 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 720px;
-    height: 694px;
+    //width: 720px;
+    //height: 694px;
     background-image: url("../../images/index/index-cat-background-desktop@2x.png");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: right;
   }
-} */
+}
 
 .hero__wrapper {
   @include flex(column, center);
 }
 
 .hero__title {
+  @include font($secondary-font, 400, 36px, 36px);
+  margin: 27px 0;
+  color: $basic-white;
+  text-align: center;
+
   @media (min-width: $tablet-width) {
     @include font($secondary-font, 400, 60px, 60px);
     margin: 0;
@@ -34,13 +40,20 @@
     text-align: left;
   }
 
-  @include font($secondary-font, 400, 36px, 36px);
-  margin: 27px 0;
-  color: $basic-white;
-  text-align: center;
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .hero__description {
+  @include font($secondary-font, 400, 14px, 14px);
+  margin: 0 0 28px;
+  padding: 0 3px 0 0;
+  color: $basic-white;
+  text-transform: uppercase;
+  text-align: center;
+
   @media (min-width: $tablet-width) {
     @include font($secondary-font, 400, 20px, 20px);
     color: $basic-black;
@@ -48,12 +61,10 @@
     padding: 0 306px 21px 0;
   }
 
-  @include font($secondary-font, 400, 14px, 14px);
-  margin: 0 0 28px;
-  padding: 0 3px 0 0;
-  color: $basic-white;
-  text-transform: uppercase;
-  text-align: center;
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 //.hero__image {}
