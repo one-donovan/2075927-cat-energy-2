@@ -1,5 +1,13 @@
 .instructions {
   @include flex(column, normal, center, wrap);
+
+  @media (min-width: $tablet-width) {
+    //
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+  }
 }
 
 .instructions__list {
@@ -22,6 +30,7 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    border: none;
   }
 }
 

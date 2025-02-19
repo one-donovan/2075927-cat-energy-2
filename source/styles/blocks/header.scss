@@ -21,6 +21,9 @@
     width: 1220px;
     min-height: 59px;
     margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 
     /* .nav__logo-text {
       margin: 0 0 6px;

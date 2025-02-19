@@ -4,6 +4,15 @@
   padding: 0;
   background-color: $basic-white;
 
-  //outline: 5px solid rgba(255, 0, 0, 0.8);
-  //outline-offset: -3px;
+  @media (min-width: $mobile-width) {
+    //margin: 0 29px 0 30px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0 29px 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }

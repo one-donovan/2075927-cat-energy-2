@@ -1,6 +1,6 @@
 .button {
   @include font($secondary-font, 400, 16px, 20px);
-  grid-column: 1 / -1; /* ПЕРЕДЕЛАТЬ! */
+
   min-width: 169px;
   min-height: 40px;
   margin: 15px 0 19px;
@@ -33,6 +33,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    grid: -2 / -1;
     width: 100%;
     height: 40px;
     margin: 0;
@@ -57,6 +58,8 @@
 }
 
 .button__product--tablet {
+  grid-column: 1 / -1;
+
   @media (min-width: $tablet-width) {
     width: 632px;
     min-height: 40px;
@@ -65,5 +68,6 @@
   @media (min-width: $desktop-width) {
     width: 244px;
     min-height: 40px;
+    grid-column: -2 / -1;
   }
 }
