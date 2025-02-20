@@ -16,17 +16,24 @@
   @media (min-width: $desktop-width) {
     //width: 720px;
     //height: 694px;
+    /* linear-gradient(-90deg, #68b738 50%, #ffffff 50%) */
     background-image: url("../../images/index/index-cat-background-desktop@2x.png");
     background-repeat: no-repeat;
     background-position: top right;
-    padding-top: 100px;
+    //padding: 100px 100px 12px;
+    //padding-top: 100px;
+    padding: 100px 0 11px;
     background-size: 50%;
-    margin-bottom: 50px;
+    margin: 0;
   }
 }
 
 .hero__wrapper {
   @include flex(column, center);
+
+  @media (min-width: $desktop-width) {
+    padding: 123px 189px;
+  }
 }
 
 .hero__title {
@@ -38,15 +45,15 @@
   @media (min-width: $tablet-width) {
     @include font($secondary-font, 400, 60px, 60px);
     margin: 0;
-    padding: 65px 179px 40px 0;
+    padding: 90px 114px 40px 0;
     color: $basic-black;
     text-align: left;
   }
 
   @media (min-width: $desktop-width) {
     align-self: baseline;
-    margin: 0;
-    padding: 30px 0 0 190px;
+    margin: 0 0 41px;
+    padding: 0;
   }
 }
 
@@ -67,17 +74,36 @@
 
   @media (min-width: $desktop-width) {
     align-self: baseline;
-    margin: 0;
-    padding: 0 0 0 190px;
+    margin: 0 0 41px;
+    padding: 0;
   }
 }
 
 //.hero__image {}
 
+.hero__main-img {
+  @media (min-width: $mobile-width) {
+    // margin: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    //margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: -303px -225px 0 0;
+  }
+}
+
 .hero__description-button {
+  @media (min-width: $mobile-width) {
+    //min-width: 280px;
+    //min-height: 40px;
+  }
+
   @include font($secondary-font, 400, 16px, 20px);
-  min-width: 280px;
-  min-height: 40px;
+  //min-width: 280px;
+  //min-height: 40px;
   margin-bottom: 20px;
   padding: 10px 63.5px;
   text-align: center;
@@ -104,9 +130,13 @@
   }
 
   @media (min-width: $desktop-width) {
+    @include font($secondary-font, 400, 20px, 26px);
+    padding: 0;
+    width: 244px;
+    height: 54px;
     position: absolute;
-    top: 385px;
-    left: 425px;
+    top: 456px;
+    left: 190px;
     margin: 0;
   }
 }

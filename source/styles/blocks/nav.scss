@@ -63,19 +63,25 @@
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
-  width: 33px;
-  height: 38px;
+  //width: 33px;
+  //height: 38px;
   margin: 0;
   text-decoration: none;
+}
 
-  .logo-image-link__icon {
-    @media (min-width: $desktop-width) {
-      //margin: 0 14px 0 0;
-    }
+.logo-image-link__icon {   //куда поместить тег
+  @media (min-width: $mobile-width) {
+    margin: 0 56px 0 0;
+  }
 
-    @media (min-width: $tablet-width) {
-      //margin: 0 12px 0 0;
-    }
+  @media (min-width: $tablet-width) {
+    //width: 174px;
+    //height: 50px;
+    //margin: 25px 13px 0 -3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 14px 0 0;
   }
 }
 
@@ -118,7 +124,8 @@
 .nav__menu-button {
   @include flex(column, center, center, wrap);
   place-content: center center;
-  margin: 4px 0 0;
+
+
   width: 24px;
   height: 24px;
   row-gap: 6px;

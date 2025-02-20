@@ -1,5 +1,13 @@
 .programs {
   @include flex(column, space-between, center, wrap);
+
+  @media (min-width: $desktop-width) {
+    //margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 51px;
+  }
 }
 
 .programs__list {
@@ -63,6 +71,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin: 0;
+
     &::before {
       @include pseudo(100px, 100px);
       top: 47px;

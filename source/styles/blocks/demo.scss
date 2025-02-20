@@ -2,7 +2,23 @@
 
 //.demo
 //.demo__img {}
-//.demo__image {}
+
+.demo__image {
+  @media (min-width: $mobile-width) {
+    //margin: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    margin: 0 auto;
+  }
+}
+
 //.demo__img--before{}
 //.demo__img--after {}
 //.demo__button {}

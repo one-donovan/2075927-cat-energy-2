@@ -1,5 +1,6 @@
 .footer {
   @include flex(column, normal, center, wrap);
+  background-color: $basic-grey;
 }
 
 .footer__container {
@@ -7,7 +8,7 @@
   min-width: 320px;
   min-height: 240px;
   padding: 40px 20px;
-  background-color: $basic-grey;
+  //background-color: $basic-grey;
 
   @media (min-width: $tablet-width) {
     display: grid;

@@ -1,11 +1,17 @@
 .header {
-  height: 65px;
+  @media (min-width: $mobile-width) {
+    width: 320px;
+    height: 65px;
+    margin: 0 auto;
+    padding: 13px 21px 14px 20px;
+  }
 
   @media (min-width: $tablet-width) {
     @include flex(row, space-between, center, wrap);
     width: 704px;
-    //min-height: 50px;
+    height: 50px;
     margin: 0 auto;
+    padding: 0;
 
     .nav__menu-button {
       display: none;
@@ -21,6 +27,7 @@
     width: 1220px;
     min-height: 59px;
     margin: 0 auto;
+    padding: 55px 0 0;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -41,7 +48,6 @@
   .header__wrapper {
     @include flex(row, space-between, center, wrap);
     width: 100%;
-    padding: 20px;
 
     .nav__item:nth-child(2) {
       padding: 13px 20px 9px 0;
