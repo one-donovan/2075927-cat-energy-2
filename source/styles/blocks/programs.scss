@@ -1,12 +1,12 @@
 .programs {
   @include flex(column, space-between, center, wrap);
 
-  @media (min-width: $desktop-width) {
-    //margin: 0;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 51px;
+    margin-bottom: 72px;
   }
 }
 
@@ -95,7 +95,8 @@
 
 .program--pro {
   position: relative;
-  margin: 0 0 20px;
+  //margin: 0 0 20px;
+  margin: 0;
 
   @media (min-width: $mobile-width) {
     &::before {

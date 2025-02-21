@@ -6,6 +6,15 @@
   border-top: 1px solid $border-color-index;
   border-bottom: 1px solid $border-color-index;
 
+  @media (min-width: $mobile-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    align-self: center;
+    padding: 0;
+    margin-top: 12px;
+  }
+
   @media (min-width: $tablet-width) {
     border: none;
     justify-content: space-between;

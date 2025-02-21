@@ -112,11 +112,19 @@
     opacity: 0.7;
   }
 
-  &::after {
+  &:hover::after {
+    transform: translateX(10px);
+  }
+
+  &:focus::after {
+    transform: translateX(10px);
+  }
+
+  /*   &::after {
     @include pseudo(24px, 12px);
     position: relative;
     bottom: 21px;
-    left: 130px;
+    left: 92px;
     background-image: url("../../icons/arrow-standart.svg");
     background-repeat: no-repeat;
     transition: 0.5s;
@@ -126,17 +134,30 @@
     @include pseudo(25px, 2.4px);
     position: relative;
     top: 15.8px;
-    left: 122px;
+    left: 89px;
     background-color: $basic-black;
+  } */
+
+  @media (min-width: $mobile-width) {
+    &::after {
+      @include pseudo(24px, 12px);
+      position: relative;
+      bottom: 21px;
+      left: 103px;
+      background-image: url("../../icons/arrow-standart.svg");
+      background-repeat: no-repeat;
+      transition: 0.5s;
+    }
+
+    &::before {
+      @include pseudo(23px, 2.4px);
+      position: relative;
+      top: 15.8px;
+      left: 102px;
+      background-color: $basic-black;
+    }
   }
 
-  &:hover::after {
-    transform: translateX(10px);
-  }
-
-  &:focus::after {
-    transform: translateX(10px);
-  }
 
   @media (min-width: $tablet-width) {
     @include font($secondary-font, 400, 20px, 29.64px);

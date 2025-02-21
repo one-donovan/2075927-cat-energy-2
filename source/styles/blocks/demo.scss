@@ -5,6 +5,8 @@
 
 .demo__image {
   @media (min-width: $mobile-width) {
+    display: flex;
+    justify-content: center;
     //margin: 0;
   }
 

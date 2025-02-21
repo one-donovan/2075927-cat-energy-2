@@ -26,8 +26,8 @@
     @include flex(row, space-between, center, wrap);
     width: 1220px;
     min-height: 59px;
-    margin: 0 auto;
-    padding: 55px 0 0;
+    margin: 55px 0 0;
+    padding: 0;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -49,8 +49,8 @@
     @include flex(row, space-between, center, wrap);
     width: 100%;
 
-    .nav__item:nth-child(2) {
+    /*     .nav__item:nth-child(2) {
       padding: 13px 20px 9px 0;
-    }
+    } */
   }
 }

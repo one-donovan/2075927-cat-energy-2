@@ -2,7 +2,7 @@
   @media (min-width: $mobile-width) {
     //width: 320px;
     //height: 302px;
-    background-image: url("../../images/index/index-cat-background-mobile@2x.png");
+    background: linear-gradient(-90deg, rgba(104, 183, 56, 0.6) 100%, transparent 50%), url("../../images/index/index-cat-background-mobile@2x.png");
     background-repeat: no-repeat;
     background-position: top;
     background-size: 320px 302px;
@@ -16,14 +16,13 @@
   @media (min-width: $desktop-width) {
     //width: 720px;
     //height: 694px;
-    /* linear-gradient(-90deg, #68b738 50%, #ffffff 50%) */
-    background-image: url("../../images/index/index-cat-background-desktop@2x.png");
+    background: linear-gradient(-90deg, rgba(104, 183, 56, 0.6) 50%, transparent 50%), url("../../images/index/index-cat-background-desktop@2x.png");
     background-repeat: no-repeat;
     background-position: top right;
     //padding: 100px 100px 12px;
     //padding-top: 100px;
     padding: 100px 0 11px;
-    background-size: 50%;
+    //background-size: 50%;
     margin: 0;
   }
 }
@@ -69,7 +68,7 @@
     @include font($secondary-font, 400, 20px, 20px);
     color: $basic-black;
     margin: 0;
-    padding: 0 306px 21px 0;
+    padding: 0 246px 21px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -96,11 +95,6 @@
 }
 
 .hero__description-button {
-  @media (min-width: $mobile-width) {
-    //min-width: 280px;
-    //min-height: 40px;
-  }
-
   @include font($secondary-font, 400, 16px, 20px);
   //min-width: 280px;
   //min-height: 40px;
@@ -122,11 +116,21 @@
     color: rgba(255, 255, 255, 0.3);
   }
 
+  @media (min-width: $mobile-width) {
+    margin-bottom: 22px;
+    //min-width: 280px;
+    //min-height: 40px;
+  }
+
   @media (min-width: $tablet-width) {
+    @include font($secondary-font, 400, 20px, 26px);
+    width: 242px;
+    height: 53px;
     position: absolute;
-    top: 385px;
-    left: 90px;
+    top: 370px;
+    left: 120px;
     margin: 0;
+    padding: 14px 24px 14px 26px;
   }
 
   @media (min-width: $desktop-width) {

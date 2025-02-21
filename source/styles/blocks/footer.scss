@@ -4,11 +4,12 @@
 }
 
 .footer__container {
-  @include flex(column, space-between, normal, wrap);
-  min-width: 320px;
-  min-height: 240px;
-  padding: 40px 20px;
-  //background-color: $basic-grey;
+  @media (min-width: $mobile-width) {
+    @include flex(column, space-between, normal, wrap);
+    min-width: 320px;
+    height: 240px;
+    padding: 40px 20px;
+  }
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -34,7 +35,11 @@
   height: 24px;
 }
 
-//.footer__image {}
+.footer__image {
+  @media (min-width: $mobile-width) {
+    margin-top: 5px;
+  }
+}
 
 .footer__text {
   @include font($main-font, 400, 16px, 20px);

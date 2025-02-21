@@ -37,6 +37,9 @@
     }
 
     @media (min-width: $desktop-width) {
+      //width: 230px;
+      //height: 280px;
+
       &::before {
         @include pseudo(80px, 80px);
         margin: 0 0 31px;
@@ -94,6 +97,9 @@
     }
 
     @media (min-width: $desktop-width) {
+      //width: 246px;
+      //height: 280px;
+
       &::before {
         @include pseudo(80px, 80px);
         margin: 0 0 31px;
@@ -151,6 +157,9 @@
     }
 
     @media (min-width: $desktop-width) {
+      //width: 248px;
+      //height: 280px;
+
       &::before {
         @include pseudo(80px, 80px);
         margin: 0 0 31px;
@@ -208,6 +217,9 @@
     }
 
     @media (min-width: $desktop-width) {
+      //width: 250px;
+      //height: 280px;
+
       &::before {
         @include pseudo(80px, 80px);
         margin: 0 0 31px;
