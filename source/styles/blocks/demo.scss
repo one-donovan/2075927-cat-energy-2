@@ -1,13 +1,9 @@
 // слайдер с котом
-
-//.demo
-//.demo__img {}
-
 .demo__image {
   @media (min-width: $mobile-width) {
     display: flex;
-    justify-content: center;
-    //margin: 0;
+    //justify-content: center;
+    //margin: 0 auto;
   }
 
   @media (min-width: $tablet-width) {
@@ -17,10 +13,12 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
-    margin: 0 auto;
+    margin: -301px 0 0 660px;
   }
 }
 
+//.demo
+//.demo__img {}
 //.demo__img--before{}
 //.demo__img--after {}
 //.demo__button {}

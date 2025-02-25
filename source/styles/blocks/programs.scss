@@ -27,9 +27,11 @@
 
 .program--slim {
   position: relative;
-  margin: 0 0 20px;
+  //margin: 0 0 20px;
 
   @media (min-width: $mobile-width) {
+    margin: 0 0 30px;
+
     &::before {
       @include pseudo(50px, 50px);
       position: absolute;
@@ -53,8 +55,8 @@
   @media (min-width: $tablet-width) {
     &::before {
       @include pseudo(200px, 200px);
-      top: 81px;
-      left: 430px;
+      top: 92px;
+      left: 444px;
       border-radius: 50%;
       background-color: $accent-color;
     }
@@ -62,8 +64,8 @@
     &::after {
       @include pseudo(140px, 194px);
       position: absolute;
-      top: 70px;
-      left: 460px;
+      top: 81px;
+      left: 475px;
       background-image: url("../../images/vectors/vector-cat-1.svg");
       background-size: 100%;
       background-repeat: no-repeat;
@@ -95,7 +97,6 @@
 
 .program--pro {
   position: relative;
-  //margin: 0 0 20px;
   margin: 0;
 
   @media (min-width: $mobile-width) {
@@ -122,8 +123,8 @@
   @media (min-width: $tablet-width) {
     &::before {
       @include pseudo(200px, 200px);
-      top: 81px;
-      left: 430px;
+      top: 91px;
+      left: 445px;
       background-size: 100% 100%;
       border-radius: 50%;
       background-color: $accent-color;
@@ -132,8 +133,8 @@
     &::after {
       @include pseudo(269px, 113px);
       position: absolute;
-      top: 135px;
-      left: 397px;
+      top: 134px;
+      left: 411px;
       background-image: url("../../images/vectors/vector-cat-2.svg");
       background-size: 100%;
       background-repeat: no-repeat;

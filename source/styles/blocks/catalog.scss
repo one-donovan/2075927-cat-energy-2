@@ -1,5 +1,4 @@
 //каталог
-
 .catalog {
   @include flex(column, normal, center, wrap);
 
@@ -10,23 +9,29 @@
 
 .catalog__title {
   @include font($secondary-font, 400, 36px, 36px);
-  margin: 28px 0 56px;
+  //margin: 28px 0 56px;
+  margin: 0;
   padding: 0 23px 0 0;
   color: $basic-black;
   text-align: center;
   //border-top: 1px solid $border-color-index;
 
+  @media (min-width: $mobile-width) {
+    border-top: 1px solid $border-color-index;
+    padding: 0;
+  }
+
   @media (min-width: $tablet-width) {
     @include font($secondary-font, 400, 60px, 60px);
     align-self: flex-start;
-    padding: 0 0 84px 30px; // временный вариант !!!!
+    padding: 65px 0 84px 30px;
     margin: 0;
+    border: none;
   }
 
   @media (min-width: $desktop-width) {
     @include font($secondary-font, 400, 60px, 60px);
-    //align-self: flex-start;
-    padding: 0 0 84px 109px; // временный вариант !!!!
+    padding: 186px 0 78px 109px;
     margin: 0;
   }
 }
@@ -44,9 +49,11 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 1220px;
+    min-height: 1229px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 80px;
+    gap: 0 80px;
     margin: 0;
   }
 }

@@ -1,5 +1,5 @@
 .footer {
-  @include flex(column, normal, center, wrap);
+  //@include flex(column, normal, center, wrap);
   background-color: $basic-grey;
 }
 
@@ -29,15 +29,29 @@
 }
 
 .footer__logo-text {
-  @include flex(row, space-between, center, wrap);
-  align-self: center;
   width: 128px;
   height: 24px;
+
+  @media (min-width: $desktop-width) {
+    width: 128px;
+    height: 24px;
+    align-self: center;
+  }
 }
 
 .footer__image {
   @media (min-width: $mobile-width) {
-    margin-top: 5px;
+    margin: 0 0 0 75px;
+  }
+
+  @media (min-width: $tablet-width) {
+    //margin: 30px 0 0;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    //margin: 0;
+    //padding: 0;
   }
 }
 

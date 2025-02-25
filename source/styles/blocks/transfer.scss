@@ -1,0 +1,28 @@
+/* .mobile {
+
+}
+
+.card__tablet {
+
+} */
+
+
+.tablet {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.card__transfer {
+  display: block;
+}
+
+.card__tablet {
+  @media (min-width: $mobile-width) {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}

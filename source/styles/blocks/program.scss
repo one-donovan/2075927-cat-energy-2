@@ -120,24 +120,6 @@
     transform: translateX(10px);
   }
 
-  /*   &::after {
-    @include pseudo(24px, 12px);
-    position: relative;
-    bottom: 21px;
-    left: 92px;
-    background-image: url("../../icons/arrow-standart.svg");
-    background-repeat: no-repeat;
-    transition: 0.5s;
-  }
-
-  &::before {
-    @include pseudo(25px, 2.4px);
-    position: relative;
-    top: 15.8px;
-    left: 89px;
-    background-color: $basic-black;
-  } */
-
   @media (min-width: $mobile-width) {
     &::after {
       @include pseudo(24px, 12px);
@@ -162,12 +144,47 @@
   @media (min-width: $tablet-width) {
     @include font($secondary-font, 400, 20px, 29.64px);
     padding: 0;
+
+    &::after {
+      @include pseudo(24px, 12px);
+      position: relative;
+      bottom: 21px;
+      left: 132px;
+      background-image: url("../../icons/arrow-standart.svg");
+      background-repeat: no-repeat;
+      transition: 0.5s;
+    }
+
+    &::before {
+      @include pseudo(23px, 2.4px);
+      position: relative;
+      top: 15.8px;
+      left: 130px;
+      background-color: $basic-black;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    width: 161px;
+    &::after {
+      @include pseudo(24px, 12px);
+      position: relative;
+      bottom: 21px;
+      left: 132px;
+      background-image: url("../../icons/arrow-standart.svg");
+      background-repeat: no-repeat;
+      transition: 0.5s;
+    }
+
+    &::before {
+      @include pseudo(23px, 2.4px);
+      position: relative;
+      top: 15.8px;
+      left: 130px;
+      background-color: $basic-black;
+    }
+    /*     width: 161px;
     height: 38px;
-    padding: 0;
+    padding: 0; */
   }
 }
 

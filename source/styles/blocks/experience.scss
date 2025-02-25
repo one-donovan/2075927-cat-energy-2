@@ -1,49 +1,70 @@
 //блок живой пример
 .experience {
   min-height: 659px;
-  padding: 20px;
+  //padding: 20px;
   background-color: $live-example-color;
 
   @media (min-width: $mobile-width) {
-    padding: 26px 20px 20px;
+    padding: 20px;
+    //padding: 26px 20px 20px;
   }
 
   @media (min-width: $tablet-width) {
     padding: 45px 30px 0;
-    //background-color: #ffffff;
     background: linear-gradient(#ffffff 60%, #f2f2f2 10%);
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     flex-flow: row wrap;
-    width: 1440px;
-    min-height: 598px;
+    width: 100%;
+    height: 598px;
     margin: 0 auto;
+    padding: 0;
     background: linear-gradient(#ffffff 20%, #f2f2f2 0%);
   }
 }
 
+.experience__wrapper {
+  @media (min-width: $mobile-width) {
+    width: 320px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
+  }
+}
+
 .experience__title {
-  @include font($secondary-font, 400, 36px, 40px);
-  margin: 0;
-  padding: 0 0 40px;
   color: $basic-black;
 
   @media (min-width: $mobile-width) {
-    display: flex;
-    justify-content: center;
+    @include font($secondary-font, 400, 36px, 40px);
+    width: 320px;
+    margin: 0;
+    padding: 0 0 40px;
+    color: $basic-black;
   }
 
   @media (min-width: $tablet-width) {
     @include font($secondary-font, 400, 60px, 60px);
-    justify-content: flex-start;
+    width: 325px;
+    //justify-content: flex-start;
     padding: 0 0 60px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 360px;
-    height: 60px;
+    @include font($secondary-font, 400, 60px, 60px);
+    width: 100%;
+    padding: 0;
+    margin: 0 0 146px;
   }
 }
 
@@ -54,26 +75,28 @@
   }
 }
 
-
 .experience__demo {
   @media (min-width: $tablet-width) {
     padding: 99px 0 0;
   }
 
   @media (min-width: $desktop-width) {
+    //margin-top: -100px;
+    margin: 0;
     padding: 0;
   }
 }
 
 .experience__description {
-  @include font($main-font, 400, 14px, 18px);
-  margin: 0 0 20px;
   color: $basic-text-color;
-  text-align: left;
+  //text-align: left;
 
   @media (min-width: $mobile-width) {
-    justify-content: center;
-    display: flex;
+    @include font($main-font, 400, 14px, 18px);
+    width: 708px;
+    margin: 0 0 20px;
+    //justify-content: center;
+    //display: flex;
   }
 
   @media (min-width: $tablet-width) {
@@ -83,7 +106,8 @@
 
   @media (min-width: $desktop-width) {
     @include font($main-font, 400, 16px, 24px);
-    margin: 0 0 40px;
+    width: 436px;
+    margin: 0 0 71px;
   }
 }
 
@@ -94,7 +118,7 @@
   list-style-type: none;
 
   @media (min-width: $mobile-width) {
-    justify-content: center;
+    //display: flex;
   }
 
   @media (min-width: $tablet-width) {
@@ -104,8 +128,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    justify-content: center;
-    margin-bottom: 55px;
+    //justify-content: center;
+    margin-bottom: 59px;
     padding: 0;
   }
 }
@@ -126,6 +150,10 @@
 
 .experience__item:not(:last-child) {
   margin: 0 32px 0 0;
+
+  @media (min-width: $desktop-width) {
+    margin: 0 42px 0 0;
+  }
 }
 
 .experience__caption-primary {
@@ -139,6 +167,10 @@
   @media (min-width: $tablet-width) {
     @include font($secondary-font, 400, 30px, 37px);
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
 
 .experience__caption-secondary {
@@ -148,25 +180,25 @@
   margin: 0 0 0 20px;
   padding: 0;
   color: $basic-text-color;
-  background-color: $live-example-color;
+  //background-color: $live-example-color;
   text-align: center;
   text-transform: lowercase;
 
   @media (min-width: $tablet-width) {
     @include font($main-font, 400, 14px, 14px);
-    margin: 0 0 0 40px;
-    background-color: #ffffff;
+    width: 125px;
+    background-color: $basic-white;
+    margin: 5px 0 0 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 125px;
+    background-color: #f2f2f2;
+    margin: 5px 0 0 15px;
   }
 }
 
 .experience__footer {
   margin: 0 0 18px;
   text-align: center;
-}
-
-
-.tablet {
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
 }

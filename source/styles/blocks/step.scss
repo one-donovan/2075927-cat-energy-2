@@ -6,15 +6,8 @@
       background-color: $accent-color;
       background-image: url("../../images/vectors/leaf.svg");
       background-repeat: no-repeat;
-      background-position: center;
-    }
-
-    &::after {
-      @include pseudo(30px, 32px);
-      position: absolute;
-      top: 13px;
-      left: 16px;
-      margin: 0;
+      background-position: center center;
+      background-size: 30px 32px;
     }
   }
 
@@ -25,34 +18,41 @@
       background-color: $accent-color;
       background-repeat: no-repeat;
       background-image: url("../../images/vectors/leaf.svg");
-      background-position: center;
+      background-position: center center;
+      background-size: 30px 32px;
     }
 
     &::after {
-      @include pseudo(30px, 32px);
+      @include font($secondary-font, 400, 280px, 280px);
+      content: counter(number);
+      counter-increment: number;
       position: absolute;
-      top: 10px;
-      left: 20px;
-      margin: 0;
+      top: -38px;
+      left: 119px;
+      color: #f2f2f2;
+      z-index: -1;
     }
 
     @media (min-width: $desktop-width) {
-      //width: 230px;
-      //height: 280px;
-
       &::before {
         @include pseudo(80px, 80px);
         margin: 0 0 31px;
         background-color: $accent-color;
         background-image: url("../../images/vectors/leaf.svg");
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: center center;
+        background-size: 30px 32px;
       }
 
       &::after {
-        @include pseudo(30px, 32px);
+        @include font($secondary-font, 400, 280px, 280px);
+        content: counter(number);
+        counter-increment: number;
         position: absolute;
-        margin: 0;
+        top: -38px;
+        left: 119px;
+        color: #f2f2f2;
+        z-index: -1;
       }
     }
   }
@@ -85,34 +85,41 @@
       background-color: $accent-color;
       background-image: url("../../images/vectors/pot.svg");
       background-repeat: no-repeat;
-      background-position: center;
+      background-position: center center;
+      background-size: 30px 32px;
     }
 
     &::after {
-      @include pseudo(30px, 32px);
+      @include font($secondary-font, 400, 280px, 280px);
+      content: counter(number);
+      counter-increment: number;
       position: absolute;
-      top: 10px;
-      left: 20px;
-      margin: 0;
+      top: -38px;
+      left: 119px;
+      color: #f2f2f2;
+      z-index: -1;
     }
 
     @media (min-width: $desktop-width) {
-      //width: 246px;
-      //height: 280px;
-
       &::before {
         @include pseudo(80px, 80px);
         margin: 0 0 31px;
         background-color: $accent-color;
         background-image: url("../../images/vectors/pot.svg");
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: center center;
+        background-size: 30px 32px;
       }
 
       &::after {
-        @include pseudo(30px, 32px);
+        @include font($secondary-font, 400, 280px, 280px);
+        content: counter(number);
+        counter-increment: number;
         position: absolute;
-        margin: 0;
+        top: -38px;
+        left: 119px;
+        color: #f2f2f2;
+        z-index: -1;
       }
     }
   }
@@ -145,34 +152,41 @@
       background-color: $accent-color;
       background-image: url("../../images/vectors/fork_spoon.svg");
       background-repeat: no-repeat;
-      background-position: center;
+      background-position: center center;
+      background-size: 30px 32px;
     }
 
     &::after {
-      @include pseudo(30px, 32px);
+      @include font($secondary-font, 400, 280px, 280px);
+      content: counter(number);
+      counter-increment: number;
       position: absolute;
-      top: 10px;
-      left: 20px;
-      margin: 0;
+      top: -38px;
+      left: 119px;
+      color: #f2f2f2;
+      z-index: -1;
     }
 
     @media (min-width: $desktop-width) {
-      //width: 248px;
-      //height: 280px;
-
       &::before {
         @include pseudo(80px, 80px);
         margin: 0 0 31px;
         background-color: $accent-color;
         background-image: url("../../images/vectors/fork_spoon.svg");
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: center center;
+        background-size: 30px 32px;
       }
 
       &::after {
-        @include pseudo(30px, 32px);
+        @include font($secondary-font, 400, 280px, 280px);
+        content: counter(number);
+        counter-increment: number;
         position: absolute;
-        margin: 0;
+        top: -38px;
+        left: 119px;
+        color: #f2f2f2;
+        z-index: -1;
       }
     }
   }
@@ -205,35 +219,41 @@
       background-color: $accent-color;
       background-image: url("../../images/vectors/clock.svg");
       background-repeat: no-repeat;
-      background-position: center;
+      background-position: center center;
+      background-size: 30px 32px;
     }
 
     &::after {
-      @include pseudo(30px, 32px);
+      @include font($secondary-font, 400, 280px, 280px);
+      content: counter(number);
+      counter-increment: number;
       position: absolute;
-      top: 10px;
-      left: 20px;
-      margin: 0;
+      top: -38px;
+      left: 119px;
+      color: #f2f2f2;
+      z-index: -1;
     }
 
     @media (min-width: $desktop-width) {
-      //width: 250px;
-      //height: 280px;
-
       &::before {
         @include pseudo(80px, 80px);
         margin: 0 0 31px;
         background-color: $accent-color;
-
         background-image: url("../../images/vectors/clock.svg");
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: center center;
+        background-size: 30px 32px;
       }
 
       &::after {
-        @include pseudo(30px, 32px);
+        @include font($secondary-font, 400, 280px, 280px);
+        content: counter(number);
+        counter-increment: number;
         position: absolute;
-        margin: 0;
+        top: -38px;
+        left: 119px;
+        color: #f2f2f2;
+        z-index: -1;
       }
     }
   }

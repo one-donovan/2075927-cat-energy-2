@@ -1,5 +1,4 @@
 //блок с адресом
-
 .address__street {
   @include font($main-font, 400, 14px, 20px);
   color: $basic-text-color;
@@ -9,6 +8,12 @@
   @media (min-width: $tablet-width) {
     @include font($main-font, 400, 16px, 20px);
     text-align: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font($main-font, 400, 16px, 20px);
+    text-align: left;
+    padding: 0 0 0 46px;
   }
 }
 
@@ -22,5 +27,11 @@
   @media (min-width: $tablet-width) {
     @include font($main-font, 400, 16px, 20px);
     text-align: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font($main-font, 400, 16px, 20px);
+    text-align: left;
+    padding: 0 0 0 46px;
   }
 }

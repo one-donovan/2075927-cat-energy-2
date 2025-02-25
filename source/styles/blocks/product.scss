@@ -1,8 +1,10 @@
 .product {
-  //border-top: 1px solid #cdcdcd;
-
   @media (min-width: $mobile-width) {
-    //border-top: 1px solid #cdcdcd;
+    border-top: 1px solid #cdcdcd;
+
+    &:last-child {
+      border-bottom: 1px solid #cdcdcd;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -11,31 +13,33 @@
     grid-template-rows: repeat(1, 1fr);
     gap: 10px;
     padding: 26px 38px 28px;
-    //border: 1px solid #cdcdcd;
+    border: 1px solid #cdcdcd;
   }
 
   @media (min-width: $desktop-width) {
-    //@include flex(row, space-between, center, wrap);
     display: grid;
     gap: 0;
     grid-template-columns: repeat(4, 1fr);
     min-width: 896px;
     height: 72px;
     padding: 0;
-    //border: none;
-    //border-top: 1px solid #cdcdcd;
+    border-bottom: 1px solid #cdcdcd;
+
+    &:first-child {
+      border-top: 1px solid #cdcdcd;
+    }
   }
 }
 
 .product:last-child {
-  //border-bottom: 1px solid #cdcdcd;
+  //
 
   @media (min-width: $tablet-width) {
-    //border: none;
+    //
   }
 
   @media (min-width: $desktop-width) {
-    border-bottom: 1px solid #cdcdcd;
+    //
   }
 }
 

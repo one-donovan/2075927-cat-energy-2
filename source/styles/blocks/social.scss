@@ -10,8 +10,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
-    align-self: center;
-    padding: 0;
+    padding: 20px 65px;
     margin-top: 12px;
   }
 
@@ -24,7 +23,7 @@
     width: 132px;
     height: 22px;
     margin: 0;
-    padding: 0;
+    padding: 0 0 0 137px;
   }
 }
 
@@ -34,7 +33,12 @@
   }
 } */
 
-//.social__item {}
+.social__item {
+  @media (min-width: $desktop-width) {
+    width: 28px;
+    height: 22px;
+  }
+}
 //.social__icon-image {}
 //.social__link--vk {}
 //.social__link--yt {}

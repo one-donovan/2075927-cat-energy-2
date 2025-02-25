@@ -22,12 +22,14 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    gap: 35px;
     justify-content: center;
     margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
     width: 704px;
+    gap: 35px;
     display: flex;
     justify-content: end;
   }
@@ -36,53 +38,63 @@
 .nav__item {
   position: relative;
   margin: 0;
-  padding: 13px 20px 9px;
 
-  &::after {
-    @media (min-width: $tablet-width) {
-      @include pseudo(64px, 2px);
-      position: absolute;
-      background-color: $accent-color;
-      bottom: -10px;
-      left: 24px;
+  @media (min-width: $tablet-width) {
+    //padding: 13px 20px 9px;
+    padding: 0;
+
+    &:first-child {
+      &::after {
+        @include pseudo(64px, 2px);
+        position: relative;
+        background-color: $accent-color;
+        bottom: -10px;
+        left: 0;
+      }
     }
   }
 
   @media (min-width: $desktop-width) {
     margin: 0;
     padding: 0;
+
+    &:first-child {
+      &::after {
+        @include pseudo(72px, 2px);
+        position: relative;
+        background-color: $basic-white;
+        bottom: -10px;
+        left: 0;
+      }
+    }
   }
 }
-
-/* .nav__item--current {
-  @media (min-width: $tablet-width) {
-    @include pseudo(64px, 2px);
-    position: relative;
-    color: $accent-color;
-    bottom: 10px;
-    left: 10px;
-  }
-} */
 
 .nav__logo-first {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
-  //width: 33px;
-  //height: 38px;
   margin: 0;
   text-decoration: none;
+
+  /*   @media (min-width: $tablet-width) {
+    &:not(:last-child) {
+      margin: 0;
+    }
+  } */
 }
 
-.logo-image-link__icon {   //куда поместить тег
+.logo-image-link__icon {
   @media (min-width: $mobile-width) {
     margin: 0 56px 0 0;
   }
 
   @media (min-width: $tablet-width) {
-    //width: 174px;
-    //height: 50px;
-    //margin: 25px 13px 0 -3px;
+    margin: 0 13px 0 0;
+
+    /*     &:last-child {
+      margin: 0;
+    } */
   }
 
   @media (min-width: $desktop-width) {
@@ -122,15 +134,45 @@
   }
 
   @media (min-width: $desktop-width) {
+    color: $basic-white;
+
     @include font($secondary-font, 400, 20px, 29.64px);
   }
+}
+
+.nav__item--current {
+  @media (min-width: $tablet-width) {
+    &:nth-child(2) {
+      &::after {
+        @include pseudo(154px, 2px);
+        position: relative;
+        background-color: $accent-color;
+        bottom: -10px;
+        left: 0;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &:nth-child(2) {
+      &::after {
+        @include pseudo(171px, 2px);
+        position: relative;
+        background-color: $accent-color;
+        bottom: -10px;
+        left: 0;
+      }
+    }
+  }
+}
+
+.nav__link--current {
+  color: $basic-black;
 }
 
 .nav__menu-button {
   @include flex(column, center, center, wrap);
   place-content: center center;
-
-
   width: 24px;
   height: 24px;
   row-gap: 6px;
@@ -160,6 +202,6 @@
   background-color: $basic-black;
 
   &:hover {
-    color: #d24899; //не работает ?
+    color: #d24899;
   }
 }

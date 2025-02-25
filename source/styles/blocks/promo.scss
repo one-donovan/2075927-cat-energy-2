@@ -1,13 +1,27 @@
 .promo {
-  @include flex(column, center, center, wrap);
-  position: relative;
-  margin: 0 0 42px;
-  //background: linear-gradient(to right, $basic-white 50%, $accent-color 50%);
+  //@include flex(column, center, center, wrap);
+  //position: relative;
+  //margin: 0 0 42px;
+
+  @media (min-width: $mobile-width) {
+    margin: 0 0 42px;
+    position: relative;
+    //
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 42px;
+    position: relative;
+  }
+
+  @media (min-width: $desktop-width) {
+    //
+  }
 }
 
 .promo__description {
-  @include flex(column, center, center, wrap);
   @include font($main-font, 400, 16px, 20px);
+  //@include flex(column, center, center, wrap);
   width: 280px;
   height: 290px;
   margin: 0;
@@ -17,14 +31,11 @@
   color: $basic-white;
   text-align: center;
 
-  /*   @media (min-width: $tablet-width) {
-    padding: 0 125px 0 0;
-  } */
-
   &::before {
     @include pseudo(78px, 80px);
     position: absolute;
     top: 59px;
+    left: 100px;
     background-image: url("../../icons/present.svg");
     background-size: 100%;
     background-repeat: no-repeat;
@@ -37,7 +48,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    align-content: end;
+    //align-content: end;
     width: 707px;
     height: 200px;
     background: linear-gradient(-90deg, rgba(104, 183, 56, 0.6) 100%, transparent 50%), url("../../images/catalog/promo-cat/cat-in-backpack-tablet@2x.png");
