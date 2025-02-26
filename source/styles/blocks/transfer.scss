@@ -1,15 +1,14 @@
-/* .mobile {
-
-}
-
-.card__tablet {
-
-} */
-
-
-.tablet {
-  @media (min-width: $tablet-width) {
+.off {
+  @media (min-width: $mobile-width) {
     display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    //display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
   }
 }
 
@@ -25,4 +24,8 @@
   @media (min-width: $tablet-width) {
     display: flex;
   }
+}
+
+.tablet {
+  display: none;
 }

@@ -1,17 +1,15 @@
 //блок живой пример
 .experience {
   min-height: 659px;
-  //padding: 20px;
   background-color: $live-example-color;
 
   @media (min-width: $mobile-width) {
-    padding: 20px;
-    //padding: 26px 20px 20px;
+    margin: 0;
   }
 
   @media (min-width: $tablet-width) {
     padding: 45px 30px 0;
-    background: linear-gradient(#ffffff 60%, #f2f2f2 10%);
+    background: linear-gradient($basic-white 58%, $basic-grey 10%);
   }
 
   @media (min-width: $desktop-width) {
@@ -21,18 +19,19 @@
     height: 598px;
     margin: 0 auto;
     padding: 0;
-    background: linear-gradient(#ffffff 20%, #f2f2f2 0%);
+    background: linear-gradient($basic-white 24%, $basic-grey 0%);
   }
 }
 
 .experience__wrapper {
   @media (min-width: $mobile-width) {
-    width: 320px;
+    width: 280px;
     margin: 0 auto;
+    padding: 21px 0;
   }
 
   @media (min-width: $tablet-width) {
-    width: 768px;
+    width: 708px;
     margin: 0;
   }
 
@@ -47,16 +46,15 @@
 
   @media (min-width: $mobile-width) {
     @include font($secondary-font, 400, 36px, 40px);
-    width: 320px;
+    width: 280px;
     margin: 0;
-    padding: 0 0 40px;
+    padding: 3px 0 40px;
     color: $basic-black;
   }
 
   @media (min-width: $tablet-width) {
     @include font($secondary-font, 400, 60px, 60px);
     width: 325px;
-    //justify-content: flex-start;
     padding: 0 0 60px;
   }
 
@@ -69,6 +67,10 @@
 }
 
 .experience__content {
+  @media (min-width: $mobile-width) {
+    width: 280px;
+  }
+
   @media (min-width: $desktop-width) {
     width: 436px;
     height: 96px;
@@ -81,7 +83,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    //margin-top: -100px;
     margin: 0;
     padding: 0;
   }
@@ -89,25 +90,23 @@
 
 .experience__description {
   color: $basic-text-color;
-  //text-align: left;
 
   @media (min-width: $mobile-width) {
     @include font($main-font, 400, 14px, 18px);
-    width: 708px;
+    width: 280px;
     margin: 0 0 20px;
-    //justify-content: center;
-    //display: flex;
   }
 
   @media (min-width: $tablet-width) {
     @include font($main-font, 400, 16px, 24px);
-    margin: 0 0 40px;
+    width: 708px;
+    margin: 0 0 55px;
   }
 
   @media (min-width: $desktop-width) {
     @include font($main-font, 400, 16px, 24px);
-    width: 436px;
-    margin: 0 0 71px;
+    width: 433px;
+    margin: 0 0 70px;
   }
 }
 
@@ -118,7 +117,7 @@
   list-style-type: none;
 
   @media (min-width: $mobile-width) {
-    //display: flex;
+    //margin: 0;
   }
 
   @media (min-width: $tablet-width) {
@@ -128,7 +127,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    //justify-content: center;
     margin-bottom: 59px;
     padding: 0;
   }
@@ -151,6 +149,10 @@
 .experience__item:not(:last-child) {
   margin: 0 32px 0 0;
 
+  @media (min-width: $tablet-width) {
+    margin: 0 43px 0 0;
+  }
+
   @media (min-width: $desktop-width) {
     margin: 0 42px 0 0;
   }
@@ -166,6 +168,7 @@
 
   @media (min-width: $tablet-width) {
     @include font($secondary-font, 400, 30px, 37px);
+    width: 162px;
   }
 
   @media (min-width: $desktop-width) {
@@ -174,27 +177,37 @@
 }
 
 .experience__caption-secondary {
-  @include font($main-font, 400, 12px, 12px);
-  width: 77px;
-  height: 24px;
-  margin: 0 0 0 20px;
-  padding: 0;
-  color: $basic-text-color;
-  //background-color: $live-example-color;
-  text-align: center;
   text-transform: lowercase;
+  text-align: center;
+
+  @media (min-width: $mobile-width) {
+    @include font($main-font, 400, 12px, 12px);
+    width: 77px;
+    height: 24px;
+    margin: 0 0 0 20px;
+    padding: 0;
+    color: $basic-text-color;
+    background-color: $live-example-color;
+  }
 
   @media (min-width: $tablet-width) {
     @include font($main-font, 400, 14px, 14px);
-    width: 125px;
+    width: 114px;
     background-color: $basic-white;
-    margin: 5px 0 0 15px;
+    margin: 5px 0 0 22px;
   }
 
   @media (min-width: $desktop-width) {
     width: 125px;
-    background-color: #f2f2f2;
-    margin: 5px 0 0 15px;
+    background-color: $basic-grey;
+    margin: 3px 0 0 17px;
+  }
+}
+
+.experience__caption--additional {
+  @media (min-width: $tablet-width) {
+    width: 135px;
+    margin: 4px 0 0 12px;
   }
 }
 

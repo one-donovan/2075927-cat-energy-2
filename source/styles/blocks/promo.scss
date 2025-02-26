@@ -1,8 +1,4 @@
 .promo {
-  //@include flex(column, center, center, wrap);
-  //position: relative;
-  //margin: 0 0 42px;
-
   @media (min-width: $mobile-width) {
     margin: 0 0 42px;
     position: relative;
@@ -21,12 +17,11 @@
 
 .promo__description {
   @include font($main-font, 400, 16px, 20px);
-  //@include flex(column, center, center, wrap);
   width: 280px;
   height: 290px;
   margin: 0;
   padding: 146px 0 0;
-  background: linear-gradient(-90deg, rgba(104, 183, 56, 0.6) 100%, transparent 50%), url("../../images/catalog/promo-cat/cat-in-backpack-mobile@1x.png");
+  background: linear-gradient(-90deg, rgba(104, 183, 56, 0.6) 100%, transparent 50%), url("../../images/promo/promo-cat-mobile@1x.png");
   background-repeat: no-repeat;
   color: $basic-white;
   text-align: center;
@@ -36,7 +31,7 @@
     position: absolute;
     top: 59px;
     left: 100px;
-    background-image: url("../../icons/present.svg");
+    background-image: url("../../icons/icon-gift.svg");
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -51,7 +46,7 @@
     //align-content: end;
     width: 707px;
     height: 200px;
-    background: linear-gradient(-90deg, rgba(104, 183, 56, 0.6) 100%, transparent 50%), url("../../images/catalog/promo-cat/cat-in-backpack-tablet@2x.png");
+    background: linear-gradient(-90deg, rgba(104, 183, 56, 0.6) 100%, transparent 50%), url("../../images/promo/promo-cat-tablet@1x.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -61,7 +56,7 @@
     width: 245px;
     height: 288px;
     align-content: center;
-    background: linear-gradient(-90deg, rgba(104, 183, 56, 0.6) 100%, transparent 50%), url("../../images/catalog/promo-cat/cat--in-backpack-desktop@2x.png");
+    background: linear-gradient(-90deg, rgba(104, 183, 56, 0.6) 100%, transparent 50%), url("../../images/promo/promo-cat-desktop@1x.png");
     background-repeat: no-repeat;
   }
 }

@@ -1,20 +1,19 @@
 .instructions {
   @include flex(column, normal, center, wrap);
-  width: 320px;
-  margin: 0 auto;
 
   @media (min-width: $mobile-width) {
-    //
+    width: 280px;
+    margin: 0 auto 50px;
   }
 
   @media (min-width: $tablet-width) {
-    width: 768px;
+    width: 708px;
     margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
     width: 1220px;
-    margin: 0 auto 128px;
+    margin: 0 auto 107px;
   }
 }
 
@@ -24,17 +23,20 @@
   @media (min-width: $mobile-width) {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    margin: 0 0 49px;
-    padding: 0 8px 0 0;
+    width: 280px;
+    margin: 0;
+    padding: 0;
     list-style-type: none;
   }
 
   @media (min-width: $tablet-width) {
+    width: 708px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 60px;
+    justify-content: center;
+    gap: 134px 60px;
     margin: 0;
-    padding: 20px 20px 60px;
+    padding: 0 0 82px;
     border-bottom: 1px solid #e6e6e6;
   }
 
@@ -61,7 +63,7 @@
   }
 
   @media (min-width: $mobile-width) {
-    //
+    //width: 100px;
   }
 
   @media (min-width: $tablet-width) {
@@ -82,20 +84,14 @@
 }
 
 .instructions__title {
-  /*   @media (min-height: $mobile-width) {
-
-  } */
-
-
   @include font($secondary-font, 400, 36px, 40px);
   align-self: flex-start;
   margin: 0 0 40px;
-  padding: 0 0 0 20px;
   color: $basic-black;
 
   @media (min-width: $tablet-width) {
     @include font($secondary-font, 400, 60px, 60px);
-    //padding: 0;
+    margin: 0 0 72px;
   }
 
   @media (min-width: $desktop-width) {
@@ -109,16 +105,18 @@
 
   @media (min-width: $mobile-width) {
     @include font($main-font, 400, 14px, 18px);
+    width: 200px;
     margin: 0;
-    //padding: 2px 0 0;
   }
 
   @media (min-width: $tablet-width) {
     @include font($main-font, 400, 16px, 24px);
+    width: 245px;
   }
 
   @media (min-width: $desktop-width) {
     @include font($main-font, 400, 16px, 24px);
+    width: 245px;
     padding: 0;
   }
 }

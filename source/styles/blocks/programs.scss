@@ -27,10 +27,9 @@
 
 .program--slim {
   position: relative;
-  //margin: 0 0 20px;
 
   @media (min-width: $mobile-width) {
-    margin: 0 0 30px;
+    margin: 0 0 22px;
 
     &::before {
       @include pseudo(50px, 50px);
@@ -46,13 +45,15 @@
       position: absolute;
       top: 20px;
       left: 28px;
-      background-image: url("../../images/vectors/vector-cat-1.svg");
+      background-image: url("../../icons/black-cat-slim.svg");
       background-repeat: no-repeat;
       background-size: 100%;
     }
   }
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+
     &::before {
       @include pseudo(200px, 200px);
       top: 92px;
@@ -66,7 +67,7 @@
       position: absolute;
       top: 81px;
       left: 475px;
-      background-image: url("../../images/vectors/vector-cat-1.svg");
+      background-image: url("../../icons/black-cat-slim.svg");
       background-size: 100%;
       background-repeat: no-repeat;
     }
@@ -88,7 +89,7 @@
       position: absolute;
       top: 41px;
       left: 67px;
-      background-image: url("../../images/vectors/vector-cat-1.svg");
+      background-image: url("../../icons/black-cat-slim.svg");
       background-size: 100%;
       background-repeat: no-repeat;
     }
@@ -114,7 +115,7 @@
       position: absolute;
       top: 35px;
       left: 10px;
-      background-image: url("../../images/vectors/vector-cat-2.svg");
+      background-image: url("../../icons/black-cat-pro.svg");
       background-repeat: no-repeat;
       background-size: 100%;
     }
@@ -135,7 +136,7 @@
       position: absolute;
       top: 134px;
       left: 411px;
-      background-image: url("../../images/vectors/vector-cat-2.svg");
+      background-image: url("../../icons/black-cat-pro.svg");
       background-size: 100%;
       background-repeat: no-repeat;
     }
@@ -155,7 +156,7 @@
       position: absolute;
       top: 67px;
       left: 33px;
-      background-image: url("../../images/vectors/vector-cat-2.svg");
+      background-image: url("../../icons/black-cat-pro.svg");
       background-size: 100%;
       background-repeat: no-repeat;
     }

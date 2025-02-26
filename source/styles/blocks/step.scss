@@ -1,10 +1,14 @@
+.step {
+  width: 280px;
+}
+
 .step--leaf {
   @media (min-width: $mobile-width) {
     &::before {
       @include pseudo(60px, 60px);
       margin: 0 20px 0 0;
       background-color: $accent-color;
-      background-image: url("../../images/vectors/leaf.svg");
+      background-image: url("../../icons/icon-leaf.svg");
       background-repeat: no-repeat;
       background-position: center center;
       background-size: 30px 32px;
@@ -17,7 +21,7 @@
       margin: 0 0 31px;
       background-color: $accent-color;
       background-repeat: no-repeat;
-      background-image: url("../../images/vectors/leaf.svg");
+      background-image: url("../../icons/icon-leaf.svg");
       background-position: center center;
       background-size: 30px 32px;
     }
@@ -38,7 +42,7 @@
         @include pseudo(80px, 80px);
         margin: 0 0 31px;
         background-color: $accent-color;
-        background-image: url("../../images/vectors/leaf.svg");
+        background-image: url("../../icons/icon-leaf.svg");
         background-repeat: no-repeat;
         background-position: center center;
         background-size: 30px 32px;
@@ -64,7 +68,7 @@
       @include pseudo(60px, 60px);
       margin: 0 20px 0 0;
       background-color: $accent-color;
-      background-image: url("../../images/vectors/pot.svg");
+      background-image: url("../../icons/icon-water.svg");
       background-repeat: no-repeat;
       background-position: center;
     }
@@ -83,7 +87,7 @@
       @include pseudo(80px, 80px);
       margin: 0 0 31px;
       background-color: $accent-color;
-      background-image: url("../../images/vectors/pot.svg");
+      background-image: url("../../icons/icon-water.svg");
       background-repeat: no-repeat;
       background-position: center center;
       background-size: 30px 32px;
@@ -105,7 +109,7 @@
         @include pseudo(80px, 80px);
         margin: 0 0 31px;
         background-color: $accent-color;
-        background-image: url("../../images/vectors/pot.svg");
+        background-image: url("../../icons/icon-water.svg");
         background-repeat: no-repeat;
         background-position: center center;
         background-size: 30px 32px;
@@ -131,7 +135,7 @@
       @include pseudo(60px, 60px);
       margin: 0 20px 0 0;
       background-color: $accent-color;
-      background-image: url("../../images/vectors/fork_spoon.svg");
+      background-image: url("../../icons/icon-eat.svg");
       background-repeat: no-repeat;
       background-position: center;
     }
@@ -150,7 +154,7 @@
       @include pseudo(80px, 80px);
       margin: 0 0 31px;
       background-color: $accent-color;
-      background-image: url("../../images/vectors/fork_spoon.svg");
+      background-image: url("../../icons/icon-eat.svg");
       background-repeat: no-repeat;
       background-position: center center;
       background-size: 30px 32px;
@@ -172,7 +176,7 @@
         @include pseudo(80px, 80px);
         margin: 0 0 31px;
         background-color: $accent-color;
-        background-image: url("../../images/vectors/fork_spoon.svg");
+        background-image: url("../../icons/icon-eat.svg");
         background-repeat: no-repeat;
         background-position: center center;
         background-size: 30px 32px;
@@ -198,7 +202,7 @@
       @include pseudo(60px, 60px);
       margin: 0 20px 0 0;
       background-color: $accent-color;
-      background-image: url("../../images/vectors/clock.svg");
+      background-image: url("../../icons/icon-time.svg");
       background-repeat: no-repeat;
       background-position: center;
     }
@@ -217,7 +221,7 @@
       @include pseudo(80px, 80px);
       margin: 0 0 31px;
       background-color: $accent-color;
-      background-image: url("../../images/vectors/clock.svg");
+      background-image: url("../../icons/icon-time.svg");
       background-repeat: no-repeat;
       background-position: center center;
       background-size: 30px 32px;
@@ -239,7 +243,7 @@
         @include pseudo(80px, 80px);
         margin: 0 0 31px;
         background-color: $accent-color;
-        background-image: url("../../images/vectors/clock.svg");
+        background-image: url("../../icons/icon-time.svg");
         background-repeat: no-repeat;
         background-position: center center;
         background-size: 30px 32px;

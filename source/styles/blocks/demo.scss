@@ -2,13 +2,11 @@
 .demo__image {
   @media (min-width: $mobile-width) {
     display: flex;
-    //justify-content: center;
-    //margin: 0 auto;
   }
 
   @media (min-width: $tablet-width) {
     display: flex;
-    margin: 0 auto;
+    margin: 16px auto 80px;
   }
 
   @media (min-width: $desktop-width) {
