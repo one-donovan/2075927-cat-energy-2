@@ -5,16 +5,7 @@
   width: 320px;
   height: 209px;
   justify-content: center;
-  //border-top: 1px solid $border-color-catalog;
-}
 
-/* .card:not(:last-child) {
-  display: grid;
-  grid-template-columns: repeat(2, 140px);
-  grid-auto-rows: max-content;
-} */
-
-.card--tablet {
   @media (min-width: $mobile-width) {
     border-bottom: 1px solid #ebebeb;
 
@@ -36,18 +27,18 @@
   }
 
   @media (min-width: $tablet-width) {
-    @include flex(column, space-around, center, wrap);
+    @include flex(column, start, center, wrap);
     width: 324px;
-    height: 511px;
+    min-height: 511px;
     align-content: center;
-    padding: 37px;
-    background: linear-gradient($basic-white 10%, $basic-grey 10%);
+    padding: 29px;
+    background: linear-gradient($basic-white 16%, $basic-grey 16%);
   }
 
   @media (min-width: $desktop-width) {
     @include flex(column, start, center, wrap);
     width: 245px;
-    height: 511px;
+    min-height: 511px;
     align-content: center;
     padding: 37px;
     background: linear-gradient(transparent 20%, $basic-grey 10%);
@@ -55,13 +46,13 @@
 }
 
 .card__list {
-  margin: 0 0 6px;
   padding: 0;
   list-style-type: none;
 
   @media (min-width: $tablet-width) {
     @include flex(column, space-between, normal, wrap);
-    margin: 0;
+    width: 250px;
+    margin-bottom: 35px;
     gap: 10px;
   }
 }
@@ -95,7 +86,7 @@
 
   @media (min-width: $tablet-width) {
     @include font($secondary-font, 400, 20px, 24px);
-    margin: 0 0 20px;
+    margin: 0;
     padding: 0;
     text-align: center;
   }
@@ -130,7 +121,7 @@
 
   @media (min-width: $tablet-width) {
     @include font($main-font, 400, 16px, 20px);
-    padding: 0 150px 0 0;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -157,8 +148,21 @@
   }
 }
 
-.card__link {
+.card__link-image {
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 35px;
+  }
+}
+
+.card__link-title {
+  text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 26px;
+    padding: 0 55px;
+  }
 }
 
 .card__image {
@@ -230,6 +234,7 @@
   border: none;
   cursor: pointer;
   text-transform: uppercase;
+  text-decoration: none;
 
   @media (min-width: $mobile-width) {
     width: 280px;
