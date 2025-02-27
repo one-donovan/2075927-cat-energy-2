@@ -13,17 +13,16 @@
     min-height: 200px;
     background: linear-gradient(-90deg, rgba(104, 183, 56, 0.6) 100%, transparent 50%), url("../../images/promo/promo-cat-tablet@1x.png");
     background-repeat: no-repeat;
-    align-content: center;
-    //background-size: cover;
-    //background-position: center;
     margin: 0 0 70px;
     position: relative;
   }
 
   @media (min-width: $desktop-width) {
     width: 245px;
-    height: 288px;
+    padding: 44px 10px;
+    margin: 0;
     align-content: center;
+    align-items: start;
     background: linear-gradient(-90deg, rgba(104, 183, 56, 0.6) 100%, transparent 50%), url("../../images/promo/promo-cat-desktop@1x.png");
     background-repeat: no-repeat;
   }

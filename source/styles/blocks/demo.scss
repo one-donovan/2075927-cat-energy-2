@@ -1,4 +1,3 @@
-// слайдер с котом
 .demo__image {
   @media (min-width: $mobile-width) {
     display: flex;
@@ -18,13 +17,20 @@
 
 //.demo__img--before{}
 //.demo__img--after {}
+//.demo__img {}
+
+.demo {
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    align-self: center;
+    margin-bottom: 20px;
+  }
+}
 
 .demo__button {
   width: 4px;
-  height: 511px;
-  z-index: 1;
-  position: relative;
-  /*   height: inherit;
+  height: inherit;
   padding: 0;
   background-color: #666666;
   border: none;
@@ -33,12 +39,10 @@
   top: 0;
   left: 138px;
   z-index: 1;
-  cursor: pointer; */
+  cursor: pointer;
 
   @media (min-width: 768px) {
     left: 278px;
   }
 }
 
-//.demo
-//.demo__img {}

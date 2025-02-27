@@ -60,27 +60,10 @@
     color: $basic-grey;
   }
 
-  @media (min-width: $mobile-width) {
-    //width: 100px;
-  }
-
   @media (min-width: $tablet-width) {
     display: block;
   }
-
-  @media (min-width: $desktop-width) {
-    //
-  }
 }
-
-/*
-.instructions__item:not(:last-child) {
-  margin: 0 0 20px;
-
-  @media (min-width: $tablet-width) {
-    margin: 0;
-  }
-} */
 
 .instructions__title {
   @include font($secondary-font, 400, 36px, 40px);

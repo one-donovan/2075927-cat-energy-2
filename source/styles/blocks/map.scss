@@ -1,12 +1,6 @@
-//блок карта
-
 .map {
   @include flex(column, normal, center, wrap);
   margin: 0;
-
-  /*   @media (min-width: $tablet-width) {
-    margin: 0;
-  } */
 
   @media (min-width: $desktop-width) {
     margin: -41px 0 0;
@@ -50,11 +44,6 @@
     width: 100%;
   }
 
-  @media (min-width: $tablet-width) {
-    //
-  }
-
-
   @media (min-width: $desktop-width) {
     width: 565px;
     height: 199px;
@@ -64,12 +53,18 @@
 
 .map__invitation-title {
   @include font($secondary-font, 400, 16px, 20px);
+  width: 140px;
   margin: 0;
   color: $text-grey;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     @include font($secondary-font, 400, 20px, 26px);
+    width: 163px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 163px;
   }
 }
 

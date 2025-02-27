@@ -1,4 +1,3 @@
-//блок с адресом
 .address__street {
   @include font($main-font, 400, 14px, 20px);
   color: $basic-text-color;

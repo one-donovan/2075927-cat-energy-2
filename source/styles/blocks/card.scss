@@ -18,9 +18,9 @@
         border: none;
       }
 
-      &:nth-child(even) {
+      /* &:nth-child(even) {
         padding-top: 12px;
-      }
+      } */
 
       &:nth-child(even) .card__link-image {
         margin-bottom: 19px;
@@ -130,7 +130,13 @@
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
-    padding: 169px 0 8px;
+    width: 134px;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 134px;
+    padding: 0;
   }
 }
 
@@ -144,6 +150,7 @@
 
   @media (min-width: $desktop-width) {
     text-align: center;
+    padding: 0;
   }
 }
 
@@ -181,8 +188,12 @@
 
   @media (min-width: $tablet-width) {
     @include font($main-font, 400, 16px, 18px);
-    margin: 0 0 32px;
+    margin: 0;
     color: $basic-text-color;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
   }
 }
 
@@ -229,21 +240,20 @@
   border-bottom: 1px solid $border-color-catalog;
 
   @media (min-width: $tablet-width) {
-    @include flex(column, space-between, center, wrap);
+    @include flex(column, center, center, wrap);
     width: 324px;
-    height: 511px;
     align-content: center;
     border: 2px solid $basic-grey;
     padding: 37px;
   }
 
   @media (min-width: $desktop-width) {
-    @include flex(column, space-around, center, wrap);
+    @include flex(column, center, center, wrap);
     width: 245px;
-    height: 511px;
+    min-height: 431px;
     align-content: center;
     background-color: $basic-white;
-    padding: 37px;
+    padding: 0 38px;
   }
 }
 
@@ -262,6 +272,16 @@
     position: absolute;
     top: 130px;
     left: 130px;
+    background-image: url("../../icons/plus-tablet.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include pseudo(60px, 60px);
+    position: absolute;
+    top: 171px;
+    left: 91px;
     background-image: url("../../icons/plus-tablet.svg");
     background-repeat: no-repeat;
     background-size: 100%;

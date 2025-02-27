@@ -1,37 +1,38 @@
-//блок подписка
-
 .subscription {
-  min-width: 320px;
+  width: 280px;
   position: relative;
-  margin: 0 0 42px;
+  margin: 0 auto 42px;
 
   @media (min-width: $tablet-width) {
     @include flex(column, normal, normal, wrap);
-    padding: 0 68px;
-    margin-bottom: 80px;
+    width: 708px;
+    padding: 0;
+    margin: 0 auto 80px;
   }
 
   @media (min-width: $desktop-width) {
     @include flex(column, normal, normal, wrap);
-    padding: 0 68px;
-    margin: 0 0 104px;
+    width: 1220px;
+    margin: 0 auto 104px;
+    padding: 0;
   }
 }
 
 .subscription__title {
   @include font($secondary-font, 400, 24px, 24px);
   margin: 0 0 30px;
-  padding: 0 0 0 20px;
+  padding: 0;
   color: $basic-black;
 
   @media (min-width: $tablet-width) {
     @include font($secondary-font, 400, 32px, 32px);
     margin-bottom: 66px;
-    padding: 0;
+    padding: 0 0 0 38px;
   }
 
   @media (min-width: $desktop-width) {
     @include font($secondary-font, 400, 40px, 40px);
+    padding: 0;
   }
 
   &::before {
@@ -39,7 +40,7 @@
       @include pseudo(30px, 2px);
       position: absolute;
       top: 13px;
-      left: 0;
+      left: -30px;
       border: 2px solid $hover-buttons;
     }
 
@@ -47,7 +48,7 @@
       @include pseudo(70px, 2px);
       position: absolute;
       top: 20px;
-      left: 0;
+      left: -111px;
       border: 2px solid $hover-buttons;
     }
   }
@@ -63,7 +64,7 @@
       @include pseudo(456px, 2px);
       position: absolute;
       top: 13px;
-      right: 0;
+      right: -30px;
       border: 2px solid $hover-buttons;
     }
 
@@ -71,7 +72,7 @@
       @include pseudo(1053px, 2px);
       position: absolute;
       top: 20px;
-      right: 0;
+      left: 277px;
       border: 2px solid $hover-buttons;
     }
   }
@@ -89,13 +90,14 @@
   @media (min-width: $tablet-width) {
     @include font($secondary-font, 400, 24px, 32px);
     width: 634px;
-    margin: 0 auto;
+    margin: 0 auto 24px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     @include font($secondary-font, 400, 24px, 32px);
-    width: 634px;
-    margin: 0 0 24px;
+    width: 1220px;
+    margin: 0 auto 24px;
+    align-self: center;
   }
 }
 

@@ -13,7 +13,7 @@
   padding: 0 23px 0 0;
   color: $basic-black;
   text-align: center;
-  //border-top: 1px solid $border-color-index;
+
 
   @media (min-width: $mobile-width) {
     border-top: 1px solid $border-color-index;
@@ -49,7 +49,6 @@
 
   @media (min-width: $desktop-width) {
     width: 1220px;
-    min-height: 1229px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 0 80px;

@@ -16,7 +16,6 @@
     display: flex;
     flex-flow: row wrap;
     width: 100%;
-    height: 598px;
     margin: 0 auto;
     padding: 0;
     background: linear-gradient($basic-white 24%, $basic-grey 0%);
@@ -115,10 +114,6 @@
   margin: 0 0 31px;
   padding: 0;
   list-style-type: none;
-
-  /*  @media (min-width: $mobile-width) {
-    margin: 0;
-  } */
 
   @media (min-width: $tablet-width) {
     justify-content: normal;
