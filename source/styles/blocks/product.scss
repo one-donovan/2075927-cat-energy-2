@@ -45,7 +45,7 @@
 
   @media (min-width: $desktop-width) {
     @include font($main-font, 400, 16px, 20px);
-    padding: 0;
+    padding: 0 0 0 90px;
   }
 }
 
@@ -61,7 +61,7 @@
 
   @media (min-width: $desktop-width) {
     @include font($main-font, 400, 16px, 20px);
-    padding: 0 40px 0 0;
+    padding: 0 61px 0 0;
   }
 }
 

@@ -7,7 +7,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 96px;
+    margin-bottom: 93px;
     gap: 0;
   }
 }
@@ -30,7 +30,7 @@
   @media (min-width: $desktop-width) {
     @include font($secondary-font, 400, 40px, 40px);
     width: 1220px;
-    padding: 0 0 80px;
+    padding: 0 0 81px;
   }
 }
 
@@ -38,7 +38,7 @@
   @include pseudo(34px, 2px);
   position: absolute;
   top: 9px;
-  right: 0;
+  right: -22px;
   border: 2px solid $accent-color;
 
   @media (min-width: $tablet-width) {
@@ -52,7 +52,7 @@
   @media (min-width: $desktop-width) {
     @include pseudo(914, 2px);
     position: absolute;
-    top: 25px;
+    top: 19px;
     left: 415px;
     border: 2px solid $accent-color;
   }
@@ -62,7 +62,7 @@
   @include pseudo(34px, 2px);
   position: absolute;
   top: 9px;
-  right: 0;
+  right: -22px;
   border: 2px solid $accent-color;
 
   @media (min-width: $tablet-width) {
@@ -76,7 +76,7 @@
   @media (min-width: $desktop-width) {
     @include pseudo(70px, 2px);
     position: absolute;
-    top: 25px;
+    top: 19px;
     left: -111px;
     border: 2px solid $accent-color;
   }
@@ -84,6 +84,7 @@
 
 .additional-products__list {
   @include flex(column, center);
+  width: 280px;
   margin: 16px 0 34px;
   padding: 0;
   list-style-type: none;

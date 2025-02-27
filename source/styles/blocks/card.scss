@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: repeat(2, 140px);
   grid-auto-rows: max-content;
-  width: 320px;
+  width: 280px;
   min-height: 209px;
   justify-content: center;
 
@@ -20,11 +20,11 @@
     }
 
     &:nth-child(even) .card__link-image {
-      margin-bottom: 19px;
+      margin-bottom: 3px;
     }
 
     &:nth-child(4) .card__link-image {
-      margin-bottom: 25px;
+      margin-bottom: 9px;
     }
 
     &:nth-child(5) .card__link-image {
@@ -32,7 +32,7 @@
     }
 
     &:nth-child(6) .card__link-image {
-      margin-bottom: 25px;
+      margin-bottom: 9px;
     }
   }
 
@@ -122,7 +122,7 @@
 .card__title-current {
   width: 204px;
   margin-bottom: 7px;
-  padding: 81px 0 0;
+  padding: 59px 0 0;
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
@@ -132,7 +132,8 @@
 
   @media (min-width: $desktop-width) {
     width: 134px;
-    padding: 0;
+    padding: 90px 0 0;
+    margin: 0;
   }
 }
 
@@ -190,6 +191,7 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
+    padding: 0 0 65px;
   }
 }
 
@@ -202,7 +204,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 29px;
+    margin-bottom: 17px;
+
+    &:nth-child(2) .card__link-image {
+      margin: 0;
+    }
   }
 }
 
@@ -221,7 +227,7 @@
 }
 
 .card__image {
-  margin: 31px 0 0 29px;
+  margin: 35px 0 0 35px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -231,7 +237,7 @@
 .card--add {
   @include flex(column, center, center, wrap);
   position: relative;
-  width: 320px;
+  width: 280px;
   min-height: 208px;
   border-bottom: 1px solid $border-color-catalog;
 
@@ -249,7 +255,7 @@
     min-height: 431px;
     align-content: center;
     background: $basic-white;
-    padding: 150px 38px 40px;
+    padding: 41px 38px 57px;
     margin-top: 80px;
   }
 }
@@ -259,7 +265,7 @@
     @include pseudo(30px, 30px);
     position: absolute;
     top: 27px;
-    right: 151px;
+    right: 125px;
     background-image: url("../../icons/plus-mobile.svg");
     background-repeat: no-repeat;
     background-size: 100%;
@@ -278,8 +284,8 @@
   @media (min-width: $desktop-width) {
     @include pseudo(60px, 60px);
     position: absolute;
-    top: 171px;
-    left: 91px;
+    top: 30px;
+    left: 90px;
     background-image: url("../../icons/plus-tablet.svg");
     background-repeat: no-repeat;
     background-size: 100%;

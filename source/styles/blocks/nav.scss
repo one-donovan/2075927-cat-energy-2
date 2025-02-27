@@ -36,9 +36,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-color: $basic-white;
-    width: 704px;
-    gap: 35px;
+    color: $basic-white;
+    width: 475px;
+    gap: 10px;
     display: flex;
     justify-content: end;
   }
@@ -143,6 +143,15 @@
   }
 }
 
+
+.nav--main .nav__item--current {
+  @media (min-width: $desktop-width) {
+    &::after {
+      background-color: $basic-white;
+    }
+  }
+}
+
 .nav__menu-button {
   @include flex(column, center, center, wrap);
   place-content: center center;
@@ -184,6 +193,8 @@
   @media (max-width: $tablet-width) {
     display: block;
     position: static;
+    width: 100%;
+    margin-top: 18px;
   }
 }
 
@@ -213,8 +224,6 @@
   display: flex;
 }
 
-
 .nav__logo-icon {
   margin-right: 10px;
 }
-

@@ -23,7 +23,7 @@
   @media (min-width: $mobile-width) {
     @include font($secondary-font, 400, 24px, 37px);
     margin: 0;
-    padding: 0 0 29px 9px;
+    padding: 0 0 31px 9px;
     text-align: center;
     text-transform: uppercase;
   }
@@ -149,7 +149,7 @@
       @include pseudo(24px, 12px);
       position: relative;
       bottom: 21px;
-      left: 132px;
+      left: 137px;
       background-image: url("../../icons/icon-arrow.svg");
       background-repeat: no-repeat;
       transition: 0.5s;

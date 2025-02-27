@@ -32,7 +32,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
-    gap: 134px 60px;
+    gap: 130px 60px;
     margin: 0;
     padding: 0 0 82px;
     border-bottom: 1px solid #e6e6e6;
@@ -89,6 +89,7 @@
     @include font($main-font, 400, 14px, 18px);
     width: 200px;
     margin: 0;
+    padding: 2px 0 0;
   }
 
   @media (min-width: $tablet-width) {

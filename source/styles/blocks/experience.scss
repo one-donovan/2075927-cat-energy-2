@@ -8,7 +8,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 45px 30px 0;
+    padding: 45px 30px 80px;
     background: linear-gradient($basic-white 58%, $basic-grey 10%);
   }
 
@@ -16,9 +16,9 @@
     display: flex;
     flex-flow: row wrap;
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto -40px;
     padding: 0;
-    background: linear-gradient($basic-white 20%, $basic-grey 20%);
+    background: linear-gradient($basic-white 24%, $basic-grey 24%);
   }
 }
 
@@ -209,4 +209,14 @@
 .experience__footer {
   margin: 0 0 18px;
   text-align: center;
+}
+
+.experience__slider {
+  width: 280px;
+  height: 256px;
+
+  @media (min-width: $tablet-width) {
+    width: 560px;
+    height: 512px;
+  }
 }
