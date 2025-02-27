@@ -8,6 +8,7 @@
   @media (min-width: $tablet-width) {
     @include flex(column, normal, normal, wrap);
     padding: 0 68px;
+    margin-bottom: 80px;
   }
 
   @media (min-width: $desktop-width) {
@@ -23,6 +24,12 @@
   padding: 0 0 0 20px;
   color: $basic-black;
 
+  @media (min-width: $tablet-width) {
+    @include font($secondary-font, 400, 32px, 32px);
+    margin-bottom: 66px;
+    padding: 0;
+  }
+
   @media (min-width: $desktop-width) {
     @include font($secondary-font, 400, 40px, 40px);
   }
@@ -31,7 +38,7 @@
     @media (min-width: $tablet-width) {
       @include pseudo(30px, 2px);
       position: absolute;
-      top: 8px;
+      top: 13px;
       left: 0;
       border: 2px solid $hover-buttons;
     }
@@ -55,7 +62,7 @@
     @media (min-width: $tablet-width) {
       @include pseudo(456px, 2px);
       position: absolute;
-      top: 8px;
+      top: 13px;
       right: 0;
       border: 2px solid $hover-buttons;
     }
@@ -72,13 +79,23 @@
 
 .subscription__description {
   @include font($secondary-font, 400, 16px, 24px);
-  margin: 0 0 24px;
+  width: 280px;
+  min-height: 48px;
+  margin: 0 auto 24px;
   padding: 0;
   color: $basic-black;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     @include font($secondary-font, 400, 24px, 32px);
+    width: 634px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $tablet-width) {
+    @include font($secondary-font, 400, 24px, 32px);
+    width: 634px;
+    margin: 0 0 24px;
   }
 }
 

@@ -40,7 +40,6 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
-    //padding: 13px 20px 9px;
     padding: 0;
 
     &:first-child {
@@ -76,12 +75,6 @@
   align-items: center;
   margin: 0;
   text-decoration: none;
-
-  /*   @media (min-width: $tablet-width) {
-    &:not(:last-child) {
-      margin: 0;
-    }
-  } */
 }
 
 .logo-image-link__icon {
@@ -91,10 +84,6 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 13px 0 0;
-
-    /*     &:last-child {
-      margin: 0;
-    } */
   }
 
   @media (min-width: $desktop-width) {

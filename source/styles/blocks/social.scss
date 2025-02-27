@@ -23,10 +23,10 @@
   }
 
   @media (min-width: $desktop-width) {
+    justify-self: center;
     width: 132px;
     height: 22px;
     margin: 0;
-    padding: 9px 0 0 137px;
   }
 }
 
@@ -42,7 +42,21 @@
     height: 22px;
   }
 }
+
 //.social__icon-image {}
-//.social__link--vk {}
-//.social__link--yt {}
-//.social__link--tg {}
+
+.social__link--vk {
+  //mask-image: url("../../icons/vkontakte.svg");
+  mask-image: url("../../icons/stack.svg#vkontakte.svg");
+  background-color: $accent-color;
+}
+
+.social__link--yt {
+  mask-image: url("../../icons/youtube.svg");
+  //mask-image: url("../../icons/stack.svg#youtube.svg");
+}
+
+.social__link--tg {
+  mask-image: url("../../icons/telegram.svg");
+  //mask-image: url("../../icons/stack.svg#telegram.svg");
+}

@@ -9,7 +9,6 @@
 
 .catalog__title {
   @include font($secondary-font, 400, 36px, 36px);
-  //margin: 28px 0 56px;
   margin: 0;
   padding: 0 23px 0 0;
   color: $basic-black;
@@ -18,7 +17,7 @@
 
   @media (min-width: $mobile-width) {
     border-top: 1px solid $border-color-index;
-    padding: 0;
+    padding: 27px 23px 55px 0;
   }
 
   @media (min-width: $tablet-width) {

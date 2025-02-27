@@ -12,6 +12,8 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(1, 1fr);
     gap: 10px;
+    width: 708px;
+    //min-height: 139px;
     padding: 26px 38px 28px;
     border: 1px solid #cdcdcd;
   }
@@ -20,8 +22,8 @@
     display: grid;
     gap: 0;
     grid-template-columns: repeat(4, 1fr);
-    min-width: 896px;
-    height: 72px;
+    //min-width: 896px;
+    //height: 72px;
     padding: 0;
     border-bottom: 1px solid #cdcdcd;
 
@@ -55,7 +57,7 @@
 
   @media (min-width: $desktop-width) {
     @include font($main-font, 400, 16px, 20px);
-    padding: 0 0 0 90px;
+    padding: 0;
   }
 }
 

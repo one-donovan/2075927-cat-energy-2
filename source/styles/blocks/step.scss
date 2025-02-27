@@ -1,6 +1,6 @@
-.step {
+/* .step {
   width: 280px;
-}
+} */
 
 .step--leaf {
   @media (min-width: $mobile-width) {
@@ -33,7 +33,7 @@
       position: absolute;
       top: -38px;
       left: 119px;
-      color: #f2f2f2;
+      color: $basic-grey;
       z-index: -1;
     }
 
@@ -55,7 +55,7 @@
         position: absolute;
         top: -38px;
         left: 119px;
-        color: #f2f2f2;
+        color: $basic-grey;
         z-index: -1;
       }
     }
@@ -101,11 +101,13 @@
       position: absolute;
       top: -38px;
       left: 119px;
-      color: #f2f2f2;
+      color: $basic-grey;
       z-index: -1;
     }
 
     @media (min-width: $desktop-width) {
+      margin-left: 14px;
+
       &::before {
         @include pseudo(80px, 80px);
         margin: 0 0 31px;
@@ -123,7 +125,7 @@
         position: absolute;
         top: -38px;
         left: 119px;
-        color: #f2f2f2;
+        color: $basic-grey;
         z-index: -1;
       }
     }
@@ -169,11 +171,13 @@
       position: absolute;
       top: -38px;
       left: 119px;
-      color: #f2f2f2;
+      color: $basic-grey;
       z-index: -1;
     }
 
     @media (min-width: $desktop-width) {
+      margin-left: 9px;
+
       &::before {
         @include pseudo(80px, 80px);
         margin: 0 0 31px;
@@ -191,7 +195,7 @@
         position: absolute;
         top: -38px;
         left: 119px;
-        color: #f2f2f2;
+        color: $basic-grey;
         z-index: -1;
       }
     }
@@ -237,7 +241,7 @@
       position: absolute;
       top: -38px;
       left: 119px;
-      color: #f2f2f2;
+      color: $basic-grey;
       z-index: -1;
     }
 
@@ -259,7 +263,7 @@
         position: absolute;
         top: -38px;
         left: 119px;
-        color: #f2f2f2;
+        color: $basic-grey;
         z-index: -1;
       }
     }

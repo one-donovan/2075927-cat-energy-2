@@ -59,17 +59,20 @@
   @media (min-width: $mobile-width) {
     width: 280px;
     height: 40px;
+    text-decoration: none;
   }
 
   @media (min-width: $tablet-width) {
-    //width: 280px;
-    //height: 40px;
+    text-decoration: none;
+    width: 250px;
+    min-height: 40px;
+    margin: 0;
   }
 
-  @media (min-width: $desktop-width) {
-    //width: 280px;
-    //height: 40px;
-  }
+  /*   @media (min-width: $desktop-width) {
+    width: 280px;
+    min-height: 40px;
+  } */
 }
 
 .button__product--tablet {

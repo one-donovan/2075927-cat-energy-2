@@ -116,9 +116,9 @@
   padding: 0;
   list-style-type: none;
 
-  @media (min-width: $mobile-width) {
-    //margin: 0;
-  }
+  /*  @media (min-width: $mobile-width) {
+    margin: 0;
+  } */
 
   @media (min-width: $tablet-width) {
     justify-content: normal;

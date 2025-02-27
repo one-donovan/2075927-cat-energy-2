@@ -19,15 +19,13 @@
 
 .instructions__list {
   counter-reset: number 0;
-
-  @media (min-width: $mobile-width) {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    width: 280px;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-  }
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  width: 280px;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+  list-style-type: none;
 
   @media (min-width: $tablet-width) {
     width: 708px;
@@ -75,13 +73,14 @@
   }
 }
 
+/*
 .instructions__item:not(:last-child) {
   margin: 0 0 20px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
   }
-}
+} */
 
 .instructions__title {
   @include font($secondary-font, 400, 36px, 40px);

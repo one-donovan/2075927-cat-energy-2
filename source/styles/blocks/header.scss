@@ -48,9 +48,5 @@
   .header__wrapper {
     @include flex(row, space-between, center, wrap);
     width: 100%;
-
-    /*     .nav__item:nth-child(2) {
-      padding: 13px 20px 9px 0;
-    } */
   }
 }
