@@ -1,42 +1,41 @@
-//каталог
 .catalog {
   @include flex(column, normal, center, wrap);
+  width: 308px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 74px;
+    width: 708px;
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
   }
 }
 
 .catalog__title {
   @include font($secondary-font, 400, 36px, 36px);
-  margin: 0;
-  padding: 0 23px 0 0;
+  margin: 0 0 40px;
+  padding: 27px 42px 0 5px;
   color: $basic-black;
   text-align: center;
-
-
-  @media (min-width: $mobile-width) {
-    border-top: 1px solid $border-color-index;
-    padding: 27px 23px 55px 0;
-  }
 
   @media (min-width: $tablet-width) {
     @include font($secondary-font, 400, 60px, 60px);
     align-self: flex-start;
-    padding: 90px 0 84px 30px;
-    margin: 0;
+    margin-bottom: 87px;
     border: none;
   }
 
   @media (min-width: $desktop-width) {
     @include font($secondary-font, 400, 60px, 60px);
-    padding: 186px 0 78px 109px;
-    margin: 0;
+    margin-bottom: 106px;
+    padding: 0;
   }
 }
 
 .catalog__list {
-  margin: 0 0 9px;
+  margin-bottom: 27px;
   padding: 0;
   list-style-type: none;
 
@@ -51,7 +50,7 @@
     width: 1220px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 0 80px;
+    gap: 60px 80px;
     margin: 0;
   }
 }

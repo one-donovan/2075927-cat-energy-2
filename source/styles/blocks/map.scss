@@ -1,10 +1,7 @@
 .map {
   @include flex(column, normal, center, wrap);
   margin: 0;
-
-  @media (min-width: $desktop-width) {
-    margin: -41px 0 0;
-  }
+  margin-bottom: -5px;
 }
 
 .map__invitation {
@@ -26,7 +23,7 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    left: 85px;
+    left: calc(50% - 610px);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     width: 565px;
@@ -51,23 +48,6 @@
   }
 }
 
-.map__invitation-title {
-  @include font($secondary-font, 400, 16px, 20px);
-  width: 140px;
-  margin: 0;
-  color: $text-grey;
-  text-transform: uppercase;
-
-  @media (min-width: $tablet-width) {
-    @include font($secondary-font, 400, 20px, 26px);
-    width: 163px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 163px;
-  }
-}
-
 .map__image {
   width: 100%;
   object-fit: cover;
@@ -89,4 +69,14 @@
     object-fit: cover;
     width: 100%;
   }
+}
+
+.map noscript,
+.map iframe {
+  width: 100%;
+  border: none;
+}
+
+.map__frame--nojs {
+  display: none;
 }

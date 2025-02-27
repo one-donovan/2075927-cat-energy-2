@@ -1,6 +1,7 @@
 .product {
-
   border-top: 1px solid #cdcdcd;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 
   &:last-child {
     border-bottom: 1px solid #cdcdcd;

@@ -18,7 +18,7 @@
     width: 100%;
     margin: 0 auto;
     padding: 0;
-    background: linear-gradient($basic-white 24%, $basic-grey 0%);
+    background: linear-gradient($basic-white 20%, $basic-grey 20%);
   }
 }
 
@@ -199,7 +199,7 @@
   }
 }
 
-.experience__caption--additional {
+.experience__caption-secondary--additional {
   @media (min-width: $tablet-width) {
     width: 135px;
     margin: 4px 0 0 12px;

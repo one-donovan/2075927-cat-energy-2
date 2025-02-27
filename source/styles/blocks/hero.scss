@@ -39,7 +39,7 @@
   @media (min-width: $tablet-width) {
     @include font($secondary-font, 400, 60px, 60px);
     margin: 0;
-    padding: 90px 114px 40px 0;
+    padding: 65px 114px 40px 0;
     color: $basic-black;
     text-align: left;
   }
@@ -112,9 +112,7 @@
   }
 
   @media (min-width: $mobile-width) {
-    position: relative;
-    top: 275px;
-    left: 0;
+    order: 4;
     margin-bottom: 20px;
   }
 
@@ -127,6 +125,7 @@
     left: -143px;
     margin: 0;
     padding: 14px 24px 14px 26px;
+    order: 0;
   }
 
   @media (min-width: $desktop-width) {

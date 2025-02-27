@@ -15,17 +15,17 @@
 
 <body class="page__body">
   <header class="page__header header">
-    <div class="header__wrapper">
-      <a class="nav__logo-first" href="index.html">
+    <nav class="header__wrapper nav">
+      <a class="nav__logo" href="index.html">
         <picture>
           <source media="(min-width: 1440px)" srcset="images/vector/logo-cat-desktop.svg" type="image/svg+xml" width="70" height="59">
           <source media="(min-width: 768px)" srcset="images/vector/logo-cat-tablet.svg" type="image/svg+xml" width="60" height="50">
-          <img class="logo-image-link__icon" src="images/vector/logo-cat-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
+          <img class="nav__logo-icon" src="images/vector/logo-cat-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
         </picture>
         <picture>
           <source media="(min-width: 1440px)" srcset="images/vector/logo-text-tablet.svg" type="image/svg+xml" width="118" height="21">
           <source media="(min-width: 768px)" srcset="images/vector/logo-text-tablet.svg" type="image/svg+xml" width="101" height="18">
-          <img class="logo-image-link__icon icon--secondary" src="images/vector/logo-text-mobile.svg" width="101" height="18" alt="Логотип Cat Energy текст">
+          <img class="nav__logo-text" src="images/vector/logo-text-mobile.svg" width="101" height="18" alt="Логотип Cat Energy текстовый">
         </picture>
       </a>
       <button class="nav__menu-button" type="button" aria-label="Меню переключения">
@@ -49,7 +49,6 @@
           </a>
         </li>
       </ul>
-    </div>
     </nav>
   </header>
 
@@ -116,7 +115,7 @@
         </li>
         <li class="instructions__item step step--clock">
           <p class="instructions__description-step-content">
-            Уже через месяц наслаждайтесь изменениями к лучшему <br class="off">вашего питомца!
+            Уже через месяц наслаждайтесь изменениями к лучшему <br>вашего питомца!
           </p>
         </li>
       </ul>
@@ -141,7 +140,7 @@
             </li>
             <li class="experience__item">
               <p class="experience__caption-primary">60 дней</p>
-              <p class="experience__caption-secondary experience__caption--additional">Затрачено времени
+              <p class="experience__caption-secondary experience__caption-secondary--additional">Затрачено времени
               </p>
             </li>
           </ul>
@@ -154,15 +153,13 @@
           <div class="demo__img demo__img--before">
             <h2 class="visually-hidden">Демонстрация похудения Кота</h2>
             <picture>
-              <source media="(min-width: 1440px)" width="560px" height="512px" type="image/webp" srcset="images/slider/slider-cat-before-tablet@1x.webp 1x, images/slider/slider-cat-before-tablet@2x.webp 2x">
+              <source media="(min-width: 1440px)" width="560" height="512" type="image/webp" srcset="images/slider/slider-cat-before-tablet@1x.webp 1x, images/slider/slider-cat-before-tablet@2x.webp 2x">
               <source media="(min-width: 768px)" width="560" height="512" type="image/webp" srcset="images/slider/slider-cat-before-tablet@1x.webp 1x, images/slider/slider-cat-before-tablet@2x.webp 2x">
               <source media="(min-width: 320px)" width="280" height="256" type="image/webp" srcset="images/slider/slider-cat-before-mobile@1x.webp 1x, images/slider/slider-cat-before-mobile@2x.webp 2x">
 
-              <source media="(min-width: 1440px)" width="560px" height="512px" type="image/png" srcset="images/slider/slider-cat-before-tablet@1x.png 1x, images/slider/slider-cat-before-tablet@2x.png 2x">
+              <source media="(min-width: 1440px)" width="560" height="512" type="image/png" srcset="images/slider/slider-cat-before-tablet@1x.png 1x, images/slider/slider-cat-before-tablet@2x.png 2x">
               <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/slider/slider-cat-before-tablet@1x.png 1x, images/slider/slider-cat-before-tablet@2x.png 2x">
-              <source media="(min-width: 320px)" width="280" height="256" type="image/png" srcset="images/slider/slider-cat-before-mobile@1x.png 1x, images/slider/slider-cat-before-mobile@2x.png 2x">
-
-              <img class="demo__image" src="images/slider/slider-cat-before-mobile@1x.png" width="280" height="256" type="image/png" srcset=" 1x,  2x" alt="Демонстрация кот до и после">
+              <img class="demo__image" src="images/slider/slider-cat-before-mobile@1x.png" width="280" height="256" srcset="images/slider/slider-cat-before-mobile@1x.png 1x, images/slider/slider-cat-before-mobile@2x.png 2x" alt="Демонстрация кот до и после">
             </picture>
           </div>
 
@@ -172,15 +169,13 @@
 
           <div class="demo__img demo__img--after">
             <picture>
-              <source media="(min-width: 1440px)" width="560px" height="512px" type="image/webp" srcset="images/slider/slider-cat-after-tablet@1x.webp 1x, images/slider/slider-cat-after-tablet@2x.webp 2x">
+              <source media="(min-width: 1440px)" width="560" height="512" type="image/webp" srcset="images/slider/slider-cat-after-tablet@1x.webp 1x, images/slider/slider-cat-after-tablet@2x.webp 2x">
               <source media="(min-width: 768px)" width="560" height="512" type="image/webp" srcset="images/slider/slider-cat-after-tablet@1x.webp 1x, images/slider/slider-cat-after-tablet@2x.webp 2x">
               <source media="(min-width: 320px)" width="280" height="256" type="image/webp" srcset="images/slider/slider-cat-after-mobile@1x.webp 1x, images/slider/slider-cat-after-mobile@2x.webp 2x">
 
-              <source media="(min-width: 1440px)" width="560px" height="512px" type="image/png" srcset="images/slider/slider-cat-after-tablet@1x.png 1x, images/slider/slider-cat-after-tablet@2x.png 2x">
+              <source media="(min-width: 1440px)" width="560" height="512" type="image/png" srcset="images/slider/slider-cat-after-tablet@1x.png 1x, images/slider/slider-cat-after-tablet@2x.png 2x">
               <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/slider/slider-cat-after-tablet@1x.png 1x, images/slider/slider-cat-after-tablet@2x.png  2x">
-              <source media="(min-width: 320px)" width="280" height="256" type="image/png" srcset="images/slider/slider-cat-after-mobile@1x.png 1x, images/slider/slider-cat-after-mobile@2x.png 2x">
-
-              <img class="demo__image" src="images/slider/slider-cat-after-mobile@1x.png" width="280" height="256" type="image/png" srcset=" 1x,  2x" alt="Демонстрация кот до и после">
+              <img class="demo__image" src="images/slider/slider-cat-after-mobile@1x.png" width="280" height="256" srcset="mages/slider/slider-cat-after-mobile@1x.png 1x, images/slider/slider-cat-after-mobile@2x.png 2x" alt="Демонстрация кот до и после">
             </picture>
           </div>
         </div>
@@ -188,23 +183,25 @@
     </section>
 
     <section class="map">
-      <div class="map__invitation">
-        <h3 class="map__invitation-title">Приглашаем<br> к сотрудничеству<br>дилеров!</h3>
+      <div class="map__invitation address">
+        <h3 class="address__title">Приглашаем к сотрудничеству дилеров!</h3>
         <p class="address__street">ул. Большая<br>Конюшенная, д. 19/8</p>
         <p class="address__city">Санкт-Петербург</p>
       </div>
-      <h2 class="visually-hidden">Карта</h2>
-      <picture>
-        <source media="(min-width: 1440px)" width="1440" height="400" type="image/webp" srcset="images/map/location-desktop@1x.webp 1x, images/map/location-desktop@2x.webp 2x">
-        <source media="(min-width: 768px)" width="768" height="400" type="image/webp" srcset="images/map/location-tablet@1x.webp 1x, images/map/location-tablet@2x.webp 2x">
-        <source media="(min-width: 320px)" width="320" height="362" type="image/webp" srcset="images/map/location-mobile@1x.webp 1x, images/map/location-mobile@2x.webp 2x">
+      <iframe class="map__frame map__frame--nojs" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.2132437005553!2d30.318521171012474!3d59.93866944929408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1740150907443!5m2!1sru!2sru" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Расположение компании на карте"></iframe>
+      <noscript>
+        <picture>
+          <source media="(min-width: 1440px)" width="1440" height="400" type="image/webp" srcset="images/map/location-desktop@1x.webp 1x, images/map/location-desktop@2x.webp 2x">
+          <source media="(min-width: 768px)" width="768" height="400" type="image/webp" srcset="images/map/location-tablet@1x.webp 1x, images/map/location-tablet@2x.webp 2x">
+          <source media="(min-width: 320px)" width="320" height="362" type="image/webp" srcset="images/map/location-mobile@1x.webp 1x, images/map/location-mobile@2x.webp 2x">
 
-        <source media="(min-width: 1440px)" width="1440" height="400" type="image/png" srcset="images/map/location-desktop@1x.png 1x, images/map/location-desktop@2x.png 2x">
-        <source media="(min-width: 768px)" width="768" height="400" type="image/png" srcset="images/map/location-tablet@1x.png 1x, images/map/location-tablet@2x.png 2x">
-        <source media="(min-width: 320px)" width="300" height="362" type="image/png" srcset="images/map/location-mobile@1x.png 1x, images/map/location-mobile@2x.png 2x">
+          <source media="(min-width: 1440px)" width="1440" height="400" type="image/png" srcset="images/map/location-desktop@1x.png 1x, images/map/location-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" width="768" height="400" type="image/png" srcset="images/map/location-tablet@1x.png 1x, images/map/location-tablet@2x.png 2x">
+          <source media="(min-width: 320px)" width="300" height="362" type="image/png" srcset="images/map/location-mobile@1x.png 1x, images/map/location-mobile@2x.png 2x">
 
-        <img class="map__image" src="images/map/location-desktop@1x.png" srcset="image/map/location-desktop@2x.png" width="320" height="362" alt="Карта">
-      </picture>
+          <img class="map__image" src="images/map/location-desktop@1x.png" srcset="image/map/location-desktop@2x.png" width="320" height="362" alt="Карта">
+        </picture>
+      </noscript>
     </section>
   </main>
 
