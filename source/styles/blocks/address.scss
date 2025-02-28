@@ -1,3 +1,9 @@
+.address {
+  @media (min-width: $tablet-width) {
+    background-color: $basic-grey;
+  }
+}
+
 .address__street {
   @include font($main-font, 400, 14px, 20px);
   color: $basic-text-color;

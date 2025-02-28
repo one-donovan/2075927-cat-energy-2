@@ -38,43 +38,45 @@
 
   &::before {
     @media (min-width: $tablet-width) {
-      @include pseudo(30px, 2px);
+      @include pseudo(100vw, 2px);
       position: absolute;
       top: 13px;
-      left: -30px;
-      border: 2px solid $hover-buttons;
+      left: 282px;
+      border: 1px solid $hover-buttons;
     }
 
     @media (min-width: $desktop-width) {
-      @include pseudo(70px, 2px);
+      @include pseudo(100vw, 2px);
       position: absolute;
       top: 20px;
-      left: -111px;
-      border: 2px solid $hover-buttons;
+      left: 292px;
+      border: 1px solid $hover-buttons;
     }
   }
 
   &::after {
-    @include pseudo(108px, 2px);
+    @include pseudo(100vw, 2px);
     position: absolute;
     top: 8px;
     left: 192px;
-    border: 2px solid $hover-buttons;
+    border: 1px solid $hover-buttons;
+    transform: none;
 
     @media (min-width: $tablet-width) {
-      @include pseudo(456px, 2px);
+      @include pseudo(100vw, 2px);
       position: absolute;
       top: 13px;
-      right: -30px;
-      border: 2px solid $hover-buttons;
+      left: 0;
+      border: 1px solid $hover-buttons;
+      transform: translateX(-100%);
     }
 
     @media (min-width: $desktop-width) {
-      @include pseudo(1036px, 2px);
+      @include pseudo(100vw, 2px);
       position: absolute;
       top: 20px;
-      left: 293px;
-      border: 2px solid $hover-buttons;
+      left: -41px;
+      border: 1px solid $hover-buttons;
     }
   }
 }

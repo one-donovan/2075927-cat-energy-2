@@ -4,6 +4,7 @@
 @import "./common/global.scss";
 @import "./common/fonts.scss";
 @import "./common/list-reset.scss";
+@import "./blocks/button.scss";
 /* BLOCKS INDEX */
 @import "./blocks/page.scss";
 @import "./blocks/page-header.scss";
@@ -30,5 +31,4 @@
 @import "./blocks/promo.scss";
 @import "./blocks/subscription.scss";
 /* additionally */
-@import "./blocks/button.scss";
-@import "./blocks/transfer.scss"
+@import "./blocks/transfer.scss";

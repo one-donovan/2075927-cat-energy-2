@@ -3,7 +3,7 @@
 
   @media (min-width: $tablet-width) {
     @include flex(row, center, center, wrap);
-    gap: 80px;
+    gap: 70px;
   }
 
   @media (min-width: $desktop-width) {
@@ -16,7 +16,7 @@
   @include font($secondary-font, 400, 24px, 24px);
   position: relative;
   margin: 0 auto;
-  padding: 0 50px 16px 0;
+  padding: 0 50px 19px 0;
   color: $basic-black;
 
   @media (min-width: $tablet-width) {
@@ -30,67 +30,64 @@
   @media (min-width: $desktop-width) {
     @include font($secondary-font, 400, 40px, 40px);
     width: 1220px;
-    padding: 0 0 81px;
+    padding: 0 0 70px;
   }
 }
 
 .additional-products__headline::after {
-  @include pseudo(34px, 2px);
-  position: absolute;
-  top: 9px;
-  right: -22px;
-  border: 2px solid $accent-color;
-
   @media (min-width: $tablet-width) {
-    @include pseudo(350px, 2px);
+    @include pseudo(100vw, 2px);
     position: absolute;
     top: 13px;
-    left: 387px;
-    border: 2px solid $accent-color;
+    left: 0;
+    border: 1px solid $accent-color;
+    transform: translateX(-100%);
   }
 
   @media (min-width: $desktop-width) {
-    @include pseudo(914, 2px);
+    @include pseudo(100vw, 2px);
     position: absolute;
     top: 19px;
-    left: 415px;
-    border: 2px solid $accent-color;
+    left: -40px;
+    border: 1px solid $accent-color;
   }
 }
 
 .additional-products__headline::before {
-  @include pseudo(34px, 2px);
+  @include pseudo(100vw, 2px);
   position: absolute;
   top: 9px;
-  right: -22px;
-  border: 2px solid $accent-color;
+  left: 264px;
+  border: 1px solid $accent-color;
 
   @media (min-width: $tablet-width) {
-    @include pseudo(30px, 2px);
+    @include pseudo(100vw, 2px);
     position: absolute;
     top: 13px;
-    left: -30px;
-    border: 2px solid $accent-color;
+    left: 380px;
+    border: 1px solid $accent-color;
   }
 
   @media (min-width: $desktop-width) {
-    @include pseudo(70px, 2px);
+    @include pseudo(100vw, 2px);
     position: absolute;
     top: 19px;
-    left: -111px;
-    border: 2px solid $accent-color;
+    left: 415px;
+    border: 1px solid $accent-color;
   }
 }
 
 .additional-products__list {
   @include flex(column, center);
   width: 280px;
-  margin: 16px 0 34px;
+  margin: 16px 0 40px;
   padding: 0;
   list-style-type: none;
 
   @media (min-width: $tablet-width) {
+    width: 708px;
     margin: 0;
+    margin-top: 10px;
   }
 
   @media (min-width: $desktop-width) {

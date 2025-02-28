@@ -27,7 +27,6 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 250px;
     height: 40px;
     margin: 0;
   }
@@ -75,7 +74,7 @@
   }
 }
 
-.button__product--tablet {
+.button__product {
   grid-column: 1 / -1;
 
   @media (min-width: $mobile-width) {

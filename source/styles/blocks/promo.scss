@@ -1,12 +1,10 @@
 .promo {
-  @media (min-width: $mobile-width) {
-    width: 280px;
-    min-height: 290px;
-    margin: 0 0 42px;
-    position: relative;
-    background: linear-gradient(-90deg, rgba(104, 183, 56, 0.6) 100%, transparent 50%), url("../../images/promo/promo-cat-mobile@1x.png");
-    background-repeat: no-repeat;
-  }
+  width: 280px;
+  min-height: 290px;
+  margin: 0 0 42px;
+  position: relative;
+  background: linear-gradient(-90deg, rgba(104, 183, 56, 0.6) 100%, transparent 50%), url("../../images/promo/promo-cat-mobile@1x.png");
+  background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
     width: 707px;
@@ -15,6 +13,9 @@
     background-repeat: no-repeat;
     margin: 0 0 83px;
     position: relative;
+    display: flex;
+    justify-content: end;
+    align-items: center;
   }
 
   @media (min-width: $desktop-width) {
@@ -47,7 +48,7 @@
     background-position: center;
 
     @media (min-width: $tablet-width) {
-      top: 61px;
+      top: 58px;
       left: 78px;
     }
 
@@ -62,6 +63,7 @@
     width: 161px;
     min-height: 60px;
     margin: 0;
+    margin-right: 125px;
   }
 
   @media (min-width: $desktop-width) {
