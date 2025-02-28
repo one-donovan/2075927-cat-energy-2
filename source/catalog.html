@@ -9,11 +9,14 @@
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicons/180.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <script src="scripts/index.js" defer></script>
 </head>
 
 <body class="page__body">
-  <header class="page__header header header--inner">
+  <header class="page__header header header--inner" data-test="header">
     <nav class="header__wrapper nav">
       <a class="nav__logo" href="index.html">
         <picture>
@@ -52,7 +55,7 @@
   </header>
 
   <main class="main-container">
-    <section class="catalog">
+    <section class="catalog" data-test="catalog">
       <h2 class="catalog__title">Каталог продукции</h2>
       <ul class="catalog__list">
         <li class="catalog__item card">
@@ -284,7 +287,7 @@
       </ul>
     </section>
 
-    <section class="additional-products">
+    <section class="additional-products" date-test="additional-products">
       <h2 class="additional-products__headline">Дополнительные товары</h2>
       <ul class="additional-products__list">
         <li class="additional-products__item product">
@@ -321,7 +324,7 @@
       </div>
     </section>
 
-    <section class="subscription">
+    <section class="subscription" data-test="subscription">
       <h2 class="subscription__title">Акции и новинки</h2>
       <p class="subscription__description">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
       <form class="subscription__form" action="https://echo.htmlacademy.ru/" method="post">
@@ -333,7 +336,7 @@
       </form>
     </section>
 
-    <section class="map">
+    <section class="map" date-test="map">
       <div class="map__invitation address">
         <h3 class="address__title">Приглашаем <br> к сотрудничеству дилеров!</h3>
         <p class="address__street">ул. Большая<br>Конюшенная, д. 19/8</p>
@@ -356,7 +359,7 @@
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="footer" date-test="footer">
     <div class="footer__container">
       <a class="footer__logo-text" href="#">
         <picture>

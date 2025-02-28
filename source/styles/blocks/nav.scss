@@ -37,8 +37,8 @@
 
   @media (min-width: $desktop-width) {
     color: $basic-white;
-    width: 475px;
-    gap: 10px;
+    width: 485px;
+    gap: 34px;
     display: flex;
     justify-content: end;
   }
@@ -117,7 +117,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    letter-spacing: 1px;
     color: $basic-black;
 
     @include font($secondary-font, 400, 20px, 29.64px);
