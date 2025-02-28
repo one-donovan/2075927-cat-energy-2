@@ -40,6 +40,18 @@
     &:nth-child(7) .card__link-image {
       margin: 4px -1px 0;
     }
+
+    &:nth-child(2) .card__image {
+      top: -11px;
+    }
+
+    &:nth-child(5) .card__image {
+      top: -7px;
+    }
+
+    &:nth-child(7) .card__image {
+      top: -6px;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -52,7 +64,7 @@
     }
 
     &:nth-child(2) .card__link-image {
-      margin: 0 0 3px;
+      margin: -6px 0 9px;
     }
 
     &:nth-child(3) .card__link-image {
@@ -60,7 +72,7 @@
     }
 
     &:nth-child(4) .card__link-image {
-      margin-bottom: 13px;
+      margin: -14px 0 22px;
     }
 
     &:nth-child(5) .card__link-image {
@@ -68,7 +80,7 @@
     }
 
     &:nth-child(6) .card__link-image {
-      margin-bottom: 13px;
+      margin: -14px 0 22px;
     }
 
     &:nth-child(7) .card__link-image {
@@ -82,31 +94,31 @@
     }
 
     &:nth-child(1) .card__link-image {
-      margin: 0 0 16px;
+      margin: 0 0 28px;
     }
 
     &:nth-child(2) .card__link-image {
-      margin: 0 0 -6px;
+      margin: 0 0 4px;
     }
 
     &:nth-child(3) .card__link-image {
-      margin: 0 0 16px;
+      margin: 0 0 28px;
     }
 
     &:nth-child(4) .card__link-image {
-      margin: 0 0 -6px;
+      margin: -11px 0 16px;
     }
 
     &:nth-child(5) .card__link-image {
-      margin: 0 0 16px;
+      margin: 30px 0 22px;
     }
 
     &:nth-child(6) .card__link-image {
-      margin: 0 0 -6px;
+      margin: 11px 0 16px;
     }
 
     &:nth-child(7) .card__link-image {
-      margin: 0 0 16px;
+      margin: 28px 0 22px;
     }
   }
 
@@ -120,12 +132,12 @@
   }
 
   @media (min-width: $desktop-width) {
-    @include flex(column, space-between, center,nowrap);
+    @include flex(column, start, center, nowrap);
     width: 245px;
-    min-height: 511px;
+    min-height: 489px;
     align-content: center;
     padding: 6px 38px 40px;
-    background: linear-gradient(transparent 15%, $basic-grey 15%);
+    background: linear-gradient(transparent 12%, $basic-grey 12%);
   }
 }
 
@@ -198,13 +210,13 @@
 
   @media (min-width: $tablet-width) {
     width: 134px;
-    padding: 102px 0 0;
-    margin: 0;
+    padding: 0;
+    margin: 122px 0 22px;
   }
 
   @media (min-width: $desktop-width) {
     width: 134px;
-    padding: 90px 0 0;
+    padding: 110px 0 0;
     margin: 0;
   }
 }
@@ -252,7 +264,7 @@
 
   @media (min-width: $tablet-width) {
     @include font($main-font, 400, 16px, 18px);
-    margin: 0;
+    margin-bottom: 83px;
     color: $basic-text-color;
   }
 
@@ -289,13 +301,14 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 21px;
+    margin-bottom: 22px;
     padding: 0 25px;
   }
 }
 
 .card__image {
   margin: 29px 0 0 35px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -310,12 +323,13 @@
   border-bottom: 1px solid $border-color-catalog;
 
   @media (min-width: $tablet-width) {
-    @include flex(column, center, center, wrap);
-    background-color: transparent;
+    @include flex(column, start, center, wrap);
+    background: transparent;
     width: 324px;
     align-content: center;
     border: 2px solid $basic-grey;
     padding: 37px;
+    margin-top: 82px;
   }
 
   @media (min-width: $desktop-width) {
@@ -323,8 +337,8 @@
     width: 245px;
     min-height: 431px;
     align-content: center;
-    background-color: $basic-white;
-    padding: 41px 38px 57px;
+    background: transparent;
+    padding: 41px 38px 40px;
     margin-top: 80px;
   }
 }
@@ -343,7 +357,7 @@
   @media (min-width: $tablet-width) {
     @include pseudo(60px, 60px);
     position: absolute;
-    top: 130px;
+    top: 48px;
     left: 130px;
     background-image: url("../../icons/plus-tablet.svg");
     background-repeat: no-repeat;
@@ -353,7 +367,7 @@
   @media (min-width: $desktop-width) {
     @include pseudo(60px, 60px);
     position: absolute;
-    top: 30px;
+    top: 50px;
     left: 90px;
     background-image: url("../../icons/plus-tablet.svg");
     background-repeat: no-repeat;
