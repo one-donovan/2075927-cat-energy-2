@@ -1,0 +1,43 @@
+.costs {
+  @media (min-width: $tablet-width) {
+    @include flex(column, end, normal, wrap);
+    width: 174px;
+    margin: -61px 532px 0;
+    padding: 0;
+    text-align: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: contents;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.costs__title {
+  @include font($secondary-font, 400, 14px, 24px);
+  color: $basic-black;
+  text-transform: uppercase;
+  padding: 0 0 0 2px;
+
+  @media (min-width: $tablet-width) {
+    @include font($secondary-font, 400, 20px, 20px);
+    padding: 0 0 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 63px;
+  }
+}
+
+.costs__description {
+  @include font($secondary-font, 400, 14px, 24px);
+  color: $basic-black;
+  text-transform: uppercase;
+  padding: 0 0 0 2px;
+
+  @media (min-width: $tablet-width) {
+    @include font($secondary-font, 400, 20px, 20px);
+    padding: 0;
+  }
+}

@@ -1,0 +1,267 @@
+.step--leaf {
+  @media (min-width: $mobile-width) {
+    &::before {
+      @include pseudo(60px, 60px);
+      margin: 0 20px 0 0;
+      background-color: $accent-color;
+      background-image: url("../../icons/icon-leaf.svg");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 30px 32px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      @include pseudo(80px, 80px);
+      margin: 0 0 31px;
+      background-color: $accent-color;
+      background-repeat: no-repeat;
+      background-image: url("../../icons/icon-leaf.svg");
+      background-position: center center;
+      background-size: 30px 32px;
+    }
+
+    &::after {
+      @include font($secondary-font, 400, 280px, 280px);
+      content: counter(number);
+      counter-increment: number;
+      position: absolute;
+      top: -38px;
+      left: 119px;
+      color: $basic-grey;
+      z-index: -1;
+    }
+
+    @media (min-width: $desktop-width) {
+      &::before {
+        @include pseudo(80px, 80px);
+        margin: 0 0 31px;
+        background-color: $accent-color;
+        background-image: url("../../icons/icon-leaf.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 30px 32px;
+      }
+
+      &::after {
+        @include font($secondary-font, 400, 280px, 280px);
+        content: counter(number);
+        counter-increment: number;
+        position: absolute;
+        top: -38px;
+        left: 119px;
+        color: $basic-grey;
+        z-index: -1;
+      }
+    }
+  }
+}
+
+.step--pot {
+  @media (min-width: $mobile-width) {
+    &::before {
+      @include pseudo(60px, 60px);
+      margin: 0 20px 0 0;
+      background-color: $accent-color;
+      background-image: url("../../icons/icon-water.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 30px 32px;
+    }
+
+    &::after {
+      @include pseudo(30px, 32px);
+      position: absolute;
+      top: 13px;
+      left: 16px;
+      margin: 0;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      @include pseudo(80px, 80px);
+      margin: 0 0 31px;
+      background-color: $accent-color;
+      background-image: url("../../icons/icon-water.svg");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 30px 32px;
+    }
+
+    &::after {
+      @include font($secondary-font, 400, 280px, 280px);
+      content: counter(number);
+      counter-increment: number;
+      position: absolute;
+      top: -38px;
+      left: 119px;
+      color: $basic-grey;
+      z-index: -1;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-left: 14px;
+
+      &::before {
+        @include pseudo(80px, 80px);
+        margin: 0 0 31px;
+        background-color: $accent-color;
+        background-image: url("../../icons/icon-water.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 30px 32px;
+      }
+
+      &::after {
+        @include font($secondary-font, 400, 280px, 280px);
+        content: counter(number);
+        counter-increment: number;
+        position: absolute;
+        top: -38px;
+        left: 119px;
+        color: $basic-grey;
+        z-index: -1;
+      }
+    }
+  }
+}
+
+.step--spoon {
+  @media (min-width: $mobile-width) {
+    &::before {
+      @include pseudo(60px, 60px);
+      margin: 0 20px 0 0;
+      background-color: $accent-color;
+      background-image: url("../../icons/icon-eat.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 30px 32px;
+    }
+
+    &::after {
+      @include pseudo(30px, 32px);
+      position: absolute;
+      top: 13px;
+      left: 16px;
+      margin: 0;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      @include pseudo(80px, 80px);
+      margin: 0 0 31px;
+      background-color: $accent-color;
+      background-image: url("../../icons/icon-eat.svg");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 30px 32px;
+    }
+
+    &::after {
+      @include font($secondary-font, 400, 280px, 280px);
+      content: counter(number);
+      counter-increment: number;
+      position: absolute;
+      top: -38px;
+      left: 119px;
+      color: $basic-grey;
+      z-index: -1;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-left: 9px;
+
+      &::before {
+        @include pseudo(80px, 80px);
+        margin: 0 0 31px;
+        background-color: $accent-color;
+        background-image: url("../../icons/icon-eat.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 30px 32px;
+      }
+
+      &::after {
+        @include font($secondary-font, 400, 280px, 280px);
+        content: counter(number);
+        counter-increment: number;
+        position: absolute;
+        top: -38px;
+        left: 119px;
+        color: $basic-grey;
+        z-index: -1;
+      }
+    }
+  }
+}
+
+.step--clock {
+  @media (min-width: $mobile-width) {
+    &::before {
+      @include pseudo(60px, 60px);
+      margin: 0 20px 0 0;
+      background-color: $accent-color;
+      background-image: url("../../icons/icon-time.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 30px 32px;
+    }
+
+    &::after {
+      @include pseudo(27px, 33px);
+      position: absolute;
+      top: 13px;
+      left: 16px;
+      margin: 0;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      @include pseudo(80px, 80px);
+      margin: 0 0 31px;
+      background-color: $accent-color;
+      background-image: url("../../icons/icon-time.svg");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 30px 32px;
+    }
+
+    &::after {
+      @include font($secondary-font, 400, 280px, 280px);
+      content: counter(number);
+      counter-increment: number;
+      position: absolute;
+      top: -38px;
+      left: 119px;
+      color: $basic-grey;
+      z-index: -1;
+    }
+
+    @media (min-width: $desktop-width) {
+      &::before {
+        @include pseudo(80px, 80px);
+        margin: 0 0 31px;
+        background-color: $accent-color;
+        background-image: url("../../icons/icon-time.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 30px 32px;
+      }
+
+      &::after {
+        @include font($secondary-font, 400, 280px, 280px);
+        content: counter(number);
+        counter-increment: number;
+        position: absolute;
+        top: -38px;
+        left: 119px;
+        color: $basic-grey;
+        z-index: -1;
+      }
+    }
+  }
+}

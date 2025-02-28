@@ -1,0 +1,164 @@
+.programs {
+  @include flex(column, space-between, center, wrap);
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 72px;
+  }
+}
+
+.programs__list {
+  margin: 0 0 20px;
+  padding: 0;
+  list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    gap: 80px;
+  }
+}
+
+.program--slim {
+  position: relative;
+
+  @media (min-width: $mobile-width) {
+    margin: 0 0 22px;
+
+    &::before {
+      @include pseudo(50px, 50px);
+      position: absolute;
+      background-color: $accent-color;
+      top: 21px;
+      left: 20px;
+      border-radius: 50%;
+    }
+
+    &::after {
+      @include pseudo(36px, 50px);
+      position: absolute;
+      top: 20px;
+      left: 28px;
+      background-image: url("../../icons/black-cat-slim.svg");
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+
+    &::before {
+      @include pseudo(200px, 200px);
+      top: 92px;
+      left: 444px;
+      border-radius: 50%;
+      background-color: $accent-color;
+    }
+
+    &::after {
+      @include pseudo(140px, 194px);
+      position: absolute;
+      top: 81px;
+      left: 475px;
+      background-image: url("../../icons/black-cat-slim.svg");
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+
+    &::before {
+      @include pseudo(100px, 100px);
+      top: 47px;
+      left: 52px;
+      background-color: $accent-color;
+      border-radius: 50%;
+    }
+
+    &::after {
+      @include pseudo(70px, 97px);
+      position: absolute;
+      top: 41px;
+      left: 67px;
+      background-image: url("../../icons/black-cat-slim.svg");
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.program--pro {
+  position: relative;
+  margin: 0;
+
+  @media (min-width: $mobile-width) {
+    &::before {
+      @include pseudo(50px, 50px);
+      position: absolute;
+      top: 21px;
+      left: 20px;
+      border-radius: 50%;
+      background-color: $accent-color;
+    }
+
+    &::after {
+      @include pseudo(67px, 28px);
+      position: absolute;
+      top: 35px;
+      left: 10px;
+      background-image: url("../../icons/black-cat-pro.svg");
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      @include pseudo(200px, 200px);
+      top: 91px;
+      left: 445px;
+      background-size: 100% 100%;
+      border-radius: 50%;
+      background-color: $accent-color;
+    }
+
+    &::after {
+      @include pseudo(269px, 113px);
+      position: absolute;
+      top: 134px;
+      left: 411px;
+      background-image: url("../../icons/black-cat-pro.svg");
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      @include pseudo(100px, 100px);
+      top: 47px;
+      left: 52px;
+      border-radius: 50%;
+      background-color: $accent-color;
+    }
+
+    &::after {
+      @include pseudo(134px, 57px);
+      position: absolute;
+      top: 67px;
+      left: 33px;
+      background-image: url("../../icons/black-cat-pro.svg");
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+  }
+}

@@ -1,0 +1,187 @@
+.subscription {
+  width: 280px;
+  position: relative;
+  margin: 0 auto 42px;
+
+  @media (min-width: $tablet-width) {
+    @include flex(column, normal, normal, wrap);
+    width: 708px;
+    padding: 0;
+    margin: 0 auto 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include flex(column, normal, normal, wrap);
+    width: 1220px;
+    margin: 0 auto 104px;
+    padding: 0;
+  }
+}
+
+.subscription__title {
+  @include font($secondary-font, 400, 24px, 24px);
+  margin: 0 0 30px;
+  padding: 0;
+  color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    @include font($secondary-font, 400, 32px, 32px);
+    margin-bottom: 66px;
+    padding: 0 0 0 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font($secondary-font, 400, 40px, 40px);
+    padding: 0;
+    margin-bottom: 72px;
+  }
+
+  &::before {
+    @media (min-width: $tablet-width) {
+      @include pseudo(100vw, 2px);
+      position: absolute;
+      top: 13px;
+      left: 282px;
+      border: 1px solid $hover-buttons;
+    }
+
+    @media (min-width: $desktop-width) {
+      @include pseudo(100vw, 2px);
+      position: absolute;
+      top: 20px;
+      left: 292px;
+      border: 1px solid $hover-buttons;
+    }
+  }
+
+  &::after {
+    @include pseudo(100vw, 2px);
+    position: absolute;
+    top: 8px;
+    left: 192px;
+    border: 1px solid $hover-buttons;
+    transform: none;
+
+    @media (min-width: $tablet-width) {
+      @include pseudo(100vw, 2px);
+      position: absolute;
+      top: 13px;
+      left: 0;
+      border: 1px solid $hover-buttons;
+      transform: translateX(-100%);
+    }
+
+    @media (min-width: $desktop-width) {
+      @include pseudo(100vw, 2px);
+      position: absolute;
+      top: 20px;
+      left: -41px;
+      border: 1px solid $hover-buttons;
+    }
+  }
+}
+
+.subscription__description {
+  @include font($secondary-font, 400, 16px, 24px);
+  width: 280px;
+  min-height: 48px;
+  margin: 0 auto 24px;
+  padding: 0;
+  color: $basic-black;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    @include font($secondary-font, 400, 24px, 32px);
+    width: 634px;
+    margin: 0 auto 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font($secondary-font, 400, 24px, 32px);
+    width: 1220px;
+    margin: 0 auto 8px;
+    align-self: center;
+  }
+}
+
+.subscription__form {
+  @include flex(row, center, center, wrap);
+
+
+  @media (min-width: $tablet-width) {
+    @include flex(row, center, center, wrap);
+  }
+}
+
+.subscription__input {
+  @include font($secondary-font, 400, 20px, 29.64px);
+  min-width: 280px;
+  height: 56px;
+  max-height: max-content;
+  margin: 0 0 16px;
+  padding: 13px;
+  color: $basic-text-color;
+  text-align: left;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 1px solid#e7e7e7;
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:active,
+  &:focus {
+    border-radius: 0;
+    border: 2px solid $basic-text-color;
+    outline: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-width: 376px;
+    height: 56px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 496px;
+    height: 56px;
+    margin: 0;
+  }
+}
+
+.subscription__button {
+  margin: 0 0 40px;
+}
+
+.subscription__button-subscribe {
+  @include font($secondary-font, 400, 20px, 26px);
+  min-width: 280px;
+  min-height: 56px;
+  margin: 0;
+  color: $basic-white;
+  background-color: $accent-color;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $hover-buttons;
+  }
+
+  &:active {
+    background-color: $hover-buttons;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    min-width: 256px;
+    min-height: 56px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    min-width: 256px;
+    min-height: 56px;
+  }
+}

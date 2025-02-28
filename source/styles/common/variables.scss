@@ -1,1 +1,26 @@
 /* здесь используйте глобальные переменные */
+
+//шрифты
+$main-font: "Lato", "Arial", sans-serif;
+$secondary-font: "Oswald ", "Arial", sans-serif;
+
+//цвета
+$basic-white: #ffffff;
+$basic-grey: #f2f2f2;
+$basic-text-color: #444444;
+$basic-text-color-two: #222222;
+$basic-black: #000000;
+$accent-color: #68b738;
+$live-example-color: #eaeaea;
+$text-grey: #111111;
+$hover-buttons: #5eaa2f;
+$border-color-index: #d9d9d9; //цвет бордер линий индекса
+$border-color-catalog: #ebebeb; //цвет бордер линий каталога
+//color: #cdcdcd; //цвет бордер обводки инпута при наведении /каталог
+//color: #e7e7e7; //цвет бордера обводки инпута в спокойном состоянии
+
+//размеры вьюпортов
+$mobile-width: 320px;
+$tablet-width: 768px;
+$max-tablet-width: 767px;
+$desktop-width: 1440px;

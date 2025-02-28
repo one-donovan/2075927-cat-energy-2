@@ -1,0 +1,186 @@
+.program {
+  @media (min-width: $mobile-width) {
+    padding: 30px 20px 20px;
+    width: 280px;
+    height: 266px;
+    background-color: $basic-grey;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    height: 372px;
+    padding: 77px 63px 53px 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    height: 374px;
+    padding: 41px 61px 59px 52px;
+  }
+}
+
+.program__title {
+  @media (min-width: $mobile-width) {
+    @include font($secondary-font, 400, 24px, 37px);
+    margin: 0;
+    padding: 0 0 31px 9px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  @media (min-width: $tablet-width) {
+    @include font($secondary-font, 400, 36px, 36px);
+    padding: 0 0 24px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 36px 0 73px 31px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+.program__title-secondary {
+  @media (min-width: $mobile-width) {
+    @include font($secondary-font, 400, 24px, 37px);
+    margin: 0;
+    padding: 0 0 29px 39px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  @media (min-width: $tablet-width) {
+    @include font($secondary-font, 400, 36px, 36px);
+    text-align: left;
+    padding: 0 0 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 36px 0 73px 72px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+.program__description {
+  @media (min-width: $mobile-width) {
+    @include font($main-font, 400, 14px, 18px);
+    margin: 0;
+    padding: 0 0 23px;
+    color: $basic-text-color;
+    border-bottom: 1px solid $border-color-index;
+  }
+
+  @media (min-width: $tablet-width) {
+    @include font($main-font, 400, 16px, 24px);
+    width: 340px;
+    height: 96px;
+    margin: 0 0 48px;
+    color: $basic-black;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 457px;
+    height: 72px;
+    padding: 0;
+    margin: 0 0 27px;
+  }
+}
+
+.program__link {
+  @include font($secondary-font, 400, 16px, 29.64px);
+  display: block;
+  width: 134px;
+  height: 24px;
+  margin: 0;
+  padding: 10px 0 0;
+  color: $basic-black;
+  list-style-type: none;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:focus {
+    color: #d24899;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+
+  &:hover::after {
+    transform: translateX(10px);
+  }
+
+  &:focus::after {
+    transform: translateX(10px);
+  }
+
+  @media (min-width: $mobile-width) {
+    &::after {
+      @include pseudo(24px, 12px);
+      position: relative;
+      bottom: 21px;
+      left: 109px;
+      background-image: url("../../icons/icon-arrow.svg");
+      background-repeat: no-repeat;
+      transition: 0.5s;
+    }
+
+    &::before {
+      @include pseudo(23px, 2.4px);
+      position: relative;
+      top: 15.8px;
+      left: 102px;
+      background-color: $basic-black;
+    }
+  }
+
+
+  @media (min-width: $tablet-width) {
+    @include font($secondary-font, 400, 20px, 29.64px);
+    padding: 0;
+
+    &::after {
+      @include pseudo(24px, 12px);
+      position: relative;
+      bottom: 21px;
+      left: 137px;
+      background-image: url("../../icons/icon-arrow.svg");
+      background-repeat: no-repeat;
+      transition: 0.5s;
+    }
+
+    &::before {
+      @include pseudo(23px, 2.4px);
+      position: relative;
+      top: 15.8px;
+      left: 130px;
+      background-color: $basic-black;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      @include pseudo(24px, 12px);
+      position: relative;
+      bottom: 21px;
+      left: 138px;
+      background-image: url("../../icons/icon-arrow.svg");
+      background-repeat: no-repeat;
+      transition: 0.5s;
+    }
+
+    &::before {
+      @include pseudo(23px, 2.4px);
+      position: relative;
+      top: 15.8px;
+      left: 130px;
+      background-color: $basic-black;
+    }
+  }
+}

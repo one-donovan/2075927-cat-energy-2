@@ -1,0 +1,105 @@
+.instructions {
+  @include flex(column, normal, center, wrap);
+
+  @media (min-width: $mobile-width) {
+    width: 280px;
+    margin: 0 auto 50px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 auto 107px;
+  }
+}
+
+.instructions__list {
+  counter-reset: number 0;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  width: 280px;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+  list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    gap: 130px 60px;
+    margin: 0;
+    padding: 0 0 82px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 230px 246px 248px 250px;
+    padding: 0;
+    border: none;
+    gap: 83px;
+  }
+}
+
+.instructions__item {
+  display: flex;
+  position: relative;
+
+  &::after {
+    @include font($secondary-font, 400, 280px, 40px);
+    position: absolute;
+    z-index: -1;
+    top: 80;
+    left: 130;
+    color: $basic-grey;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.instructions__title {
+  @include font($secondary-font, 400, 36px, 40px);
+  align-self: flex-start;
+  margin: 0 0 40px;
+  color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    @include font($secondary-font, 400, 60px, 60px);
+    margin: 0 0 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 70px;
+    padding: 0;
+  }
+}
+
+.instructions__description-step-content {
+  color: $basic-text-color;
+
+  @media (min-width: $mobile-width) {
+    @include font($main-font, 400, 14px, 18px);
+    width: 200px;
+    margin: 0;
+    padding: 2px 0 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    @include font($main-font, 400, 16px, 24px);
+    width: 245px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font($main-font, 400, 16px, 24px);
+    width: 245px;
+    padding: 0;
+  }
+}

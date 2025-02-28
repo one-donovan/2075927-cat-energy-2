@@ -1,0 +1,222 @@
+//блок живой пример
+.experience {
+  min-height: 659px;
+  background-color: $live-example-color;
+
+  @media (min-width: $mobile-width) {
+    margin: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 45px 30px 80px;
+    background: linear-gradient($basic-white 58%, $basic-grey 10%);
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    margin: 0 auto -40px;
+    padding: 0;
+    background: linear-gradient($basic-white 24%, $basic-grey 24%);
+  }
+}
+
+.experience__wrapper {
+  @media (min-width: $mobile-width) {
+    width: 280px;
+    margin: 0 auto;
+    padding: 21px 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
+  }
+}
+
+.experience__title {
+  color: $basic-black;
+
+  @media (min-width: $mobile-width) {
+    @include font($secondary-font, 400, 36px, 40px);
+    width: 280px;
+    margin: 0;
+    padding: 3px 0 40px;
+    color: $basic-black;
+  }
+
+  @media (min-width: $tablet-width) {
+    @include font($secondary-font, 400, 60px, 60px);
+    width: 325px;
+    padding: 0 0 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font($secondary-font, 400, 60px, 60px);
+    width: 100%;
+    padding: 0;
+    margin: 0 0 146px;
+  }
+}
+
+.experience__content {
+  @media (min-width: $mobile-width) {
+    width: 280px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 436px;
+    height: 96px;
+  }
+}
+
+.experience__demo {
+  @media (min-width: $tablet-width) {
+    padding: 99px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.experience__description {
+  color: $basic-text-color;
+
+  @media (min-width: $mobile-width) {
+    @include font($main-font, 400, 14px, 18px);
+    width: 280px;
+    margin: 0 0 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    @include font($main-font, 400, 16px, 24px);
+    width: 708px;
+    margin: 0 0 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font($main-font, 400, 16px, 24px);
+    width: 433px;
+    margin: 0 0 70px;
+  }
+}
+
+.experience__list {
+  display: flex;
+  margin: 0 0 31px;
+  padding: 0;
+  list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    justify-content: normal;
+    margin: 0;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 59px;
+    padding: 0;
+  }
+}
+
+.experience__item {
+  width: 124px;
+  height: 56px;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+    height: 72px;
+    border: 1px solid #cdcdcd;
+    border-radius: 3px;
+  }
+}
+
+.experience__item:not(:last-child) {
+  margin: 0 32px 0 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 43px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 42px 0 0;
+  }
+}
+
+.experience__caption-primary {
+  @include font($secondary-font, 400, 24px, 24px);
+  margin: 0;
+  padding: 14px 0 7.5px;
+  color: $basic-black;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    @include font($secondary-font, 400, 30px, 37px);
+    width: 162px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
+.experience__caption-secondary {
+  text-transform: lowercase;
+  text-align: center;
+
+  @media (min-width: $mobile-width) {
+    @include font($main-font, 400, 12px, 12px);
+    width: 77px;
+    height: 24px;
+    margin: 0 0 0 20px;
+    padding: 0;
+    color: $basic-text-color;
+    background-color: $live-example-color;
+  }
+
+  @media (min-width: $tablet-width) {
+    @include font($main-font, 400, 14px, 14px);
+    width: 114px;
+    background-color: $basic-white;
+    margin: 5px 0 0 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 125px;
+    background-color: $basic-grey;
+    margin: 3px 0 0 17px;
+  }
+}
+
+.experience__caption-secondary--additional {
+  @media (min-width: $tablet-width) {
+    width: 135px;
+    margin: 4px 0 0 12px;
+  }
+}
+
+.experience__footer {
+  margin: 0 0 18px;
+  text-align: center;
+}
+
+.experience__slider {
+  width: 280px;
+  height: 256px;
+
+  @media (min-width: $tablet-width) {
+    width: 560px;
+    height: 512px;
+  }
+}

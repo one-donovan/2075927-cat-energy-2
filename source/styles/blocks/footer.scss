@@ -1,0 +1,113 @@
+.footer {
+  background-color: $basic-grey;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    height: 147px;
+    padding: 58px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    min-height: 169px;
+    padding: 66px 110px;
+  }
+}
+
+.footer__container {
+  @include flex(column, space-between, center, wrap);
+  width: 320px;
+  min-height: 240px;
+  padding: 40px 20px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 120px;
+    align-content: end;
+    width: 708px;
+    min-height: 37px;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
+  }
+}
+
+.footer__logo-text {
+  width: 128px;
+  margin: 0 41px 0 0;
+
+  @media (min-width: $desktop-width) {
+    width: 128px;
+    align-self: center;
+  }
+}
+
+.footer__image {
+  @media (min-width: $mobile-width) {
+    margin: 4px 0 12px 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
+.footer__text {
+  @include font($main-font, 400, 16px, 20px);
+  padding: 6px 0 0;
+  color: $basic-text-color;
+
+  @media (min-width: $mobile-width) {
+    padding: 0 0 2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 0 5px;
+  }
+}
+
+.footer__copyright {
+  @include flex(row, space-between, center, wrap);
+  text-decoration: none;
+  position: relative;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 168px;
+    padding: 0 0 1px 6px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-self: right;
+    padding: 0;
+  }
+}
+
+.footer__copyright::after {
+  content: "";
+  display: block;
+  width: 27px;
+  height: 34px;
+  position: absolute;
+  right: 0;
+  padding: 0;
+  mask-image: url("../../images/vector/logo-htmlacademy.svg");
+  background-color: $basic-text-color;
+  mask-size: 100% 100%;
+  mask-position: center center;
+  transition: 0.6s;
+}
+
+.footer__copyright:hover::after {
+  background-color: $accent-color;
+}
