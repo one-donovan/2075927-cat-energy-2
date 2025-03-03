@@ -45,8 +45,13 @@
   transition: 0.6s;
 }
 
-.social__link:hover {
+.social__link:hover,
+.social__link:focus {
   background-color: $accent-color;
+}
+
+.social__link:active {
+  opacity: 0.6;
 }
 
 .social__link--vk {

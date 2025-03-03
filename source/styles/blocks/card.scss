@@ -153,6 +153,15 @@
   }
 }
 
+.card:hover,
+.card:focus {
+  opacity: 0.8;
+}
+
+.card:active {
+  opacity: 0.6;
+}
+
 .card__list {
   padding: 0;
   list-style-type: none;
