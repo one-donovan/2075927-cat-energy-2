@@ -134,7 +134,7 @@
   @media (min-width: $tablet-width) {
     @include font($secondary-font, 400, 20px, 26px);
     width: 242px;
-    height: 53px;
+    min-height: 53px;
     position: relative;
     top: 29px;
     left: -143px;
@@ -147,7 +147,7 @@
     @include font($secondary-font, 400, 20px, 26px);
     padding: 0;
     width: 244px;
-    height: 54px;
+    min-height: 54px;
     position: relative;
     top: 11px;
     left: -408px;
