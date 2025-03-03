@@ -47,6 +47,15 @@
   }
 }
 
+.footer__logo-text:hover,
+.footer__logo-text:focus {
+  opacity: 0.8;
+}
+
+.footer__logo-text:active {
+  opacity: 0.6;
+}
+
 .footer__image {
   @media (min-width: $mobile-width) {
     margin: 4px 0 12px 20px;
@@ -76,11 +85,16 @@
   }
 }
 
+.footer__text:active {
+  opacity: 0.6;
+}
+
 .footer__copyright {
   @include flex(row, space-between, center, wrap);
   text-decoration: none;
   position: relative;
   width: 100%;
+  outline: none;
 
   @media (min-width: $tablet-width) {
     width: 168px;
@@ -110,4 +124,12 @@
 
 .footer__copyright:hover::after {
   background-color: $accent-color;
+}
+
+.footer__copyright:focus::after {
+  background-color: $accent-color;
+}
+
+.footer__copyright:active::after {
+  opacity: 0.6;
 }

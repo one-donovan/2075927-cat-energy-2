@@ -153,6 +153,18 @@
   }
 }
 
+.card__link-title:hover,
+.card__link-title:focus,
+.card__link-image:hover,
+.card__link-image:focus {
+  opacity: 0.8;
+}
+
+.card__link-image:active,
+.card__link-title:active {
+  opacity: 0.6;
+}
+
 .card__list {
   padding: 0;
   list-style-type: none;

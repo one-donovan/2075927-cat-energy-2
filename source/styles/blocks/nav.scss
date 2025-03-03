@@ -89,6 +89,15 @@
   }
 }
 
+.nav__logo:hover,
+.nav__logo:focus {
+  opacity: 0.8;
+}
+
+.nav__logo:active {
+  opacity: 0.6;
+}
+
 .nav__logo img {
   margin-right: auto;
 }
@@ -238,5 +247,5 @@
 
 .nav__list-inner--opened {
   display: flex;
+  z-index: 100;
 }
-
